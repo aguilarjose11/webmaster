@@ -1,0 +1,411 @@
+
+/*
+ *Scrolling
+ */
+
+.dd , .tas{
+	
+	border-right: 1px dashed rgb(120,120,120);
+}
+
+.navbar{
+	padding:0px;
+	margin: 0px;
+	
+}
+body{background-color: rgb(319,297,217); color: rgb(250,250,250);}
+.jumbotron {
+  height: 350px;
+  color: white;
+  text-shadow: #444 0 1px 1px;
+  background:transparent;
+}
+
+.parallax { 
+    /* The image used */
+    background-image: url("../img/vrSet.png");
+	background-color: red;
+
+    /* Set a specific height */
+    height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	position: static;
+}
+#front{height: 650px;}
+.btn{
+	padding:10px;
+	margin: 10px;
+	width: 15%;
+	
+}
+.row{
+	margin:0px;
+	padding:0px;
+}
+.frontend{
+	size: 150%;
+	padding: 50px;
+}
+.btn-default{
+	width: 33%;
+	
+	
+}
+.btn-primary, /**/.btn-primary:hover, .btn-primary:focus, .btn-primary.focus, 
+    .btn-primary:active, .btn-default.active, .btn-primary:visited,
+    .btn-primary:active:hover, .btn-primary.active:hover{
+	background-color: rgb(150,206,179);
+	}
+	
+.btn-default, /**/.btn-default:hover, .btn-default:focus, .btn-default.focus, 
+    .btn-default:active, .btn-default.active, .btn-default:visited,
+    .btn-default:active:hover, .btn-default.active:hover{
+        background-color: rgba(0,0,0,0);
+        color:#fff;
+    }
+	
+.btn-default:hover, .btn-default:focus, .btn-default.focus, 
+    .btn-default:active, .btn-default.active, .btn-default:visited,
+    .btn-default:active:hover, .btn-default.active:hover{
+		background-color: rgba(0,0,0,.3);
+	}
+	
+.btn-default:active:hover{background-color: rgba(0,0,0,.5);}
+.menub{background-color: rgb(150,10,25);}
+.container{
+
+	background-color: rgb(210, 210, 210);
+	position: relative;
+	height: 400px;
+}
+/*.col-xs-4.dd{
+	
+	position: relative;
+    left: 10%;
+}
+.col-xs-4.ds{
+	
+	position: relative;
+    left:10%;
+}*/
+.container{
+	position: relative;
+	width:100%;
+}
+.row.logs{
+    text-align:center;
+}
+.row .btn-primary{
+	width: 100%;
+}
+.ds{
+	position: relative;
+	top:14px;
+}
+.tas{
+	position: relative;
+	top: 6px;
+	
+}
+.ft{
+	position: relative;
+	top: 8px;
+	
+}
+.txt{
+	position: relative;
+	top: 80px;
+}
+.logos{
+	top:35px;
+}
+ .tsa,.ft,.csa {
+	-webkit-transition-delay: 1s; /* Safari */
+	transition-delay: 1s;
+    opacity:0;
+    transition:all 1.5s;
+   }
+
+    .ft.in-view,.tsa.in-view,.csa.in-view {
+       opacity:1;
+    }
+	h2 small{
+		color:rgba(240,240,240,.8)
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+/* body css*/
+.history{
+	
+	margin:0px;
+	padding:0px;
+	height:450px;
+	
+	
+}
+/*dexometrophan lambroxolflemosa*/
+	.history h1{
+		
+	}
+	.left-box-2, .right-box-2{
+		background-color:transparent;
+		height:300px;
+		margin:0px;
+		padding:20px;
+		margin-top:35px;
+		margin-bottom:25px;
+		
+	
+	}
+	.history{
+		background-color:rgb(225,225,225);
+		/*background-image:url("../img/hexBG.png");
+		background-repeat:no-repeat;
+		background-size:cover;*/
+	}
+	.history p{
+		font-size:18px;
+	}
+	.history .text-center{
+	
+		height:100px;
+		
+	}
+	.present-text .desc,.past-text .desc{
+	opacity:1;
+	height:50px;
+	/*-webkit-box-shadow: 0px 0px 15px 2px rgba(255,255,255,.75);*/
+	/*box-shadow: 0px 0px 15px 2px rgba(255,255,255,.75);*/
+	-webkit-transition: all 0.7s ease;
+	transition: all 0.7s ease;
+		
+	}
+	.present-text .desc:hover, .past-text .desc:hover{
+		opacity:1;
+		
+	}
+/*body css*/
+/*intro*/
+.intro #title{
+	bottom:100px;
+}
+.intro .text-center{
+	background-color:transparent;
+	padding-top:150px;
+	padding-bottom:150px;
+	
+}
+.intro{
+	background-image:url("../img/cardBoard.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	
+}
+.intro span{
+    opacity:0;
+    transition: opacity 0.8s;
+}
+.intro p{
+	font-size:16px;
+	
+}
+/*---------------------------------------------------------------------------*/
+/*uses*/
+.info-vr{
+	margin:0px;
+	padding:0px;
+	
+}
+/*.arrow-2{
+	width: 0; 
+	height: 0; 
+	border-left: 100% solid transparent;
+	border-right: 100% solid transparent;
+	border-top: 100% solid #f00;
+}*/
+
+/*----------------------------------------------------------------------*/
+
+/*uses*/
+.uses{
+	background-image:url("../img/hexBG.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.uses .daily-life{
+	padding-bottom:30px;
+}
+/*------------------------------------------------------------------------*/
+
+/*comparacion*/
+.comparacion{
+	background-color:rgb(155, 155, 155);
+}
+.comparacion .row{
+	margin-bottom:35px;
+}
+/*------------------------------------------------------------------------*/
+
+/*importance*/
+.importance{
+	background-image:url("../img/old-vr/old2.jpg");
+	background-repeat:no-repeat;
+	background-size:cover;
+	padding-top:75px;
+	padding-bottom:250px;
+	font-family:Ubuntu, serif;
+	color:rgb(256,256,256);
+}
+.importance .content{
+	font-size:15px;
+}
+
+
+/*------------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------------*/
+
+
+/*----- only iphone rules -----*/
+@media only screen and (max-width: 750px){
+	.importance{
+		background-position:-50px 0px;
+	}
+	.dd , .tas{
+	
+	border-right: none;
+}
+	.col-sm-4{
+		background-color: rgb(210,210,210);
+		height:400px;
+		overflow:hidden;
+		position: relative;
+		margin:20px;
+		/*visibility: hidden;*/
+	}
+	.container{
+		height:1300px;
+	}
+	.ds{
+		position: relative;
+		top: 0px;
+	}
+	h1{
+		font-size: 50px;
+	}
+	.txt .btn-primary{
+		width:65% ;
+	}
+	h2 small{font-size:17px ;}
+
+/*History block*/
+.history{
+	height:960px;
+}
+.left-box-2{
+	height:250px;
+	/*bottom:20px;*/
+}
+.right-box-2{
+	height:410px;
+	margin-top:150px;
+	/*bottom:39px;*/
+}
+/*.past-text{
+	right: 10px;
+}
+.present-text{
+	left: 10px;
+}*/
+#title{
+	font-size:40px;
+}
+.jumbotron{
+	margin-top:40px;
+}
+.parallax {
+	height:50px;
+	background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;              /* optional, center the image */
+}
+.brand{height:35px;width:50px;}
+.intro .text-center{margin-top:0px; padding-top:0px;}
+/*---------------------------------------------------------*/
+}
+
+
+
+/* Page background-image landscape for iPad 3 */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: landscape)
+  and (-webkit-min-device-pixel-ratio: 2) {
+  .parallax {
+    -webkit-background-size: 2024px 768px !important;
+    background-size: 2024px 768px !important;
+    background: url("../img/vrSet.png") no-repeat center top #000 !important;
+  }
+}
+/* Page background-image portrait for iPad 3 */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: portrait)
+  and (-webkit-min-device-pixel-ratio: 2) {
+  .parallax {
+    -webkit-background-size: 2024px 768px !important;
+    background-size: 2024px 768px !important;
+    background: url("../img/vrSet.png") no-repeat center top #000 !important;
+  }
+}
+/* Page background-image landscape for iPad 1/2 */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: landscape)
+  and (-webkit-min-device-pixel-ratio: 1) {
+  .parallax {
+    background: url("../img/vrSet.png") no-repeat center top #000 !important;
+    -webkit-background-size: 2024px 768px !important;
+    background-size: 2024px 768px !important;
+  }
+}
+/* Page background-image portrait for iPad 1/2 */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: portrait)
+  and (-webkit-min-device-pixel-ratio: 1) {
+  .parallax {
+    background: url("../img/vrSet.png") no-repeat center top #000 !important;
+    -webkit-background-size: 5024px 2024px !important;
+    background-size: 5024px 2024px !important;
+  }
+}
+.t-1{
+	padding-left: 30px;
+	padding-right: 30px ;
+	text-align: left;
+}
+.pro-txt{}
+.cons-txt{}
