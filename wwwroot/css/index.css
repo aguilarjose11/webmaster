@@ -7,4 +7,20 @@
 html {
   background-color: #c8c8c8; }
 
+.content {
+  margin-top: 50px;
+  padding-top: 30px; }
+
+.navbar {
+  background-color: #87d7ff;
+  padding-bottom: 0px;
+  border-bottom-color: rgba(0, 0, 0, 0);
+  height: 50px;
+  @navbar-padding-vertical: 10px;
+  @navbar height: 10px;
+  transition: background-color 0.5s, padding-bottom 0.5s; }
+  .navbar:hover {
+    background-color: rgba(135, 215, 255, 0.3);
+    padding-bottom: -10px; }
+
 /*# sourceMappingURL=index.css.map */

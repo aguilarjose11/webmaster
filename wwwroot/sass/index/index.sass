@@ -6,3 +6,20 @@
 
 html
   background-color: rgb(200, 200, 200)
+
+.content
+  margin-top: 50px
+  padding-top: 30px
+
+.navbar
+  background-color: rgba(135,215,255,1)
+  padding-bottom: 0px
+  border-bottom-color: rgba(0,0,0,0)
+  height: 50px
+  @navbar-padding-vertical: 10px
+  @navbar height: 10px
+
+  transition: background-color .5s, padding-bottom .5s
+  &:hover
+    background-color: rgba(135,215,255,.3)
+    padding-bottom: -10px
