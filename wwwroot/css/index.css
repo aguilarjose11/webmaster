@@ -1,3 +1,5 @@
+/* Variables */
+/*==================================== */
 .ftduck {
   z-index: 50000; }
 
@@ -5,7 +7,7 @@
   z-index: -1; }
 
 html {
-  background-color: #c8c8c8; }
+  background-color: white; }
 
 .content {
   margin-top: 50px;
@@ -22,5 +24,9 @@ html {
   .navbar:hover {
     background-color: rgba(135, 215, 255, 0.3);
     padding-bottom: -10px; }
+
+/*find way to make selected box change opacity! */
+.selected {
+  background-color: #69b9d7; }
 
 /*# sourceMappingURL=index.css.map */
