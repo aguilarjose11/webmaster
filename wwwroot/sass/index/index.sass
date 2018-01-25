@@ -1,8 +1,7 @@
-/* Variables */
-
+/* Global Variables */
 $background-color-navbar: 1
-
 /*====================================*/
+
 
 /* first division (Hello world)*/
 .content
@@ -17,6 +16,10 @@ $background-color-navbar: 1
 html
   background-color: rgb(255, 255, 255)
 
+/* */
+.jumbotron
+  background-image: url("https://dummyimage.com/600x405/ffffff/8afdff.png&text=Jumbotron")
+
 .mobile-button
   &:hover
     background-color: rgb(105,185,215)
@@ -29,7 +32,6 @@ html
   height: 50px
   @navbar-padding-vertical: 10px
   @navbar height: 10px
-
   transition: background-color .5s, padding-bottom .5s
 
 /* background of drop menu of mobile mode */
@@ -37,8 +39,8 @@ html
   z-index: -2
   background-color: rgb(135, 215, 255)
 
-/*find way to make selected box change opacity!*/
 /* selected shade for navigation bar menu items (at the top!)*/
 .selected
+  /*Note: find way to make selected box change opacity!*/
   background-color: rgb(105,185,215)
   z-index: 0
