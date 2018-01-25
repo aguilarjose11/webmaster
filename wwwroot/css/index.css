@@ -13,16 +13,22 @@
 html {
   background-color: white; }
 
-/* */
+/* Jumbotron (First Element) */
 .jumbotron {
-  background-image: url("https://dummyimage.com/600x405/ffffff/8afdff.png&text=Jumbotron"); }
+  background-image: url("https://dummyimage.com/600x500/e3e3e3/4abfbf.png&text=Jumbotron");
+  height: 700px;
+  /*background-attachment: fixed */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: static; }
 
 .mobile-button:hover {
   background-color: #69b9d7; }
 
 /* navigation bar (at the top!) */
 .navbar {
-  background-color: #87d7ff;
+  background-color: #91e1ff;
   padding-bottom: 0px;
   border-bottom-color: rgba(0, 0, 0, 0);
   height: 50px;
@@ -33,7 +39,7 @@ html {
 /* background of drop menu of mobile mode */
 .navbar-right {
   z-index: -2;
-  background-color: #87d7ff; }
+  background-color: #91e1ff; }
 
 /* selected shade for navigation bar menu items (at the top!) */
 .selected {
