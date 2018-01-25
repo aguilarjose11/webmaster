@@ -1,18 +1,22 @@
 /* Variables */
 /*==================================== */
-.ftduck {
-  z-index: 50000; }
-
-.navbar-right {
-  z-index: -1; }
-
-html {
-  background-color: white; }
-
+/* first division (Hello world) */
 .content {
   margin-top: 50px;
   padding-top: 30px; }
 
+/* Logo image */
+.ftduck {
+  max-width: 40%; }
+
+/* entire document (HTML page) */
+html {
+  background-color: white; }
+
+.mobile-button:hover {
+  background-color: #69b9d7; }
+
+/* navigation bar (at the top!) */
 .navbar {
   background-color: #87d7ff;
   padding-bottom: 0px;
@@ -21,12 +25,16 @@ html {
   @navbar-padding-vertical: 10px;
   @navbar height: 10px;
   transition: background-color 0.5s, padding-bottom 0.5s; }
-  .navbar:hover {
-    background-color: rgba(135, 215, 255, 0.3);
-    padding-bottom: -10px; }
+
+/* background of drop menu of mobile mode */
+.navbar-right {
+  z-index: -2;
+  background-color: #87d7ff; }
 
 /*find way to make selected box change opacity! */
+/* selected shade for navigation bar menu items (at the top!) */
 .selected {
-  background-color: #69b9d7; }
+  background-color: #69b9d7;
+  z-index: 0; }
 
 /*# sourceMappingURL=index.css.map */

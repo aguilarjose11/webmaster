@@ -4,21 +4,24 @@ $background-color-navbar: 1
 
 /*====================================*/
 
-
-
-.ftduck
-  z-index: 50000
-
-.navbar-right
-  z-index: -1
-
-html
-  background-color: rgb(255, 255, 255)
-
+/* first division (Hello world)*/
 .content
   margin-top: 50px
   padding-top: 30px
 
+/* Logo image*/
+.ftduck
+  max-width: 40%
+
+/* entire document (HTML page)*/
+html
+  background-color: rgb(255, 255, 255)
+
+.mobile-button
+  &:hover
+    background-color: rgb(105,185,215)
+
+/* navigation bar (at the top!)*/
 .navbar
   background-color: rgba(135, 215, 255, 1)
   padding-bottom: 0px
@@ -28,10 +31,14 @@ html
   @navbar height: 10px
 
   transition: background-color .5s, padding-bottom .5s
-  &:hover
-    $background-color-navbar: .3
-    background-color: rgba(135, 215, 255, $background-color-navbar)
-    padding-bottom: -10px
+
+/* background of drop menu of mobile mode */
+.navbar-right
+  z-index: -2
+  background-color: rgb(135, 215, 255)
+
 /*find way to make selected box change opacity!*/
+/* selected shade for navigation bar menu items (at the top!)*/
 .selected
-  background-color: rgba(105,185,215, $background-color-navbar)
+  background-color: rgb(105,185,215)
+  z-index: 0
