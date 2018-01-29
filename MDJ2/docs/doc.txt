@@ -1,0 +1,38 @@
+------------------------>Here be Dragons! <---------------------------
+2018 TSA Francis Tuttle Webmaster Entry: v0.1.0
+
+dependencies: (check init.bat to link all of them once installed)
+  - node.js (9.1.0)
+    + npm (5.6.0)
+  - bootstrap (4.0.0)
+  - popper.js (1.12.9)
+  - jquery (3.3.1)
+  - gulp (3.9.1)
+  - gulp-Sass (3.1.0)
+  - browser-sync (2.23.6)
+
+non-dependencies (optional):
+  - ruby (2.6.14)
+  - sass (3.5.5[bleeding edge])
+
+  installation instructions:
+
+  optional: install ruby & sass
+    1.- download and install ruby (regular installation): https://www.ruby-lang.org/en/downloads/
+    2.- make sure gem is installed (gem -v)
+    3.- gem install sass
+    4.- follow instructions in official SASS website :http://sass-lang.com/install to finish any extra procedures (none!)
+
+  Installing dependencies: npm, bootstrap, popper.js, jquery, gulp, gulp-sass, browser-sync
+    1.- get node.js from official website : https://nodejs.org/
+    2.- follow regular installation.
+    3.- make sure npm is installed ( type npm -v on cmd to see version if installed!)
+    4.- run code:
+      1) cd mdj2
+      2) npm i gulp browser-sync gulp-sync --save-dev
+      3) npm i bootstrap jquery popper.js --save
+
+    5.- run gulp (if not working, link dependencies using ".\init" from root directory)
+    6.- browser & cmd should open.
+
+Contact Jose Aguilar (aguilar.jose11@outlook.com) if any --->issues<---.

@@ -1,0 +1,18 @@
+-~-~-~-~-~-~-~-~
+Frameworks & dependencies:
+
+- Node.js (npm v5.6.0) ->Install dependencies with NPM!<-
+  dev-purposes:
+    + gulp
+    + browser-sync
+    + gulp-sass
+  Production purposes:
+    + bootstrap
+    + jquery
+    + popper.js
+- Bootstrap (4.0.0)
+- Ruby
+- Sass
+- jquery
+- Popper.js
+- google fonts
