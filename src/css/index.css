@@ -1,0 +1,21 @@
+/* Here be Dragons!*/
+/* Imports */
+body {
+  background-color: #efefef; }
+
+.jumbotron {
+  background-image: url("https://dummyimage.com/1000x800/e3e3e3/104414.png&text=Jumbotron");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: static; }
+
+/* media breakpoint mixins */
+#block {
+  display: block;
+  color: magenta; }
+
+@media (min-width: 992px) {
+  #block {
+    color: green; } }
