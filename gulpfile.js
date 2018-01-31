@@ -10,7 +10,7 @@ var sass            = require('gulp-sass');
  */
 gulp.task('sass', function(){
     return gulp.src(['node_modules/bootstrap/scss/bootstrap.scss', 'src/scss/*.scss']) // gets the files to be compiled. (bootstrap.css & any .sass files)
-        .pipe(sass())                                                                  // calls sass compiler.
+        .pipe(sass().on('error', sass.logError))                                       // calls sass compiler & stablishes a error handling function.
         .pipe(gulp.dest("src/css"))                                                    // sets the destination folder.
         .pipe(browserSync.stream());                                                   // updates the browserSync to restart the static server and show the changes.
 });
