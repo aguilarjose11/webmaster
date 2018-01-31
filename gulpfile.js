@@ -9,7 +9,7 @@ var sass            = require('gulp-sass');
  * function to recompile changed files and update them in the static server (browserSync)
  */
 gulp.task('sass', function(){
-    return gulp.src(['node_modules/bootstrap/scss/bootstrap.scss', 'src/sass/*.sass']) // gets the files to be compiled. (bootstrap.css & any .sass files)
+    return gulp.src(['node_modules/bootstrap/scss/bootstrap.scss', 'src/scss/*.scss']) // gets the files to be compiled. (bootstrap.css & any .sass files)
         .pipe(sass())                                                                  // calls sass compiler.
         .pipe(gulp.dest("src/css"))                                                    // sets the destination folder.
         .pipe(browserSync.stream());                                                   // updates the browserSync to restart the static server and show the changes.
@@ -39,7 +39,7 @@ gulp.task('serve', ['sass'], function() {
 
     //watches for any changes:
     // + changes on sass files?
-    gulp.watch(['node_modules/bootstrap/scss/bootstrap.scss', 'src/sass/*.sass'], ['sass']); // calls the sass compiler on changed files.
+    gulp.watch(['node_modules/bootstrap/scss/bootstrap.scss', 'src/scss/*.scss'], ['sass']); // calls the sass compiler on changed files.
     // + changes on html files?
     gulp.watch("src/*.html").on('change', browserSync.reload); // reloads the entire static server.
 });

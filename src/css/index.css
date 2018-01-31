@@ -3,19 +3,67 @@
 body {
   background-color: #efefef; }
 
+.Jumbotron {
+  height: 550px; }
+
+/** media breakpoint mixins */
+/**
+  * indexmedia partial
+  *
+  * This partial sets all the media breakpoints,
+  *
+  */
+#block:before {
+  content: "extra small"; }
+
 .jumbotron {
   background-image: url("https://dummyimage.com/1000x800/e3e3e3/104414.png&text=Jumbotron");
   background-attachment: fixed;
-  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: static; }
+  position: static;
+  background-position: 0px -50px; }
 
-/* media breakpoint mixins */
-#block {
-  display: block;
-  color: magenta; }
+@media (min-width: 576px) {
+  #block:before {
+    content: "small"; }
+  .jumbotron {
+    background-image: url("https://dummyimage.com/1000x800/e3e3e3/104414.png&text=Jumbotron");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: static;
+    background-position: 0px -100px; } }
+
+@media (min-width: 768px) {
+  #block:before {
+    content: "medium"; }
+  .jumbotron {
+    background-image: url("https://dummyimage.com/1000x800/e3e3e3/104414.png&text=Jumbotron");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: static;
+    background-position: 0px -150px; } }
 
 @media (min-width: 992px) {
-  #block {
-    color: green; } }
+  #block:before {
+    content: "large"; }
+  .jumbotron {
+    background-image: url("https://dummyimage.com/1000x800/e3e3e3/104414.png&text=Jumbotron");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: static;
+    background-position: 0px -200px; } }
+
+@media (min-width: 1200px) {
+  #block:before {
+    content: "extra large"; }
+  .jumbotron {
+    background-image: url("https://dummyimage.com/1000x800/e3e3e3/104414.png&text=Jumbotron");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: static;
+    background-position: 0px -350px; } }

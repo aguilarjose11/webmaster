@@ -1,0 +1,29 @@
+/* Here be Dragons!*/
+
+/* Imports */
+
+// required imports! --> DO NOT DELETE! <--
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+
+// selective imports.
+//@import "node_module/bootstrap/scss/functions"
+
+$bg-color: #efefef;
+
+body
+{
+    background-color: $bg-color;
+}
+
+// jumbotron
+.Jumbotron
+{
+  height: 550px;
+}
+
+
+
+/** media breakpoint mixins */
+@import 'indexmedia'

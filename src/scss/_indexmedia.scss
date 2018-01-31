@@ -1,0 +1,84 @@
+/**
+  * indexmedia partial
+  *
+  * This partial sets all the media breakpoints,
+  *
+  */
+
+// ------ mixins -------------
+@mixin jumbotron-base($size)
+{
+  background-image: url("https://dummyimage.com/1000x800/e3e3e3/104414.png&text=Jumbotron");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: static;
+  background-position: 0px $size;
+}
+
+// ------ Display mixins ------
+@include media-breakpoint-up(xs)
+{
+  #block:before
+  {
+    content: "extra small";
+  }
+  .jumbotron
+  {
+      @include jumbotron-base(-50px);
+  }
+}
+
+
+@include media-breakpoint-up(sm)
+{
+
+  #block:before
+  {
+    content: "small";
+  }
+
+  .jumbotron
+  {
+    @include jumbotron-base(-100px);
+  }
+}
+
+@include media-breakpoint-up(md)
+{
+  #block:before
+  {
+    content: "medium";
+  }
+  .jumbotron
+  {
+    @include jumbotron-base(-150px);
+  }
+}
+
+@include media-breakpoint-up(lg)
+{
+  // test color changes on screen size.
+  #block:before
+  {
+    content: "large";
+  }
+
+  .jumbotron
+  {
+    @include jumbotron-base(-200px);
+  }
+}
+
+
+@include media-breakpoint-up(xl)
+{
+  #block:before
+  {
+    content: "extra large";
+  }
+  .jumbotron
+  {
+    @include jumbotron-base(-350px);
+  }
+}
