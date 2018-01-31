@@ -1,17 +1,23 @@
 /* Here be Dragons!*/
 /* Imports */
+/* Variable Overrides.*/
+/*--------------------------*/
+/* Variable declaration */
+/* Rules.*/
 body {
   background-color: #efefef; }
 
-.Jumbotron {
-  height: 550px; }
-
-/** media breakpoint mixins */
+/* media breakpoint mixins */
+/* Here be Dragons!*/
 /**
-  * indexmedia partial
+  * indexmedia partial.
   *
-  * This partial sets all the media breakpoints,
-  *
+  * This partial sets all the media breakpoints to manage
+  * Changes in the display size.
+  */
+/** This mixin takes care of the jumbotron rules.
+  * To change rules that are expected to be shown
+  * in every display size add them here.
   */
 #block:before {
   content: "extra small"; }
@@ -22,7 +28,8 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   position: static;
-  background-position: 0px -50px; }
+  background-position: 0px -50px;
+  height: 750px; }
 
 @media (min-width: 576px) {
   #block:before {
@@ -33,7 +40,8 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     position: static;
-    background-position: 0px -100px; } }
+    background-position: 0px -100px;
+    height: 750px; } }
 
 @media (min-width: 768px) {
   #block:before {
@@ -44,7 +52,8 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     position: static;
-    background-position: 0px -150px; } }
+    background-position: 0px -150px;
+    height: 750px; } }
 
 @media (min-width: 992px) {
   #block:before {
@@ -55,7 +64,8 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     position: static;
-    background-position: 0px -200px; } }
+    background-position: 0px -200px;
+    height: 750px; } }
 
 @media (min-width: 1200px) {
   #block:before {
@@ -66,4 +76,5 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     position: static;
-    background-position: 0px -350px; } }
+    background-position: 0px -350px;
+    height: 750px; } }

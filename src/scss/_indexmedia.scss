@@ -1,11 +1,18 @@
+/* Here be Dragons!*/
+
 /**
-  * indexmedia partial
+  * indexmedia partial.
   *
-  * This partial sets all the media breakpoints,
-  *
+  * This partial sets all the media breakpoints to manage
+  * Changes in the display size.
   */
 
-// ------ mixins -------------
+// ------ mixins declarations -------------
+
+/** This mixin takes care of the jumbotron rules.
+  * To change rules that are expected to be shown
+  * in every display size add them here.
+  */
 @mixin jumbotron-base($size)
 {
   background-image: url("https://dummyimage.com/1000x800/e3e3e3/104414.png&text=Jumbotron");
@@ -14,6 +21,7 @@
   background-size: cover;
   position: static;
   background-position: 0px $size;
+  height: 750px;
 }
 
 // ------ Display mixins ------

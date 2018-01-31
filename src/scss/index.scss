@@ -7,23 +7,27 @@
 @import "node_modules/bootstrap/scss/variables";
 @import "node_modules/bootstrap/scss/mixins";
 
-// selective imports.
-//@import "node_module/bootstrap/scss/functions"
+// selective imports:
 
-$bg-color: #efefef;
+/* Variable Overrides.*/
 
+
+/*--------------------------*/
+
+/* Variable declaration */
+
+$bg-color: #efefef; // html body background color
+
+/* Rules.*/
+
+// color of the html body section
 body
 {
     background-color: $bg-color;
 }
 
-// jumbotron
-.Jumbotron
-{
-  height: 550px;
-}
 
 
 
-/** media breakpoint mixins */
-@import 'indexmedia'
+/* media breakpoint mixins */
+@import 'indexmedia' // mixin that takes care of the display changes.
