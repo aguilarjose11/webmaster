@@ -11,9 +11,6 @@
 
 /* Variable Overrides.*/
 
-
-/*--------------------------*/
-
 /* Variable declaration */
 
 $bg-color: #efefef; // html body background color
@@ -29,5 +26,6 @@ body
 
 
 
-/* media breakpoint mixins */
-@import 'indexmedia' // mixin that takes care of the display changes.
+/* mixins */
+
+@import 'indexdisplay' // mixin that takes care of the display changes.
