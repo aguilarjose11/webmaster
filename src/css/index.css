@@ -25,9 +25,6 @@ body {
 /**
   * Set up for displays LESS THAN: 576px (*exclusive*).
   **/
-#block:before {
-  content: "extra small"; }
-
 .jumbotron {
   background-image: url("https://dummyimage.com/1000x800/e3e3e3/104414.png&text=Jumbotron");
   background-attachment: fixed;
@@ -41,8 +38,6 @@ body {
   * Set up for displays RANGING: 576px -> 768px (*exclusive*).
   **/
 @media (min-width: 576px) {
-  #block:before {
-    content: "small"; }
   .jumbotron {
     background-image: url("https://dummyimage.com/1000x800/e3e3e3/104414.png&text=Jumbotron");
     background-attachment: fixed;
@@ -56,8 +51,6 @@ body {
   * Set up for displays RANGING: 768px -> 992px (*exclusive*).
   **/
 @media (min-width: 768px) {
-  #block:before {
-    content: "medium"; }
   .jumbotron {
     background-image: url("https://dummyimage.com/1000x800/e3e3e3/104414.png&text=Jumbotron");
     background-attachment: fixed;
@@ -71,8 +64,6 @@ body {
   * Set up for displays RANGING: 992px -> 1200px (*exclusive*).
   **/
 @media (min-width: 992px) {
-  #block:before {
-    content: "large"; }
   .jumbotron {
     background-image: url("https://dummyimage.com/1000x800/e3e3e3/104414.png&text=Jumbotron");
     background-attachment: fixed;
@@ -86,8 +77,6 @@ body {
   * Set up for displays GREATER THAN: 1200px.
   **/
 @media (min-width: 1200px) {
-  #block:before {
-    content: "extra large"; }
   .jumbotron {
     background-image: url("https://dummyimage.com/1000x800/e3e3e3/104414.png&text=Jumbotron");
     background-attachment: fixed;

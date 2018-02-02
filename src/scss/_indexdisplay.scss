@@ -29,15 +29,13 @@
 }
 
 // ------ Display mixins ------
+
 /**
   * Set up for displays LESS THAN: 576px (*exclusive*).
   **/
 @include media-breakpoint-up(xs)
 {
-  #block:before
-  {
-    content: "extra small";
-  }
+  // jumbotron rules
   .jumbotron
   {
       @include jumbotron-base(-50px);
@@ -49,12 +47,7 @@
   **/
 @include media-breakpoint-up(sm)
 {
-
-  #block:before
-  {
-    content: "small";
-  }
-
+  // jumbotron rules
   .jumbotron
   {
     @include jumbotron-base(-100px);
@@ -66,10 +59,7 @@
   **/
 @include media-breakpoint-up(md)
 {
-  #block:before
-  {
-    content: "medium";
-  }
+    // jumbotron rules
   .jumbotron
   {
     @include jumbotron-base(-150px);
@@ -81,12 +71,7 @@
   **/
 @include media-breakpoint-up(lg)
 {
-  // test color changes on screen size.
-  #block:before
-  {
-    content: "large";
-  }
-
+  // jumbotron rules
   .jumbotron
   {
     @include jumbotron-base(-200px);
@@ -98,10 +83,7 @@
   **/
 @include media-breakpoint-up(xl)
 {
-  #block:before
-  {
-    content: "extra large";
-  }
+  // jumbotron rules
   .jumbotron
   {
     @include jumbotron-base(-350px);
