@@ -29,7 +29,7 @@ Installing dependencies: npm, bootstrap, popper.js, jquery, gulp, gulp-sass, bro
     3.- make sure npm is installed ( type npm -v on cmd to see version if installed!)
     4.- run code:
       1) cd mdj2
-      2) npm i gulp browser-sync gulp-sync --save-dev
+      2) npm i -g gulp browser-sync gulp-sync --save-dev
       3) npm i bootstrap jquery popper.js --save
 
     5.- run gulp (if not working, link dependencies using ".\init" from root directory)

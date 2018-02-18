@@ -8,24 +8,81 @@
   */
 
 // ------ mixins declarations -------------
+/**
+  * - jumbotron-base($size)
+  * - slant-shade($width)
+  * - slant-text($size)
+  **/
+
+//variable declarations
+$jumbotron-height: 575px;
+
 
 /** This mixin takes care of the jumbotron rules.
   * To add rules that are expected to be shown-
   * in every display size add them here.
   *
   * variables:
-  *   - $size: Variable used to set the size in pixels-
-  *     for the offset of the image (center it).
+  *   - $x-axis: Variable for the x position of the jumbotron's
+  *              picture background.
+  *   -$y-axis:  Variable for the y position of the jumbotron's
+  *              picture background.
   */
-@mixin jumbotron-base($size)
+@mixin jumbotron-base($x-axis, $y-axis)
 {
-  background-image: url("https://dummyimage.com/1000x800/e3e3e3/104414.png&text=Jumbotron");
-  background-attachment: fixed;
+  background-image: url("https://www.bernardmarr.com/img/blog/big-data/What%20is%20Artificial%20Intelligece%20AI.png");
+  background-attachment: absolute;
   background-repeat: no-repeat;
   background-size: cover;
   position: static;
-  background-position: 0px $size;
-  height: 750px;
+  background-position: $x-axis $y-axis;
+  height: $jumbotron-height;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  margin-bottom: 0px;
+}
+
+
+/** slant-shade mixin
+  *
+  * This mixin controlls the size of the slant shade used
+  * to display text on the jumbotron's face.
+  *
+  * variables:
+  *   -$width: Width of the slant shade.
+  */
+  @mixin slant-shade($width)
+  {
+    position: absolute;
+    width: $width;
+    height: $jumbotron-height;
+    //top: 56px;
+    left: -100px;
+    background-color: rgba(0,0,0,.4);
+    transform: rotate(0) scale(1) skewX(-15.75deg) translate(0);
+
+  }
+
+  /** slant-text mixin
+    *
+    * this mixin takes care of the slant-shade text size and other
+    * propereties.
+    *
+    * variables:
+    *   - $text-box: width of the text box.
+    *   - $text-box-x: x position of the text on jumbotron.
+    *   - $text-box-y: y position of the text on jumbotron.
+    */
+
+@mixin slant-text($text-box, $text-box-x, $text-box-y)
+{
+  background-color: rgba(0,0,0,0);
+  border-color: rgba(0,0,0,0);
+  width: $text-box;
+  padding-left: $text-box-x;//30px;
+  padding-top: $text-box-y;//85px;
+  color: rgb(225,225,225);
+
 }
 
 // ------ Display mixins ------
@@ -38,8 +95,21 @@
   // jumbotron rules
   .jumbotron
   {
-      @include jumbotron-base(-50px);
+      @include jumbotron-base(-450px, 0px);
   }
+
+  // slanted background over jumbotron
+  .slant
+  {
+    @include slant-shade(350px);
+  }
+
+  // text over slant shade over jumbotron.
+  .slant-text
+  {
+    @include slant-text(300px, 0px, 25px);
+  }
+
 }
 
 /**
@@ -50,8 +120,21 @@
   // jumbotron rules
   .jumbotron
   {
-    @include jumbotron-base(-100px);
+    @include jumbotron-base(-250px, 0px);
   }
+
+  // slanted background over jumbotron
+  .slant
+  {
+    @include slant-shade(390px);
+  }
+
+  // text over slant shade over jumbotron.
+  .slant-text
+  {
+    @include slant-text(300px, 30px, 85px);
+  }
+
 }
 
 /**
@@ -62,8 +145,21 @@
     // jumbotron rules
   .jumbotron
   {
-    @include jumbotron-base(-150px);
+    @include jumbotron-base(-150px, 0px);
   }
+
+  // slanted background over jumbotron
+  .slant
+  {
+    @include slant-shade(450px);
+  }
+
+  // text over slant shade over jumbotron.
+  .slant-text
+  {
+    @include slant-text(300px, 30px, 85px);
+  }
+
 }
 
 /**
@@ -74,8 +170,21 @@
   // jumbotron rules
   .jumbotron
   {
-    @include jumbotron-base(-200px);
+    @include jumbotron-base(0px, 0px);
   }
+
+  // slanted background over jumbotron
+  .slant
+  {
+    @include slant-shade(450px);
+  }
+
+  // text over slant shade over jumbotron.
+  .slant-text
+  {
+    @include slant-text(300px, 30px, 85px);
+  }
+
 }
 
 /**
@@ -86,6 +195,19 @@
   // jumbotron rules
   .jumbotron
   {
-    @include jumbotron-base(-350px);
+    @include jumbotron-base(0px, 0px);
   }
+
+  // slanted background over jumbotron
+  .slant
+  {
+    @include slant-shade(400px);
+  }
+
+  // text over slant shade over jumbotron.
+  .slant-text
+  {
+    @include slant-text(300px, 30px, 85px);
+  }
+
 }

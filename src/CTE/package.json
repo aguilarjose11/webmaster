@@ -1,0 +1,11 @@
+{
+  "name": "cte",
+  "version": "1.0.0",
+  "description": "Carrer and technology Website of the Francis Tuttle programs and TSA chapter.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Francis Tuttle TSA chapter",
+  "license": "ISC"
+}

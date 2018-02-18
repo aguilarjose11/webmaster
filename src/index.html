@@ -6,74 +6,60 @@
     <meta charset="utf-8">
 
     <title>MDJ^2</title>
-    <link rel="icon" type="image/gif/jpg" href="img/mdj2.jpg"> <!-- Top Icon -->
+    <link rel="icon" type="image/gif/jpg" href="/assets/mdj2.jpg"> <!-- Top Icon -->
 
+    <!-- css imports (SASS-compiled) -->
     <link rel="stylesheet" href="css/bootstrap.css" >
     <link rel="stylesheet" href="css/index.css" >
 
 </head>
 
 <body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-mdj2">
+    <a class="navbar-brand" href="#">
+      <img class="d-inline-block align-top" src="/assets/MDJ2.jpg" width="45" height="30" alt="">
+        MDJ<sup>2</sup>
+    </a>
+    <button class="navbar-toggler bg-light" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle Navigation">
+      <span class="navbar-toggler-icon"></span>
+
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="navbar-item active"><a class="nav-link" href="#">Home</a></li>
+        <li class="navbar-item"><a class="nav-link" href="#">Features   </a></li>
+        <li class="navbar-item"><a class="nav-link" href="#">Pricing    </a></li>
+        <li class="navbar-item"><a class="nav-link disabled" href="#">Disabled</a></li>
+
+      </ul>
+
+    </div>
+
+  </nav>
+
   <!-- Jumbotron Declaration & content. -->
-  <div class="jumbotron jumbotron-fluid">
-    <div class="jumbotron-content">
-      <h1 class="display-4"> Migration to bootstrap 4.0.0 completed</h1>
-      <hr class="my-4">
-      <p class="lead"> migration has been succesfully completed, please see
-        <code>&lt; ..\docs\doc.txt &gt;</code> for more information.
-      </p>
-      <p class="lead">
-        <a class="btn btn-primary btn-lg" href="../docs/doc.txt" role="button"> see documentation.</a>
-      </p>
+  <div>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="jumbotron-content">
+          <div class="slant"></div>
+          <div class="slant-text card">
+            <div class="card-body">
+              <span class="card-title"><h4>Introducing:</h4><h1 class="text-warning"> &emsp;Martin</h1></span>
+              <h5 class="card-body">The future is here:<br/><hr/> Robotic AI.</h5></br>
+              <a href="#" class="btn btn-primary">Learn More.</a>
+            </div>
 
-    </div>
-
-  </div>
-
-
-<div class="row">
-  <div class="col">
-    <div class="card">
-      <div class="card-body text-center">
-        <h5 class="card-title">Test of <b>Bootstrap</b> habilities and elements</h5>
-        <p class="card-text">this text means that bootstrap has been succesfully sat up in this directory.</br>
-        <i>development will proceed</i></p>
-        <a href="#" class="card-link"> link test. </a>
+          </div>
 
       </div>
 
     </div>
 
   </div>
-
-  <div class="col">
-    <div class="card">
-      <div class="card-body text-center">
-        <h5 class="card-title">Test of <b>Bootstrap</b> habilities and elements</h5>
-        <p class="card-text">this text means that bootstrap has been succesfully sat up in this directory.</br>
-        <i>development will procede</i></p>
-        <a href="#" class="card-link btn btn-warning"> link test. </a>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</div>
-
-    <div class="container">
-      <div class="row">
-        <div class="col" id="block">
-
-        </div>
-
-      </div>
-
-    </div>
-
+    <!-- JavaScript Imports. -->
     <script src="js/jquery.min.js"></script>
-    <script src="js/popper.js"></script>
+    <script src="https://getbootstrap.com/assets/js/vendor/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 
 </body>
