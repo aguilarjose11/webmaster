@@ -3,10 +3,7 @@
 /* Variable declaration */
 /* Rules.*/
 body {
-  background-color: #4f4f4f; }
-
-.Individuals-intro {
-  height: 500px; }
+  background-color: #efefef; }
 
 /* Imports */
 .align-baseline {
@@ -2470,7 +2467,7 @@ input[type="button"].btn-block {
   background-repeat: no-repeat;
   background-size: cover;
   position: static;
-  background-position: -450px 0px;
+  background-position: 0px 0px;
   height: 575px;
   padding-bottom: 0px;
   padding-top: 0px;
@@ -2487,7 +2484,7 @@ input[type="button"].btn-block {
 .slant-text {
   background-color: transparent;
   border-color: transparent;
-  width: 300px;
+  width: 370px;
   height: 575px;
   padding-left: 0px;
   padding-top: 25px;
@@ -2565,7 +2562,7 @@ input[type="button"].btn-block {
     background-repeat: no-repeat;
     background-size: cover;
     position: static;
-    background-position: 5000px 0px;
+    background-position: 0px 0px;
     height: 575px;
     padding-bottom: 0px;
     padding-top: 0px;
@@ -2580,7 +2577,7 @@ input[type="button"].btn-block {
   .slant-text {
     background-color: transparent;
     border-color: transparent;
-    width: 300px;
+    width: 500px;
     height: 575px;
     padding-left: 30px;
     padding-top: 85px;
@@ -2596,23 +2593,25 @@ input[type="button"].btn-block {
     background-repeat: no-repeat;
     background-size: cover;
     position: static;
-    background-position: 50px 0px;
+    background-position: 0px 0px;
     height: 575px;
     padding-bottom: 0px;
     padding-top: 0px;
-    margin-bottom: 0px; }
+    margin-bottom: 0px;
+    width: 100%;
+    height: auto; }
   .slant {
     position: absolute;
     width: 400px;
     height: 575px;
-    left: 200px;
+    left: 800px;
     background-color: rgba(0, 0, 0, 0.4);
     transform: rotate(0) scale(1) skewX(-15.75deg) translate(0); }
   .slant-text {
     background-color: transparent;
     border-color: transparent;
-    width: 600px;
+    width: 1500px;
     height: 575px;
-    padding-left: 250px;
+    padding-left: 550px;
     padding-top: 105px;
     color: #e1e1e1; } }
