@@ -8,6 +8,9 @@ body {
 .card-title {
   text-align: center; }
 
+h1 {
+  text-shadow: 2px 2px 10px grey; }
+
 #firstImg {
   background-position: center;
   padding-top: 10px; }
@@ -2489,7 +2492,7 @@ input[type="button"].btn-block {
   * Set up for displays LESS THAN: 576px (*exclusive*).
   **/
 .jumbotron {
-  background-image: url("http://www.freaksugar.com/wp-content/uploads/2015/02/Avengers-AOU-Ultron-Prime-Hot-Toys-1200.jpg");
+  background-image: url("https://static.pexels.com/photos/270632/pexels-photo-270632.jpeg");
   background-attachment: absolute;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2521,7 +2524,7 @@ input[type="button"].btn-block {
   **/
 @media (min-width: 576px) {
   .jumbotron {
-    background-image: url("http://www.freaksugar.com/wp-content/uploads/2015/02/Avengers-AOU-Ultron-Prime-Hot-Toys-1200.jpg");
+    background-image: url("https://static.pexels.com/photos/270632/pexels-photo-270632.jpeg");
     background-attachment: absolute;
     background-repeat: no-repeat;
     background-size: cover;
@@ -2551,7 +2554,7 @@ input[type="button"].btn-block {
   **/
 @media (min-width: 768px) {
   .jumbotron {
-    background-image: url("http://www.freaksugar.com/wp-content/uploads/2015/02/Avengers-AOU-Ultron-Prime-Hot-Toys-1200.jpg");
+    background-image: url("https://static.pexels.com/photos/270632/pexels-photo-270632.jpeg");
     background-attachment: absolute;
     background-repeat: no-repeat;
     background-size: cover;
@@ -2581,7 +2584,7 @@ input[type="button"].btn-block {
   **/
 @media (min-width: 992px) {
   .jumbotron {
-    background-image: url("http://www.freaksugar.com/wp-content/uploads/2015/02/Avengers-AOU-Ultron-Prime-Hot-Toys-1200.jpg");
+    background-image: url("https://static.pexels.com/photos/270632/pexels-photo-270632.jpeg");
     background-attachment: absolute;
     background-repeat: no-repeat;
     background-size: cover;
@@ -2611,7 +2614,7 @@ input[type="button"].btn-block {
   **/
 @media (min-width: 1200px) {
   .jumbotron {
-    background-image: url("http://www.freaksugar.com/wp-content/uploads/2015/02/Avengers-AOU-Ultron-Prime-Hot-Toys-1200.jpg");
+    background-image: url("https://static.pexels.com/photos/270632/pexels-photo-270632.jpeg");
     background-attachment: absolute;
     background-repeat: no-repeat;
     background-size: cover;
