@@ -1,0 +1,42 @@
+/* Here be Dragons!*/
+
+
+
+/* Variable Overrides.*/
+
+/* Variable declaration */
+
+$bg-color: #efefef; // html body background color
+
+
+/* Rules.*/
+
+// color of the html body section
+body
+{
+    background-color: $bg-color;
+}
+
+// map for adding theme colors, changing colors
+$theme-colors:
+(
+  "mdj2": #a0cfff
+);
+
+
+/* Imports */
+
+// required imports! --> DO NOT DELETE! <--
+
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+
+
+// selective imports:
+@import "node_modules/bootstrap/scss/utilities";  // partial that deals with bg, etc.
+@import "node_modules/bootstrap/scss/buttons";    // partail that deals with buttons.
+
+/* mixins */
+
+@import 'businessesdisplay' // mixin that takes care of the display changes.
