@@ -16,10 +16,34 @@ body
     background-color: $bg-color;
 }
 
-//
-.Individuals-intro
+
+
+
+// image at left of the introduction to martin.
+.intro-side
 {
-  //height: 200px;
+  background-image: url("https://static.pexels.com/photos/436784/pexels-photo-436784.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+  left: 0px;
+  background-position: -30px 0px
+
+}
+
+//class that deletes the gutters of the columns
+.no-gutters
+{
+  margin-left: 0;
+  margin-right: 0;
+
+  >.col,
+  > [class*="col-"]
+  {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
 }
 
 // map for adding theme colors, changing colors

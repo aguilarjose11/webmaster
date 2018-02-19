@@ -86,6 +86,20 @@ $jumbotron-height: 575px;
 
 }
 
+/**
+  *
+  *
+  *
+  */
+  @mixin info-divider($x-axis, $y-axis)
+  {
+    background-image: url("https://static.pexels.com/photos/39644/robonaut-machines-dexterous-humanoid-39644.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 250px;
+    background-position: $x-axis $y-axis;
+  }
+
 // ------ Display mixins ------
 
 /**
@@ -109,6 +123,12 @@ $jumbotron-height: 575px;
   .slant-text
   {
     @include slant-text(370px, 0px, 25px);
+  }
+
+  // image below the introduction to martin and above the interactive info table.
+  .info-divider
+  {
+    @include info-divider(0, 0);
   }
 
 }
@@ -136,6 +156,12 @@ $jumbotron-height: 575px;
     @include slant-text(300px, 30px, 85px);
   }
 
+  // image below the introduction to martin and above the interactive info table.
+  .info-divider
+  {
+    @include info-divider(0, -80px);
+  }
+
 }
 
 /**
@@ -159,6 +185,12 @@ $jumbotron-height: 575px;
   .slant-text
   {
     @include slant-text(500px, 90px, 85px);
+  }
+
+  // image below the introduction to martin and above the interactive info table.
+  .info-divider
+  {
+    @include info-divider(0, -30px);
   }
 
 }
@@ -186,6 +218,12 @@ $jumbotron-height: 575px;
     @include slant-text(500px, 30px, 85px);
   }
 
+  // image below the introduction to martin and above the interactive info table.
+  .info-divider
+  {
+    @include info-divider(0, -80px);
+  }
+
 }
 
 /**
@@ -211,6 +249,12 @@ $jumbotron-height: 575px;
   .slant-text
   {
     @include slant-text(1500px, 550px, 105px);
+  }
+
+  // image below the introduction to martin and above the interactive info table.
+  .info-divider
+  {
+    @include info-divider(0, -140px);
   }
 
 }

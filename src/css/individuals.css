@@ -5,6 +5,22 @@
 body {
   background-color: #efefef; }
 
+.intro-side {
+  background-image: url("https://static.pexels.com/photos/436784/pexels-photo-436784.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+  left: 0px;
+  background-position: -30px 0px; }
+
+.no-gutters {
+  margin-left: 0;
+  margin-right: 0; }
+  .no-gutters > .col,
+  .no-gutters > [class*="col-"] {
+    padding-left: 0;
+    padding-right: 0; }
+
 /* Imports */
 .align-baseline {
   vertical-align: baseline !important; }
@@ -2459,6 +2475,11 @@ input[type="button"].btn-block {
     *   - $text-box-y: y position of the text on jumbotron.
     */
 /**
+  *
+  *
+  *
+  */
+/**
   * Set up for displays LESS THAN: 576px (*exclusive*).
   **/
 .jumbotron {
@@ -2490,6 +2511,13 @@ input[type="button"].btn-block {
   padding-top: 25px;
   color: #e1e1e1; }
 
+.info-divider {
+  background-image: url("https://static.pexels.com/photos/39644/robonaut-machines-dexterous-humanoid-39644.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 250px;
+  background-position: 0 0; }
+
 /**
   * Set up for displays RANGING: 576px -> 768px (*exclusive*).
   **/
@@ -2519,7 +2547,13 @@ input[type="button"].btn-block {
     height: 575px;
     padding-left: 30px;
     padding-top: 85px;
-    color: #e1e1e1; } }
+    color: #e1e1e1; }
+  .info-divider {
+    background-image: url("https://static.pexels.com/photos/39644/robonaut-machines-dexterous-humanoid-39644.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 250px;
+    background-position: 0 -80px; } }
 
 /**
   * Set up for displays RANGING: 768px -> 992px (*exclusive*).
@@ -2550,7 +2584,13 @@ input[type="button"].btn-block {
     height: 575px;
     padding-left: 90px;
     padding-top: 85px;
-    color: #e1e1e1; } }
+    color: #e1e1e1; }
+  .info-divider {
+    background-image: url("https://static.pexels.com/photos/39644/robonaut-machines-dexterous-humanoid-39644.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 250px;
+    background-position: 0 -30px; } }
 
 /**
   * Set up for displays RANGING: 992px -> 1200px (*exclusive*).
@@ -2581,7 +2621,13 @@ input[type="button"].btn-block {
     height: 575px;
     padding-left: 30px;
     padding-top: 85px;
-    color: #e1e1e1; } }
+    color: #e1e1e1; }
+  .info-divider {
+    background-image: url("https://static.pexels.com/photos/39644/robonaut-machines-dexterous-humanoid-39644.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 250px;
+    background-position: 0 -80px; } }
 
 /**
   * Set up for displays GREATER THAN: 1200px.
@@ -2614,4 +2660,10 @@ input[type="button"].btn-block {
     height: 575px;
     padding-left: 550px;
     padding-top: 105px;
-    color: #e1e1e1; } }
+    color: #e1e1e1; }
+  .info-divider {
+    background-image: url("https://static.pexels.com/photos/39644/robonaut-machines-dexterous-humanoid-39644.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 250px;
+    background-position: 0 -140px; } }
