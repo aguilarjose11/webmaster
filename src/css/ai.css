@@ -2458,11 +2458,17 @@ input[type="button"].btn-block {
     *   - $text-box-x: x position of the text on jumbotron.
     *   - $text-box-y: y position of the text on jumbotron.
     */
+/**card-text mixin
+  *
+  *makes my about text look presentable
+  *
+  *
+  */
 /**
   * Set up for displays LESS THAN: 576px (*exclusive*).
   **/
 .jumbotron {
-  background-color: #4b8fa0;
+  background-color: #698faf;
   background-attachment: absolute;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2475,7 +2481,7 @@ input[type="button"].btn-block {
 
 .slant {
   position: absolute;
-  width: 350px;
+  width: 230px;
   height: 100%;
   left: -100px;
   background-color: rgba(0, 0, 0, 0.4);
@@ -2494,7 +2500,7 @@ input[type="button"].btn-block {
   **/
 @media (min-width: 576px) {
   .jumbotron {
-    background-color: #4b8fa0;
+    background-color: #698faf;
     background-attachment: absolute;
     background-repeat: no-repeat;
     background-size: cover;
@@ -2506,7 +2512,7 @@ input[type="button"].btn-block {
     margin-bottom: 0px; }
   .slant {
     position: absolute;
-    width: 390px;
+    width: 230px;
     height: 100%;
     left: -100px;
     background-color: rgba(0, 0, 0, 0.4);
@@ -2524,7 +2530,7 @@ input[type="button"].btn-block {
   **/
 @media (min-width: 768px) {
   .jumbotron {
-    background-color: #4b8fa0;
+    background-color: #698faf;
     background-attachment: absolute;
     background-repeat: no-repeat;
     background-size: cover;
@@ -2554,7 +2560,7 @@ input[type="button"].btn-block {
   **/
 @media (min-width: 992px) {
   .jumbotron {
-    background-color: #4b8fa0;
+    background-color: #698faf;
     background-attachment: absolute;
     background-repeat: no-repeat;
     background-size: cover;
@@ -2584,7 +2590,7 @@ input[type="button"].btn-block {
   **/
 @media (min-width: 1200px) {
   .jumbotron {
-    background-color: #4b8fa0;
+    background-color: #698faf;
     background-attachment: absolute;
     background-repeat: no-repeat;
     background-size: cover;

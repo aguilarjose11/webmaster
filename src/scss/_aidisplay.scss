@@ -16,7 +16,7 @@
 
 //variable declarations
 $jumbotron-height:100% ;
-$jumbotron-color: #4b8fa0;
+$jumbotron-color:#698faf;
 
 
 /** This mixin takes care of the jumbotron rules.
@@ -87,9 +87,14 @@ $jumbotron-color: #4b8fa0;
 }
 
 
-@mixin card-title(){
-  padding-left: 30px;
-  padding-top: 10px;
+/**card-text mixin
+  *
+  *makes my about text look presentable
+  *
+  *
+  */
+@mixin card-title($margin-ammt){
+  margin-right: $margin-ammt;
 }
 
 // ------ Display mixins ------
@@ -108,7 +113,7 @@ $jumbotron-color: #4b8fa0;
   // slanted background over jumbotron
   .slant
   {
-    @include slant-shade(350px);
+    @include slant-shade(230px);
   }
 
   // text over slant shade over jumbotron.
@@ -133,7 +138,7 @@ $jumbotron-color: #4b8fa0;
   // slanted background over jumbotron
   .slant
   {
-    @include slant-shade(390px);
+    @include slant-shade(230px);
   }
 
   // text over slant shade over jumbotron.
