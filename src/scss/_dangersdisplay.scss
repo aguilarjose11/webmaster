@@ -1,0 +1,213 @@
+/* Here be Dragons!*/
+
+/**
+  * indexdisplay partial.
+  *
+  * This partial sets all the media breakpoints to manage
+  * Changes in the display size.
+  */
+
+// ------ mixins declarations -------------
+/**
+  * - jumbotron-base($size)
+  * - slant-shade($width)
+  * - slant-text($size)
+  **/
+
+//variable declarations
+$jumbotron-height: 575px;
+
+
+/** This mixin takes care of the jumbotron rules.
+  * To add rules that are expected to be shown-
+  * in every display size add them here.
+  *
+  * variables:
+  *   - $x-axis: Variable for the x position of the jumbotron's
+  *              picture background.
+  *   -$y-axis:  Variable for the y position of the jumbotron's
+  *              picture background.
+  */
+@mixin jumbotron-base($x-axis, $y-axis)
+{
+  background-image: url("http://www.freaksugar.com/wp-content/uploads/2015/02/Avengers-AOU-Ultron-Prime-Hot-Toys-1200.jpg");
+  background-attachment: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: static;
+  background-position: $x-axis $y-axis;
+  height: $jumbotron-height;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  margin-bottom: 0px;
+}
+
+
+/** slant-shade mixin
+  *
+  * This mixin controlls the size of the slant shade used
+  * to display text on the jumbotron's face.
+  *
+  * variables:
+  *   -$width: Width of the slant shade.
+  */
+  @mixin slant-shade($width)
+  {
+    position: absolute;
+    width: $width;
+    height: $jumbotron-height;
+    //top: 56px;
+    left: -50px;
+    background-color: rgba(0,0,0,.4);
+    transform: rotate(0) scale(1) skewX(0deg) translate(0);
+
+  }
+
+  /** slant-text mixin
+    *
+    * this mixin takes care of the slant-shade text size and other
+    * propereties.
+    *
+    * variables:
+    *   - $text-box: width of the text box.
+    *   - $text-box-x: x position of the text on jumbotron.
+    *   - $text-box-y: y position of the text on jumbotron.
+    */
+
+@mixin slant-text($text-box, $text-box-x, $text-box-y)
+{
+  background-color: rgba(0,0,0,0);
+  border-color: rgba(0,0,0,0);
+  width: $text-box;
+  padding-left: $text-box-x;//30px;
+  padding-top: $text-box-y;//85px;
+  color: rgb(225,225,225);
+
+}
+
+// ------ Display mixins ------
+
+/**
+  * Set up for displays LESS THAN: 576px (*exclusive*).
+  **/
+@include media-breakpoint-up(xs)
+{
+  // jumbotron rules
+  .jumbotron
+  {
+      @include jumbotron-base(-450px, 0px);
+  }
+
+  // slanted background over jumbotron
+  .slant
+  {
+    @include slant-shade(350px);
+  }
+
+  // text over slant shade over jumbotron.
+  .slant-text
+  {
+    @include slant-text(300px, 0px, 25px);
+  }
+
+}
+
+/**
+  * Set up for displays RANGING: 576px -> 768px (*exclusive*).
+  **/
+@include media-breakpoint-up(sm)
+{
+  // jumbotron rules
+  .jumbotron
+  {
+    @include jumbotron-base(-250px, 0px);
+  }
+
+  // slanted background over jumbotron
+  .slant
+  {
+    @include slant-shade(390px);
+  }
+
+  // text over slant shade over jumbotron.
+  .slant-text
+  {
+    @include slant-text(300px, 30px, 85px);
+  }
+
+}
+
+/**
+  * Set up for displays RANGING: 768px -> 992px (*exclusive*).
+  **/
+@include media-breakpoint-up(md)
+{
+    // jumbotron rules
+  .jumbotron
+  {
+    @include jumbotron-base(-150px, 0px);
+  }
+
+  // slanted background over jumbotron
+  .slant
+  {
+    @include slant-shade(450px);
+  }
+
+  // text over slant shade over jumbotron.
+  .slant-text
+  {
+    @include slant-text(300px, 30px, 85px);
+  }
+
+}
+
+/**
+  * Set up for displays RANGING: 992px -> 1200px (*exclusive*).
+  **/
+@include media-breakpoint-up(lg)
+{
+  // jumbotron rules
+  .jumbotron
+  {
+    @include jumbotron-base(0px, 0px);
+  }
+
+  // slanted background over jumbotron
+  .slant
+  {
+    @include slant-shade(450px);
+  }
+
+  // text over slant shade over jumbotron.
+  .slant-text
+  {
+    @include slant-text(300px, 30px, 85px);
+  }
+
+}
+
+/**
+  * Set up for displays GREATER THAN: 1200px.
+  **/
+@include media-breakpoint-up(xl)
+{
+  // jumbotron rules
+  .jumbotron
+  {
+    @include jumbotron-base(0px, 0px);
+  }
+
+  // slanted background over jumbotron
+  .slant
+  {
+    @include slant-shade(400px);
+  }
+
+  // text over slant shade over jumbotron.
+  .slant-text
+  {
+    @include slant-text(300px, 30px, 85px);
+  }
+
+}
