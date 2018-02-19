@@ -48,6 +48,16 @@ h1{
   padding-top: 10px;
   font-family: monospace;
 }
+.card-img-top{
+    width: 200px;
+    height: 250px;
+    margin: 0 auto;
+    float: none;
+    margin-bottom: 10px;
+}
+#centerText{
+  text-align: center;
+}
 // map for adding theme colors, changing colors
 $theme-colors:
 (
