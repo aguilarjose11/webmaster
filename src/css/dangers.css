@@ -22,7 +22,15 @@ body {
   font-family: monospace; }
 
 #secondText {
-  text-align: center; }
+  text-align: center;
+  padding-bottom: 0px; }
+
+#secondImg {
+  padding-top: 50px; }
+
+#lawList {
+  padding-top: 10px;
+  font-family: monospace; }
 
 /* Imports */
 .align-baseline {

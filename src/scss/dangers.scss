@@ -33,6 +33,15 @@ body
 }
 #secondText{
   text-align: center;
+  padding-bottom: 0px;
+}
+#secondImg{
+  padding-top: 50px;
+
+}
+#lawList{
+  padding-top: 10px;
+  font-family: monospace;
 }
 // map for adding theme colors, changing colors
 $theme-colors:
