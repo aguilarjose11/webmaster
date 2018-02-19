@@ -96,7 +96,7 @@ $jumbotron-height: 575px;
   // jumbotron rules
   .jumbotron
   {
-      @include jumbotron-base(-450px, 0px);
+      @include jumbotron-base(0px, 0px);
   }
 
   // slanted background over jumbotron
@@ -108,7 +108,7 @@ $jumbotron-height: 575px;
   // text over slant shade over jumbotron.
   .slant-text
   {
-    @include slant-text(300px, 0px, 25px);
+    @include slant-text(370px, 0px, 25px);
   }
 
 }
@@ -171,7 +171,7 @@ $jumbotron-height: 575px;
   // jumbotron rules
   .jumbotron
   {
-    @include jumbotron-base(5000px, 0px);
+    @include jumbotron-base(0px, 0px);
   }
 
   // slanted background over jumbotron
@@ -183,7 +183,7 @@ $jumbotron-height: 575px;
   // text over slant shade over jumbotron.
   .slant-text
   {
-    @include slant-text(300px, 30px, 85px);
+    @include slant-text(500px, 30px, 85px);
   }
 
 }
@@ -196,19 +196,21 @@ $jumbotron-height: 575px;
   // jumbotron rules
   .jumbotron
   {
-    @include jumbotron-base(50px, 0px);
+    @include jumbotron-base(0px, 0px);
+    width: 100%;
+    height: auto;
   }
 
   // slanted background over jumbotron
   .slant
   {
-    @include slant-shade(400px, 200px);
+    @include slant-shade(400px, 800px);
   }
 
   // text over slant shade over jumbotron.
   .slant-text
   {
-    @include slant-text(600px, 250px, 105px);
+    @include slant-text(1500px, 550px, 105px);
   }
 
 }
