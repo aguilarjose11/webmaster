@@ -29,7 +29,7 @@ $jumbotron-color:#698faf;
   *   -$y-axis:  Variable for the y position of the jumbotron's
   *              picture background.
   */
-@mixin jumbotron-base($x-axis, $y-axis)
+@mixin jumbotron-base($x-axis, $y-axis, $jumbotron-height)
 {
   background-color: $jumbotron-color;
   background-attachment: absolute;
@@ -107,13 +107,13 @@ $jumbotron-color:#698faf;
   // jumbotron rules
   .jumbotron
   {
-      @include jumbotron-base(-450px, 0px);
+      @include jumbotron-base(-450px, 0px, 150px);
   }
 
   // slanted background over jumbotron
   .slant
   {
-    @include slant-shade(230px);
+    @include slant-shade(150px);
   }
 
   // text over slant shade over jumbotron.
@@ -132,13 +132,13 @@ $jumbotron-color:#698faf;
   // jumbotron rules
   .jumbotron
   {
-    @include jumbotron-base(-250px, 0px);
+    @include jumbotron-base(-250px, 0px, 150px);
   }
 
   // slanted background over jumbotron
   .slant
   {
-    @include slant-shade(230px);
+    @include slant-shade(150px);
   }
 
   // text over slant shade over jumbotron.
@@ -157,13 +157,13 @@ $jumbotron-color:#698faf;
     // jumbotron rules
   .jumbotron
   {
-    @include jumbotron-base(-150px, 0px);
+    @include jumbotron-base(-150px, 0px, $jumbotron-height);
   }
 
   // slanted background over jumbotron
   .slant
   {
-    @include slant-shade(450px);
+    @include slant-shade(150px);
   }
 
   // text over slant shade over jumbotron.
@@ -182,13 +182,13 @@ $jumbotron-color:#698faf;
   // jumbotron rules
   .jumbotron
   {
-    @include jumbotron-base(0px, 0px);
+    @include jumbotron-base(0px, 0px, $jumbotron-height);
   }
 
   // slanted background over jumbotron
   .slant
   {
-    @include slant-shade(450px);
+    @include slant-shade(150px);
   }
 
   // text over slant shade over jumbotron.
@@ -207,7 +207,7 @@ $jumbotron-color:#698faf;
   // jumbotron rules
   .jumbotron
   {
-    @include jumbotron-base(0px, 0px);
+    @include jumbotron-base(0px, 0px, $jumbotron-height);
   }
 
   // slanted background over jumbotron
