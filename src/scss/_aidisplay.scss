@@ -93,9 +93,12 @@ $jumbotron-color:#698faf;
   *
   *
   */
-@mixin card-title($margin-ammt){
-  margin-right: $margin-ammt;
+@mixin card-center($card-width){
+  padding-left: 500px;
+
 }
+
+
 
 // ------ Display mixins ------
 
@@ -120,6 +123,10 @@ $jumbotron-color:#698faf;
   .slant-text
   {
     @include slant-text(300px, 0px, 25px);
+  }
+  .card-center
+  {
+    @include card-center(150px);
   }
 
 }
@@ -146,6 +153,10 @@ $jumbotron-color:#698faf;
   {
     @include slant-text(300px, 30px, 85px);
   }
+  .card-center
+  {
+    @include card-center(150px);
+  }
 
 }
 
@@ -169,7 +180,11 @@ $jumbotron-color:#698faf;
   // text over slant shade over jumbotron.
   .slant-text
   {
-    @include slant-text(300px, 40px, 85px);
+    @include slant-text(300px, 0px, 85px);
+  }
+  .card-center
+  {
+    @include card-center(150px);
   }
 
 }
@@ -188,13 +203,18 @@ $jumbotron-color:#698faf;
   // slanted background over jumbotron
   .slant
   {
-    @include slant-shade(150px);
+    @include slant-shade(170px);
   }
 
   // text over slant shade over jumbotron.
   .slant-text
   {
-    @include slant-text(300px, 30px, 85px);
+    @include slant-text(240px, 55px, 40px);
+  }
+
+  .card-center
+  {
+    @include card-center(150px);
   }
 
 }
@@ -213,13 +233,18 @@ $jumbotron-color:#698faf;
   // slanted background over jumbotron
   .slant
   {
-    @include slant-shade(400px);
+    @include slant-shade(200px);
   }
 
   // text over slant shade over jumbotron.
   .slant-text
   {
-    @include slant-text(500px, 220px, 40px);
+    @include slant-text(300px, 40px, 40px);
+  }
+
+  .card-center
+  {
+    @include card-center(250px);
   }
 
 }

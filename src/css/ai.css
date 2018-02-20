@@ -2495,6 +2495,9 @@ input[type="button"].btn-block {
   padding-top: 25px;
   color: #e1e1e1; }
 
+.card-center {
+  padding-left: 500px; }
+
 /**
   * Set up for displays RANGING: 576px -> 768px (*exclusive*).
   **/
@@ -2523,7 +2526,9 @@ input[type="button"].btn-block {
     width: 300px;
     padding-left: 30px;
     padding-top: 85px;
-    color: #e1e1e1; } }
+    color: #e1e1e1; }
+  .card-center {
+    padding-left: 500px; } }
 
 /**
   * Set up for displays RANGING: 768px -> 992px (*exclusive*).
@@ -2551,9 +2556,11 @@ input[type="button"].btn-block {
     background-color: transparent;
     border-color: transparent;
     width: 300px;
-    padding-left: 40px;
+    padding-left: 0px;
     padding-top: 85px;
-    color: #e1e1e1; } }
+    color: #e1e1e1; }
+  .card-center {
+    padding-left: 500px; } }
 
 /**
   * Set up for displays RANGING: 992px -> 1200px (*exclusive*).
@@ -2572,7 +2579,7 @@ input[type="button"].btn-block {
     margin-bottom: 0px; }
   .slant {
     position: absolute;
-    width: 150px;
+    width: 170px;
     height: 100%;
     left: -100px;
     background-color: rgba(0, 0, 0, 0.4);
@@ -2580,10 +2587,12 @@ input[type="button"].btn-block {
   .slant-text {
     background-color: transparent;
     border-color: transparent;
-    width: 300px;
-    padding-left: 30px;
-    padding-top: 85px;
-    color: #e1e1e1; } }
+    width: 240px;
+    padding-left: 55px;
+    padding-top: 40px;
+    color: #e1e1e1; }
+  .card-center {
+    padding-left: 500px; } }
 
 /**
   * Set up for displays GREATER THAN: 1200px.
@@ -2602,7 +2611,7 @@ input[type="button"].btn-block {
     margin-bottom: 0px; }
   .slant {
     position: absolute;
-    width: 400px;
+    width: 200px;
     height: 100%;
     left: -100px;
     background-color: rgba(0, 0, 0, 0.4);
@@ -2610,7 +2619,9 @@ input[type="button"].btn-block {
   .slant-text {
     background-color: transparent;
     border-color: transparent;
-    width: 500px;
-    padding-left: 220px;
+    width: 300px;
+    padding-left: 40px;
     padding-top: 40px;
-    color: #e1e1e1; } }
+    color: #e1e1e1; }
+  .card-center {
+    padding-left: 500px; } }
