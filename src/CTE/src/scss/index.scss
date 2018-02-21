@@ -26,23 +26,8 @@ $theme-colors:
 (
   "mdj2": #af26ad
 );
-#groupImg{
-  margin-top: 50px;
-  width: 20%;
-  height: auto;
-  left: 0px;
-  right: 0px;
-}
-#textBox{
-  background-color: white;
-  margin-top: 50px;
-  margin-right: 0px;
-}
-#red{
-  color: #f44242;
-}
-#blue{
-  color: #2d62c4;
+#header{
+  background-color: rgba(29,29,29,0.2)
 }
 hr {
     border: none;
@@ -62,17 +47,13 @@ hr {
   margin-right: 50px;
   text-align: center;
 }
-card-title{
-  text-align: center;
+#bigPic{
+  height: 175px;
+  margin-left: 240px;
 }
-#officers{
-  height: 300px;
-  text-align: center;
-}
-h5{
-  text-align: center;
-}
-#starBoy{
+#bigSmallPic{
+  height: 335px;
+  margin-left: 130px;
 }
 /* Imports */
 
@@ -89,4 +70,4 @@ h5{
 
 /* mixins */
 
-@import 'tsadisplay' // mixin that takes care of the display changes.
+@import 'indexdisplay' // mixin that takes care of the display changes.
