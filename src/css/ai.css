@@ -2468,7 +2468,7 @@ input[type="button"].btn-block {
   * Set up for displays LESS THAN: 576px (*exclusive*).
   **/
 .jumbotron {
-  background-color: #698faf;
+  background-image: url("https://cdn.pixabay.com/photo/2015/10/11/11/20/banner-982162_960_720.jpg");
   background-attachment: absolute;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2496,14 +2496,14 @@ input[type="button"].btn-block {
   color: #e1e1e1; }
 
 .card-center {
-  padding-left: 500px; }
+  margin-left: 0px; }
 
 /**
   * Set up for displays RANGING: 576px -> 768px (*exclusive*).
   **/
 @media (min-width: 576px) {
   .jumbotron {
-    background-color: #698faf;
+    background-image: url("https://cdn.pixabay.com/photo/2015/10/11/11/20/banner-982162_960_720.jpg");
     background-attachment: absolute;
     background-repeat: no-repeat;
     background-size: cover;
@@ -2528,14 +2528,14 @@ input[type="button"].btn-block {
     padding-top: 85px;
     color: #e1e1e1; }
   .card-center {
-    padding-left: 500px; } }
+    margin-left: 15px; } }
 
 /**
   * Set up for displays RANGING: 768px -> 992px (*exclusive*).
   **/
 @media (min-width: 768px) {
   .jumbotron {
-    background-color: #698faf;
+    background-image: url("https://cdn.pixabay.com/photo/2015/10/11/11/20/banner-982162_960_720.jpg");
     background-attachment: absolute;
     background-repeat: no-repeat;
     background-size: cover;
@@ -2560,14 +2560,14 @@ input[type="button"].btn-block {
     padding-top: 85px;
     color: #e1e1e1; }
   .card-center {
-    padding-left: 500px; } }
+    margin-left: 15px; } }
 
 /**
   * Set up for displays RANGING: 992px -> 1200px (*exclusive*).
   **/
 @media (min-width: 992px) {
   .jumbotron {
-    background-color: #698faf;
+    background-image: url("https://cdn.pixabay.com/photo/2015/10/11/11/20/banner-982162_960_720.jpg");
     background-attachment: absolute;
     background-repeat: no-repeat;
     background-size: cover;
@@ -2592,14 +2592,14 @@ input[type="button"].btn-block {
     padding-top: 40px;
     color: #e1e1e1; }
   .card-center {
-    padding-left: 500px; } }
+    margin-left: 15px; } }
 
 /**
   * Set up for displays GREATER THAN: 1200px.
   **/
 @media (min-width: 1200px) {
   .jumbotron {
-    background-color: #698faf;
+    background-image: url("https://cdn.pixabay.com/photo/2015/10/11/11/20/banner-982162_960_720.jpg");
     background-attachment: absolute;
     background-repeat: no-repeat;
     background-size: cover;
@@ -2624,4 +2624,4 @@ input[type="button"].btn-block {
     padding-top: 40px;
     color: #e1e1e1; }
   .card-center {
-    padding-left: 500px; } }
+    margin-left: 10px; } }
