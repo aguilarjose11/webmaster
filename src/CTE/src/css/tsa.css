@@ -2468,7 +2468,7 @@ input[type="button"].btn-block {
   * Set up for displays LESS THAN: 576px (*exclusive*).
   **/
 .jumbotron {
-  background-image: url("/assets/nat.jpg");
+  background-image: url("https://static.pexels.com/photos/630839/pexels-photo-630839.jpeg");
   background-attachment: absolute;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2480,10 +2480,9 @@ input[type="button"].btn-block {
   margin-bottom: 0px; }
 
 .slant {
-  top: 125px;
   position: absolute;
   width: 350px;
-  height: 475px;
+  height: 575px;
   left: -50px;
   background-color: rgba(0, 0, 0, 0.85);
   transform: rotate(0) scale(1) skewX(0deg) translate(0); }
@@ -2501,7 +2500,7 @@ input[type="button"].btn-block {
   **/
 @media (min-width: 576px) {
   .jumbotron {
-    background-image: url("/assets/nat.jpg");
+    background-image: url("https://static.pexels.com/photos/630839/pexels-photo-630839.jpeg");
     background-attachment: absolute;
     background-repeat: no-repeat;
     background-size: cover;
@@ -2512,10 +2511,9 @@ input[type="button"].btn-block {
     padding-top: 0px;
     margin-bottom: 0px; }
   .slant {
-    top: 125px;
     position: absolute;
     width: 390px;
-    height: 475px;
+    height: 575px;
     left: -50px;
     background-color: rgba(0, 0, 0, 0.85);
     transform: rotate(0) scale(1) skewX(0deg) translate(0); }
@@ -2532,7 +2530,7 @@ input[type="button"].btn-block {
   **/
 @media (min-width: 768px) {
   .jumbotron {
-    background-image: url("/assets/nat.jpg");
+    background-image: url("https://static.pexels.com/photos/630839/pexels-photo-630839.jpeg");
     background-attachment: absolute;
     background-repeat: no-repeat;
     background-size: cover;
@@ -2543,10 +2541,9 @@ input[type="button"].btn-block {
     padding-top: 0px;
     margin-bottom: 0px; }
   .slant {
-    top: 125px;
     position: absolute;
     width: 450px;
-    height: 475px;
+    height: 575px;
     left: -50px;
     background-color: rgba(0, 0, 0, 0.85);
     transform: rotate(0) scale(1) skewX(0deg) translate(0); }
@@ -2563,7 +2560,7 @@ input[type="button"].btn-block {
   **/
 @media (min-width: 992px) {
   .jumbotron {
-    background-image: url("/assets/nat.jpg");
+    background-image: url("https://static.pexels.com/photos/630839/pexels-photo-630839.jpeg");
     background-attachment: absolute;
     background-repeat: no-repeat;
     background-size: cover;
@@ -2574,10 +2571,9 @@ input[type="button"].btn-block {
     padding-top: 0px;
     margin-bottom: 0px; }
   .slant {
-    top: 125px;
     position: absolute;
     width: 450px;
-    height: 475px;
+    height: 575px;
     left: -50px;
     background-color: rgba(0, 0, 0, 0.85);
     transform: rotate(0) scale(1) skewX(0deg) translate(0); }
@@ -2594,7 +2590,7 @@ input[type="button"].btn-block {
   **/
 @media (min-width: 1200px) {
   .jumbotron {
-    background-image: url("/assets/nat.jpg");
+    background-image: url("https://static.pexels.com/photos/630839/pexels-photo-630839.jpeg");
     background-attachment: absolute;
     background-repeat: no-repeat;
     background-size: cover;
@@ -2605,10 +2601,9 @@ input[type="button"].btn-block {
     padding-top: 0px;
     margin-bottom: 0px; }
   .slant {
-    top: 125px;
     position: absolute;
     width: 400px;
-    height: 475px;
+    height: 575px;
     left: -50px;
     background-color: rgba(0, 0, 0, 0.85);
     transform: rotate(0) scale(1) skewX(0deg) translate(0); }

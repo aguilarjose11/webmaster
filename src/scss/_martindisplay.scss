@@ -59,7 +59,7 @@ $jumbotron-height: 575px;
   height: $jumbotron-height;
   //top: 56px;
   left: $x-axis;
-  background-color: rgba(0,0,0,.4);
+  background-color: rgba(0,0,50,.5);
   transform: rotate(0) scale(1) skewX(-15.75deg) translate(0);
 
 }
@@ -87,7 +87,26 @@ color: rgb(225,225,225);
 
 }
 
+/** slant-text mixin
+  *
+  * this mixin allows the manipulation of the presentation image
+  * of the presentation textbox in the Martin's presentation website
+  *
+  * variables:
+  *   - $x-axis: width of the text box.
+  *   - $y-axis: x position of the text on jumbotron.
+  *   - $width: y position of the text on jumbotron.
+  *   - $height: y position of the text on jumbotron.
+  */
+  @mixin presentation-img($x-axis, $y-axis, $width, $height)
+  {
+    background-image: url("https://images.unsplash.com/photo-1516110833967-0b5716ca1387");
+    background-size: $width $height;
+    background-position: $width $height;
+    background-repeat: no-repeat;
+    background-size: cover;
 
+  }
 
 // ------ Display mixins ------
 
@@ -114,6 +133,12 @@ color: rgb(225,225,225);
   {
     @include slant-text(370px, 0px, 25px);
   }
+
+  // image of the Martin's introduction side picture.
+  .presentation-img
+  {
+    @include presentation-img(600px, 600px, 0, 0);
+  }
 }
 
 /**
@@ -137,6 +162,12 @@ color: rgb(225,225,225);
   .slant-text
   {
     @include slant-text(370px, 0px, 25px);
+  }
+
+  // image of the Martin's introduction side picture.
+  .presentation-img
+  {
+    @include presentation-img(600px, 600px, 0, 0);
   }
 }
 
@@ -162,6 +193,12 @@ color: rgb(225,225,225);
   {
     @include slant-text(370px, 0px, 25px);
   }
+
+  // image of the Martin's introduction side picture.
+  .presentation-img
+  {
+    @include presentation-img(600px, 600px, 0, 0);
+  }
 }
 
 /**
@@ -186,6 +223,12 @@ color: rgb(225,225,225);
   {
     @include slant-text(370px, 0px, 25px);
   }
+
+  // image of the Martin's introduction side picture.
+  .presentation-img
+  {
+    @include presentation-img(600px, 600px, -100px, 0);
+  }
 }
 
 /**
@@ -193,21 +236,27 @@ color: rgb(225,225,225);
 **/
 @include media-breakpoint-up(xl)
 {
-// Jumbotron's configuration and rules
-.jumbotron
-{
-  @include jumbotron-base(0, 0);
-}
+  // Jumbotron's configuration and rules
+  .jumbotron
+  {
+    @include jumbotron-base(0, 0);
+  }
 
-// slanted background over jumbotron
-.slant
-{
-  @include slant-shade(350px, -55px);
-}
+  // slanted background over jumbotron
+  .slant
+  {
+    @include slant-shade(350px, -55px);
+  }
 
-// text over slant shade over jumbotron.
-.slant-text
-{
-  @include slant-text(370px, 0px, 25px);
-}
+  // text over slant shade over jumbotron.
+  .slant-text
+  {
+    @include slant-text(370px, 0px, 25px);
+  }
+
+  // image of the Martin's introduction side picture.
+  .presentation-img
+  {
+    @include presentation-img(600px, 600px, 0px, 0);
+  }
 }
