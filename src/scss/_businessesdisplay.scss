@@ -14,34 +14,34 @@
   * - slant-text($size)
   **/
 
-//variable declarations
-$jumbotron-height:100% ;
-$jumbotron-color: #4b8fa0;
+  //variable declarations
+  $jumbotron-height: 575px;
 
 
-/** This mixin takes care of the jumbotron rules.
-  * To add rules that are expected to be shown-
-  * in every display size add them here.
-  *
-  * variables:
-  *   - $x-axis: Variable for the x position of the jumbotron's
-  *              picture background.
-  *   -$y-axis:  Variable for the y position of the jumbotron's
-  *              picture background.
-  */
-@mixin jumbotron-base($x-axis, $y-axis)
-{
-  background-color: $jumbotron-color;
-  background-attachment: absolute;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: static;
-  background-position: $x-axis $y-axis;
-  height: $jumbotron-height;
-  padding-bottom: 0px;
-  padding-top: 0px;
-  margin-bottom: 0px;
-}
+  /** This mixin takes care of the jumbotron rules.
+    * To add rules that are expected to be shown-
+    * in every display size add them here.
+    *
+    * variables:
+    *   - $x-axis: Variable for the x position of the jumbotron's
+    *              picture background.
+    *   -$y-axis:  Variable for the y position of the jumbotron's
+    *              picture background.
+    */
+  @mixin jumbotron-base($x-axis, $y-axis)
+  {
+    background-image: url("https://static.pexels.com/photos/669615/pexels-photo-669615.jpeg");
+    background-attachment: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: static;
+    background-position: $x-axis $y-axis;
+    height: $jumbotron-height;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    margin-bottom: 0px;
+  }
+
 
 
 /** slant-shade mixin
@@ -52,13 +52,13 @@ $jumbotron-color: #4b8fa0;
   * variables:
   *   -$width: Width of the slant shade.
   */
-  @mixin slant-shade($width)
+  @mixin slant-shade($width, $x-axis)
   {
     position: absolute;
     width: $width;
     height: $jumbotron-height;
     //top: 56px;
-    left: -100px;
+    left: $x-axis;
     background-color: rgba(0,0,0,.4);
     transform: rotate(0) scale(1) skewX(-15.75deg) translate(0);
 
@@ -80,6 +80,7 @@ $jumbotron-color: #4b8fa0;
   background-color: rgba(0,0,0,0);
   border-color: rgba(0,0,0,0);
   width: $text-box;
+  height: $jumbotron-height;
   padding-left: $text-box-x;//30px;
   padding-top: $text-box-y;//85px;
   color: rgb(225,225,225);
@@ -96,6 +97,23 @@ $jumbotron-color: #4b8fa0;
 @include media-breakpoint-up(xs)
 {
 
+  // Jumbotron's configuration and rules
+  .jumbotron
+  {
+    @include jumbotron-base(0px, 0px);
+  }
+
+  // slanted background over jumbotron
+  .slant
+  {
+    @include slant-shade(350px, -55px);
+  }
+
+  // text over slant shade over jumbotron.
+  .slant-text
+  {
+    @include slant-text(370px, 0px, 25px);
+  }
 }
 
 /**
@@ -103,7 +121,23 @@ $jumbotron-color: #4b8fa0;
   **/
 @include media-breakpoint-up(sm)
 {
+  // Jumbotron's configuration and rules
+  .jumbotron
+  {
+    @include jumbotron-base(0, 0);
+  }
 
+  // slanted background over jumbotron
+  .slant
+  {
+    @include slant-shade(350px, -55px);
+  }
+
+  // text over slant shade over jumbotron.
+  .slant-text
+  {
+    @include slant-text(370px, 0px, 25px);
+  }
 }
 
 /**
@@ -111,7 +145,23 @@ $jumbotron-color: #4b8fa0;
   **/
 @include media-breakpoint-up(md)
 {
+  // Jumbotron's configuration and rules
+  .jumbotron
+  {
+    @include jumbotron-base(0, 0);
+  }
 
+  // slanted background over jumbotron
+  .slant
+  {
+    @include slant-shade(350px, -55px);
+  }
+
+  // text over slant shade over jumbotron.
+  .slant-text
+  {
+    @include slant-text(370px, 0px, 25px);
+  }
 }
 
 /**
@@ -119,7 +169,23 @@ $jumbotron-color: #4b8fa0;
   **/
 @include media-breakpoint-up(lg)
 {
+  // Jumbotron's configuration and rules
+  .jumbotron
+  {
+    @include jumbotron-base(0, 0);
+  }
 
+  // slanted background over jumbotron
+  .slant
+  {
+    @include slant-shade(350px, -55px);
+  }
+
+  // text over slant shade over jumbotron.
+  .slant-text
+  {
+    @include slant-text(370px, 0px, 25px);
+  }
 }
 
 /**
@@ -127,5 +193,21 @@ $jumbotron-color: #4b8fa0;
   **/
 @include media-breakpoint-up(xl)
 {
+  // Jumbotron's configuration and rules
+  .jumbotron
+  {
+    @include jumbotron-base(0, 0);
+  }
 
+  // slanted background over jumbotron
+  .slant
+  {
+    @include slant-shade(350px, -55px);
+  }
+
+  // text over slant shade over jumbotron.
+  .slant-text
+  {
+    @include slant-text(370px, 0px, 25px);
+  }
 }

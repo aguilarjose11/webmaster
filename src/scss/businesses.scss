@@ -23,6 +23,16 @@ $theme-colors:
   "mdj2": #a0cfff
 );
 
+// image separating the information from the introduction.
+.img-separator-intro-info
+{
+  background-image: url("https://static.pexels.com/photos/325185/pexels-photo-325185.jpeg");
+  height: 200px;
+  background-size: cover;
+  background-position: 0px ;
+  background-repeat: no-repeat;
+}
+
 
 /* Imports */
 
