@@ -9,6 +9,31 @@ body {
   padding-top: 50px;
   padding-left: 30px; }
 
+.for-individuals-card {
+  z-index: 1000;
+  background-position: right;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("https://images.unsplash.com/photo-1449177009399-be6867ef0505"); }
+
+.for-businesses-card {
+  z-index: 1000;
+  background-position: right;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("https://images.unsplash.com/photo-1480435616171-7e5375f905de"); }
+
+.shadder {
+  padding: 0px;
+  margin: 0px;
+  top: 53px;
+  left: 0;
+  position: absolute;
+  z-index: -1;
+  width: 475px;
+  height: 150px;
+  background-color: rgba(0, 0, 0, 0.5); }
+
 /* Imports */
 .align-baseline {
   vertical-align: baseline !important; }
