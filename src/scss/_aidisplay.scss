@@ -31,7 +31,8 @@ $jumbotron-color:#698faf;
   */
 @mixin jumbotron-base($x-axis, $y-axis, $jumbotron-height)
 {
-  background-color: $jumbotron-color;
+  background-image: url("https://cdn.pixabay.com/photo/2015/10/11/11/20/banner-982162_960_720.jpg");
+
   background-attachment: absolute;
   background-repeat: no-repeat;
   background-size: cover;
@@ -94,7 +95,7 @@ $jumbotron-color:#698faf;
   *
   */
 @mixin card-center($card-width){
-  padding-left: 500px;
+  margin-left: $card-width;
 
 }
 
@@ -126,7 +127,7 @@ $jumbotron-color:#698faf;
   }
   .card-center
   {
-    @include card-center(150px);
+    @include card-center(0px);
   }
 
 }
@@ -155,7 +156,7 @@ $jumbotron-color:#698faf;
   }
   .card-center
   {
-    @include card-center(150px);
+    @include card-center(15px);
   }
 
 }
@@ -184,7 +185,7 @@ $jumbotron-color:#698faf;
   }
   .card-center
   {
-    @include card-center(150px);
+    @include card-center(15px);
   }
 
 }
@@ -214,7 +215,7 @@ $jumbotron-color:#698faf;
 
   .card-center
   {
-    @include card-center(150px);
+    @include card-center(15px);
   }
 
 }
@@ -244,7 +245,7 @@ $jumbotron-color:#698faf;
 
   .card-center
   {
-    @include card-center(250px);
+    @include card-center(10px);
   }
 
 }
