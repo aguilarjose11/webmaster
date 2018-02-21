@@ -11,6 +11,48 @@ body {
 h1 {
   text-shadow: 2px 2px 10px grey; }
 
+#groupImg {
+  margin-top: 50px;
+  width: 20%;
+  height: auto;
+  left: 0px;
+  right: 0px; }
+
+#textBox {
+  background-color: white;
+  margin-top: 50px;
+  margin-right: 0px; }
+
+#red {
+  color: #f44242; }
+
+#blue {
+  color: #2d62c4; }
+
+hr {
+  border: none;
+  height: 1px;
+  /* Set the hr color */
+  color: #757982;
+  /* old IE */
+  background-color: #757982;
+  /* Modern Browsers */
+  margin-left: 50px;
+  margin-right: 50px; }
+
+#cardBoxMan {
+  padding-left: 50px;
+  padding-right: 50px; }
+
+#cardBoxBoy {
+  padding-top: 0px;
+  margin-left: 50px;
+  margin-right: 50px;
+  text-align: center; }
+
+card-title {
+  text-align: center; }
+
 /* Imports */
 .align-baseline {
   vertical-align: baseline !important; }
@@ -2468,7 +2510,7 @@ input[type="button"].btn-block {
   * Set up for displays LESS THAN: 576px (*exclusive*).
   **/
 .jumbotron {
-  background-image: url("https://static.pexels.com/photos/630839/pexels-photo-630839.jpeg");
+  background-image: url("/assets/nat.jpg");
   background-attachment: absolute;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2500,7 +2542,7 @@ input[type="button"].btn-block {
   **/
 @media (min-width: 576px) {
   .jumbotron {
-    background-image: url("https://static.pexels.com/photos/630839/pexels-photo-630839.jpeg");
+    background-image: url("/assets/nat.jpg");
     background-attachment: absolute;
     background-repeat: no-repeat;
     background-size: cover;
@@ -2530,7 +2572,7 @@ input[type="button"].btn-block {
   **/
 @media (min-width: 768px) {
   .jumbotron {
-    background-image: url("https://static.pexels.com/photos/630839/pexels-photo-630839.jpeg");
+    background-image: url("/assets/nat.jpg");
     background-attachment: absolute;
     background-repeat: no-repeat;
     background-size: cover;
@@ -2560,7 +2602,7 @@ input[type="button"].btn-block {
   **/
 @media (min-width: 992px) {
   .jumbotron {
-    background-image: url("https://static.pexels.com/photos/630839/pexels-photo-630839.jpeg");
+    background-image: url("/assets/nat.jpg");
     background-attachment: absolute;
     background-repeat: no-repeat;
     background-size: cover;
@@ -2590,7 +2632,7 @@ input[type="button"].btn-block {
   **/
 @media (min-width: 1200px) {
   .jumbotron {
-    background-image: url("https://static.pexels.com/photos/630839/pexels-photo-630839.jpeg");
+    background-image: url("/assets/nat.jpg");
     background-attachment: absolute;
     background-repeat: no-repeat;
     background-size: cover;
