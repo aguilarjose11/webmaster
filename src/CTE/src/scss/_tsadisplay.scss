@@ -28,20 +28,19 @@ $jumbotron-height: 575px;
   *   -$y-axis:  Variable for the y position of the jumbotron's
   *              picture background.
   */
-@mixin jumbotron-base($x-axis, $y-axis)
-{
-  background-image: url("/assets/nat.jpg");
-  background-attachment: absolute;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: static;
-  background-position: $x-axis $y-axis;
-  height: $jumbotron-height;
-  padding-bottom: 0px;
-  padding-top: 0px;
-  margin-bottom: 0px;
-}
-
+  @mixin jumbotron-base($x-axis, $y-axis)
+  {
+    background-image: url("https://static.pexels.com/photos/630839/pexels-photo-630839.jpeg");
+    background-attachment: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: static;
+    background-position: $x-axis $y-axis;
+    height: $jumbotron-height;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    margin-bottom: 0px;
+  }
 
 /** slant-shade mixin
   *
@@ -53,10 +52,9 @@ $jumbotron-height: 575px;
   */
   @mixin slant-shade($width)
   {
-    top: 125px;
     position: absolute;
     width: $width;
-    height: $jumbotron-height - 100px;
+    height: $jumbotron-height;
     //top: 56px;
     left: -50px;
     background-color: rgba(0,0,0,.85);
