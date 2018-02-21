@@ -53,6 +53,13 @@ hr {
 card-title {
   text-align: center; }
 
+#officers {
+  height: 300px;
+  text-align: center; }
+
+h5 {
+  text-align: center; }
+
 /* Imports */
 .align-baseline {
   vertical-align: baseline !important; }
