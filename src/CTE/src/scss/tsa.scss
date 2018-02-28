@@ -24,8 +24,11 @@ h1{
 // map for adding theme colors, changing colors
 $theme-colors:
 (
-  "mdj2": #af26ad
+  "mdj2": rgba(175, 38, 173, 0.5)
 );
+#header{
+  background-color: rgba(29,29,29,0.2)
+}
 #groupImg{
   margin-top: 50px;
   width: 20%;

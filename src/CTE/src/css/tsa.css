@@ -11,6 +11,9 @@ body {
 h1 {
   text-shadow: 2px 2px 10px grey; }
 
+#header {
+  background-color: rgba(29, 29, 29, 0.2); }
+
 #groupImg {
   margin-top: 50px;
   width: 20%;
@@ -141,12 +144,12 @@ button.bg-dark:focus {
   background-color: #1d2124 !important; }
 
 .bg-mdj2 {
-  background-color: #af26ad !important; }
+  background-color: rgba(175, 38, 173, 0.5) !important; }
 
 a.bg-mdj2:hover, a.bg-mdj2:focus,
 button.bg-mdj2:hover,
 button.bg-mdj2:focus {
-  background-color: #851d84 !important; }
+  background-color: rgba(133, 29, 132, 0.5) !important; }
 
 .bg-white {
   background-color: #fff !important; }
@@ -209,7 +212,7 @@ button.bg-mdj2:focus {
   border-color: #343a40 !important; }
 
 .border-mdj2 {
-  border-color: #af26ad !important; }
+  border-color: rgba(175, 38, 173, 0.5) !important; }
 
 .border-white {
   border-color: #fff !important; }
@@ -1966,10 +1969,10 @@ a.text-dark:hover, a.text-dark:focus {
   color: #1d2124 !important; }
 
 .text-mdj2 {
-  color: #af26ad !important; }
+  color: rgba(175, 38, 173, 0.5) !important; }
 
 a.text-mdj2:hover, a.text-mdj2:focus {
-  color: #851d84 !important; }
+  color: rgba(133, 29, 132, 0.5) !important; }
 
 .text-muted {
   color: #6c757d !important; }
@@ -2202,23 +2205,23 @@ fieldset:disabled a.btn {
 
 .btn-mdj2 {
   color: #fff;
-  background-color: #af26ad;
-  border-color: #af26ad; }
+  background-color: rgba(175, 38, 173, 0.5);
+  border-color: rgba(175, 38, 173, 0.5); }
   .btn-mdj2:hover {
     color: #fff;
-    background-color: #901f8e;
-    border-color: #851d84; }
+    background-color: rgba(144, 31, 142, 0.5);
+    border-color: rgba(133, 29, 132, 0.5); }
   .btn-mdj2:focus, .btn-mdj2.focus {
     box-shadow: 0 0 0 0.2rem rgba(175, 38, 173, 0.5); }
   .btn-mdj2.disabled, .btn-mdj2:disabled {
     color: #fff;
-    background-color: #af26ad;
-    border-color: #af26ad; }
+    background-color: rgba(175, 38, 173, 0.5);
+    border-color: rgba(175, 38, 173, 0.5); }
   .btn-mdj2:not(:disabled):not(.disabled):active, .btn-mdj2:not(:disabled):not(.disabled).active,
   .show > .btn-mdj2.dropdown-toggle {
     color: #fff;
-    background-color: #851d84;
-    border-color: #7b1b79; }
+    background-color: rgba(133, 29, 132, 0.5);
+    border-color: rgba(123, 27, 121, 0.5); }
     .btn-mdj2:not(:disabled):not(.disabled):active:focus, .btn-mdj2:not(:disabled):not(.disabled).active:focus,
     .show > .btn-mdj2.dropdown-toggle:focus {
       box-shadow: 0 0 0 0.2rem rgba(175, 38, 173, 0.5); }
@@ -2408,24 +2411,24 @@ fieldset:disabled a.btn {
       box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5); }
 
 .btn-outline-mdj2 {
-  color: #af26ad;
+  color: rgba(175, 38, 173, 0.5);
   background-color: transparent;
   background-image: none;
-  border-color: #af26ad; }
+  border-color: rgba(175, 38, 173, 0.5); }
   .btn-outline-mdj2:hover {
     color: #fff;
-    background-color: #af26ad;
-    border-color: #af26ad; }
+    background-color: rgba(175, 38, 173, 0.5);
+    border-color: rgba(175, 38, 173, 0.5); }
   .btn-outline-mdj2:focus, .btn-outline-mdj2.focus {
     box-shadow: 0 0 0 0.2rem rgba(175, 38, 173, 0.5); }
   .btn-outline-mdj2.disabled, .btn-outline-mdj2:disabled {
-    color: #af26ad;
+    color: rgba(175, 38, 173, 0.5);
     background-color: transparent; }
   .btn-outline-mdj2:not(:disabled):not(.disabled):active, .btn-outline-mdj2:not(:disabled):not(.disabled).active,
   .show > .btn-outline-mdj2.dropdown-toggle {
     color: #fff;
-    background-color: #af26ad;
-    border-color: #af26ad; }
+    background-color: rgba(175, 38, 173, 0.5);
+    border-color: rgba(175, 38, 173, 0.5); }
     .btn-outline-mdj2:not(:disabled):not(.disabled):active:focus, .btn-outline-mdj2:not(:disabled):not(.disabled).active:focus,
     .show > .btn-outline-mdj2.dropdown-toggle:focus {
       box-shadow: 0 0 0 0.2rem rgba(175, 38, 173, 0.5); }
@@ -2518,17 +2521,20 @@ input[type="button"].btn-block {
   background-attachment: absolute;
   background-repeat: no-repeat;
   background-size: cover;
-  position: static;
+  position: relative;
   background-position: -450px 0px;
   height: 575px;
+  margin-top: auto;
+  margin-bottom: -100px;
   padding-bottom: 0px;
   padding-top: 0px;
-  margin-bottom: 0px; }
+  top: -70px; }
 
 .slant {
   position: absolute;
   width: 350px;
-  height: 575px;
+  height: 505px;
+  margin-top: 70px;
   left: -50px;
   background-color: rgba(0, 0, 0, 0.85);
   transform: rotate(0) scale(1) skewX(0deg) translate(0); }
@@ -2550,16 +2556,19 @@ input[type="button"].btn-block {
     background-attachment: absolute;
     background-repeat: no-repeat;
     background-size: cover;
-    position: static;
+    position: relative;
     background-position: -250px 0px;
     height: 575px;
+    margin-top: auto;
+    margin-bottom: -100px;
     padding-bottom: 0px;
     padding-top: 0px;
-    margin-bottom: 0px; }
+    top: -70px; }
   .slant {
     position: absolute;
     width: 390px;
-    height: 575px;
+    height: 505px;
+    margin-top: 70px;
     left: -50px;
     background-color: rgba(0, 0, 0, 0.85);
     transform: rotate(0) scale(1) skewX(0deg) translate(0); }
@@ -2580,16 +2589,19 @@ input[type="button"].btn-block {
     background-attachment: absolute;
     background-repeat: no-repeat;
     background-size: cover;
-    position: static;
+    position: relative;
     background-position: -150px 0px;
     height: 575px;
+    margin-top: auto;
+    margin-bottom: -100px;
     padding-bottom: 0px;
     padding-top: 0px;
-    margin-bottom: 0px; }
+    top: -70px; }
   .slant {
     position: absolute;
     width: 450px;
-    height: 575px;
+    height: 505px;
+    margin-top: 70px;
     left: -50px;
     background-color: rgba(0, 0, 0, 0.85);
     transform: rotate(0) scale(1) skewX(0deg) translate(0); }
@@ -2610,16 +2622,19 @@ input[type="button"].btn-block {
     background-attachment: absolute;
     background-repeat: no-repeat;
     background-size: cover;
-    position: static;
+    position: relative;
     background-position: 0px 0px;
     height: 575px;
+    margin-top: auto;
+    margin-bottom: -100px;
     padding-bottom: 0px;
     padding-top: 0px;
-    margin-bottom: 0px; }
+    top: -70px; }
   .slant {
     position: absolute;
     width: 450px;
-    height: 575px;
+    height: 505px;
+    margin-top: 70px;
     left: -50px;
     background-color: rgba(0, 0, 0, 0.85);
     transform: rotate(0) scale(1) skewX(0deg) translate(0); }
@@ -2640,16 +2655,19 @@ input[type="button"].btn-block {
     background-attachment: absolute;
     background-repeat: no-repeat;
     background-size: cover;
-    position: static;
+    position: relative;
     background-position: 0px 0px;
     height: 575px;
+    margin-top: auto;
+    margin-bottom: -100px;
     padding-bottom: 0px;
     padding-top: 0px;
-    margin-bottom: 0px; }
+    top: -70px; }
   .slant {
     position: absolute;
     width: 400px;
-    height: 575px;
+    height: 505px;
+    margin-top: 70px;
     left: -50px;
     background-color: rgba(0, 0, 0, 0.85);
     transform: rotate(0) scale(1) skewX(0deg) translate(0); }
