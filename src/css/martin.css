@@ -2493,8 +2493,7 @@ input[type="button"].btn-block {
   * of the presentation textbox in the Martin's presentation website
   *
   * variables:
-  *   - $x-axis: width of the text box.
-  *   - $y-axis: x position of the text on jumbotron.
+
   *   - $width: y position of the text on jumbotron.
   *   - $height: y position of the text on jumbotron.
   */
@@ -2534,10 +2533,11 @@ input[type="button"].btn-block {
 
 .presentation-img {
   background-image: url("https://images.unsplash.com/photo-1516110833967-0b5716ca1387");
-  background-size: 0 0;
-  background-position: 0 0;
+  background-position: 0px 0px;
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  width: 120%;
+  height: 300px; }
 
 /**
 * Set up for displays RANGING: 576px -> 768px (*exclusive*).
@@ -2570,13 +2570,7 @@ input[type="button"].btn-block {
     height: 575px;
     padding-left: 0px;
     padding-top: 95px;
-    color: #e1e1e1; }
-  .presentation-img {
-    background-image: url("https://images.unsplash.com/photo-1516110833967-0b5716ca1387");
-    background-size: 0 0;
-    background-position: 0 0;
-    background-repeat: no-repeat;
-    background-size: cover; } }
+    color: #e1e1e1; } }
 
 /**
 * Set up for displays RANGING: 768px -> 992px (*exclusive*).
@@ -2609,13 +2603,7 @@ input[type="button"].btn-block {
     height: 575px;
     padding-left: 0px;
     padding-top: 95px;
-    color: #e1e1e1; }
-  .presentation-img {
-    background-image: url("https://images.unsplash.com/photo-1516110833967-0b5716ca1387");
-    background-size: 0 0;
-    background-position: 0 0;
-    background-repeat: no-repeat;
-    background-size: cover; } }
+    color: #e1e1e1; } }
 
 /**
 * Set up for displays RANGING: 992px -> 1200px (*exclusive*).
@@ -2648,13 +2636,7 @@ input[type="button"].btn-block {
     height: 575px;
     padding-left: 0px;
     padding-top: 95px;
-    color: #e1e1e1; }
-  .presentation-img {
-    background-image: url("https://images.unsplash.com/photo-1516110833967-0b5716ca1387");
-    background-size: -100px 0;
-    background-position: -100px 0;
-    background-repeat: no-repeat;
-    background-size: cover; } }
+    color: #e1e1e1; } }
 
 /**
 * Set up for displays GREATER THAN: 1200px.
@@ -2687,10 +2669,4 @@ input[type="button"].btn-block {
     height: 575px;
     padding-left: 0px;
     padding-top: 95px;
-    color: #e1e1e1; }
-  .presentation-img {
-    background-image: url("https://images.unsplash.com/photo-1516110833967-0b5716ca1387");
-    background-size: 0px 0;
-    background-position: 0px 0;
-    background-repeat: no-repeat;
-    background-size: cover; } }
+    color: #e1e1e1; } }
