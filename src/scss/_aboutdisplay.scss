@@ -35,7 +35,7 @@ $jumbotron-color: #4b8fa0;
   background-attachment: absolute;
   background-repeat: no-repeat;
   background-size: cover;
-  position: static;
+  position: relative;
   background-position: $x-axis $y-axis;
   height: $jumbotron-height;
   padding-bottom: 0px;

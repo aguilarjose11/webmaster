@@ -32,7 +32,6 @@ $jumbotron-color:#698faf;
 @mixin jumbotron-base($x-axis, $y-axis, $jumbotron-height)
 {
   background-image: url("https://cdn.pixabay.com/photo/2015/10/11/11/20/banner-982162_960_720.jpg");
-
   background-attachment: absolute;
   background-repeat: no-repeat;
   background-size: cover;

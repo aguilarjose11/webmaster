@@ -89,12 +89,12 @@ button.bg-dark:focus {
   background-color: #1d2124 !important; }
 
 .bg-mdj2 {
-  background-color: #a0cfff !important; }
+  background-color: rgba(160, 207, 255, 0.6) !important; }
 
 a.bg-mdj2:hover, a.bg-mdj2:focus,
 button.bg-mdj2:hover,
 button.bg-mdj2:focus {
-  background-color: #6db5ff !important; }
+  background-color: rgba(109, 181, 255, 0.6) !important; }
 
 .bg-white {
   background-color: #fff !important; }
@@ -157,7 +157,7 @@ button.bg-mdj2:focus {
   border-color: #343a40 !important; }
 
 .border-mdj2 {
-  border-color: #a0cfff !important; }
+  border-color: rgba(160, 207, 255, 0.6) !important; }
 
 .border-white {
   border-color: #fff !important; }
@@ -1914,10 +1914,10 @@ a.text-dark:hover, a.text-dark:focus {
   color: #1d2124 !important; }
 
 .text-mdj2 {
-  color: #a0cfff !important; }
+  color: rgba(160, 207, 255, 0.6) !important; }
 
 a.text-mdj2:hover, a.text-mdj2:focus {
-  color: #6db5ff !important; }
+  color: rgba(109, 181, 255, 0.6) !important; }
 
 .text-muted {
   color: #6c757d !important; }
@@ -2150,23 +2150,23 @@ fieldset:disabled a.btn {
 
 .btn-mdj2 {
   color: #212529;
-  background-color: #a0cfff;
-  border-color: #a0cfff; }
+  background-color: rgba(160, 207, 255, 0.6);
+  border-color: rgba(160, 207, 255, 0.6); }
   .btn-mdj2:hover {
     color: #212529;
-    background-color: #7abcff;
-    border-color: #6db5ff; }
+    background-color: rgba(122, 188, 255, 0.6);
+    border-color: rgba(109, 181, 255, 0.6); }
   .btn-mdj2:focus, .btn-mdj2.focus {
     box-shadow: 0 0 0 0.2rem rgba(160, 207, 255, 0.5); }
   .btn-mdj2.disabled, .btn-mdj2:disabled {
     color: #212529;
-    background-color: #a0cfff;
-    border-color: #a0cfff; }
+    background-color: rgba(160, 207, 255, 0.6);
+    border-color: rgba(160, 207, 255, 0.6); }
   .btn-mdj2:not(:disabled):not(.disabled):active, .btn-mdj2:not(:disabled):not(.disabled).active,
   .show > .btn-mdj2.dropdown-toggle {
     color: #212529;
-    background-color: #6db5ff;
-    border-color: #60afff; }
+    background-color: rgba(109, 181, 255, 0.6);
+    border-color: rgba(96, 175, 255, 0.6); }
     .btn-mdj2:not(:disabled):not(.disabled):active:focus, .btn-mdj2:not(:disabled):not(.disabled).active:focus,
     .show > .btn-mdj2.dropdown-toggle:focus {
       box-shadow: 0 0 0 0.2rem rgba(160, 207, 255, 0.5); }
@@ -2356,24 +2356,24 @@ fieldset:disabled a.btn {
       box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5); }
 
 .btn-outline-mdj2 {
-  color: #a0cfff;
+  color: rgba(160, 207, 255, 0.6);
   background-color: transparent;
   background-image: none;
-  border-color: #a0cfff; }
+  border-color: rgba(160, 207, 255, 0.6); }
   .btn-outline-mdj2:hover {
     color: #212529;
-    background-color: #a0cfff;
-    border-color: #a0cfff; }
+    background-color: rgba(160, 207, 255, 0.6);
+    border-color: rgba(160, 207, 255, 0.6); }
   .btn-outline-mdj2:focus, .btn-outline-mdj2.focus {
     box-shadow: 0 0 0 0.2rem rgba(160, 207, 255, 0.5); }
   .btn-outline-mdj2.disabled, .btn-outline-mdj2:disabled {
-    color: #a0cfff;
+    color: rgba(160, 207, 255, 0.6);
     background-color: transparent; }
   .btn-outline-mdj2:not(:disabled):not(.disabled):active, .btn-outline-mdj2:not(:disabled):not(.disabled).active,
   .show > .btn-outline-mdj2.dropdown-toggle {
     color: #212529;
-    background-color: #a0cfff;
-    border-color: #a0cfff; }
+    background-color: rgba(160, 207, 255, 0.6);
+    border-color: rgba(160, 207, 255, 0.6); }
     .btn-outline-mdj2:not(:disabled):not(.disabled):active:focus, .btn-outline-mdj2:not(:disabled):not(.disabled).active:focus,
     .show > .btn-outline-mdj2.dropdown-toggle:focus {
       box-shadow: 0 0 0 0.2rem rgba(160, 207, 255, 0.5); }
@@ -2466,12 +2466,13 @@ input[type="button"].btn-block {
   background-attachment: absolute;
   background-repeat: no-repeat;
   background-size: cover;
-  position: static;
+  position: relative;
   background-position: -450px 0px;
   height: 575px;
   padding-bottom: 0px;
   padding-top: 0px;
-  margin-bottom: 0px; }
+  margin-bottom: 0px;
+  top: -70px; }
 
 .slant {
   position: absolute;
@@ -2498,12 +2499,13 @@ input[type="button"].btn-block {
     background-attachment: absolute;
     background-repeat: no-repeat;
     background-size: cover;
-    position: static;
+    position: relative;
     background-position: -250px 0px;
     height: 575px;
     padding-bottom: 0px;
     padding-top: 0px;
-    margin-bottom: 0px; }
+    margin-bottom: 0px;
+    top: -70px; }
   .slant {
     position: absolute;
     width: 390px;
@@ -2528,12 +2530,13 @@ input[type="button"].btn-block {
     background-attachment: absolute;
     background-repeat: no-repeat;
     background-size: cover;
-    position: static;
+    position: relative;
     background-position: -150px 0px;
     height: 575px;
     padding-bottom: 0px;
     padding-top: 0px;
-    margin-bottom: 0px; }
+    margin-bottom: 0px;
+    top: -70px; }
   .slant {
     position: absolute;
     width: 450px;
@@ -2558,12 +2561,13 @@ input[type="button"].btn-block {
     background-attachment: absolute;
     background-repeat: no-repeat;
     background-size: cover;
-    position: static;
+    position: relative;
     background-position: 0px 0px;
     height: 575px;
     padding-bottom: 0px;
     padding-top: 0px;
-    margin-bottom: 0px; }
+    margin-bottom: 0px;
+    top: -70px; }
   .slant {
     position: absolute;
     width: 450px;
@@ -2588,12 +2592,13 @@ input[type="button"].btn-block {
     background-attachment: absolute;
     background-repeat: no-repeat;
     background-size: cover;
-    position: static;
+    position: relative;
     background-position: 0px 0px;
     height: 575px;
     padding-bottom: 0px;
     padding-top: 0px;
-    margin-bottom: 0px; }
+    margin-bottom: 0px;
+    top: -70px; }
   .slant {
     position: absolute;
     width: 400px;
