@@ -5,6 +5,10 @@
 body {
   background-color: #efefef; }
 
+h1 {
+  text-shadow: 2px 2px 10px grey;
+  font-weight: bold; }
+
 /* Imports */
 .align-baseline {
   vertical-align: baseline !important; }

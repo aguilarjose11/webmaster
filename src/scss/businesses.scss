@@ -32,7 +32,11 @@ $theme-colors:
   background-position: 0px ;
   background-repeat: no-repeat;
 }
-
+// Makes main text stand out more.
+h1{
+  text-shadow: 2px 2px 10px grey;
+  font-weight: bold;
+}
 
 
 

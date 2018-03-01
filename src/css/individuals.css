@@ -5,6 +5,10 @@
 body {
   background-color: #efefef; }
 
+h1 {
+  text-shadow: 2px 2px 10px grey;
+  font-weight: bold; }
+
 .intro-side {
   background-image: url("https://static.pexels.com/photos/436784/pexels-photo-436784.jpeg");
   background-size: cover;
