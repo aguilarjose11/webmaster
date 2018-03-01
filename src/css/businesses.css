@@ -5,12 +5,18 @@
 body {
   background-color: #efefef; }
 
+#headerTitle {
+  padding-top: 15%; }
+
 .img-separator-intro-info {
   background-image: url("https://static.pexels.com/photos/325185/pexels-photo-325185.jpeg");
   height: 200px;
   background-size: cover;
   background-position: 0px;
   background-repeat: no-repeat; }
+
+.tab-content {
+  align-items: center; }
 
 /* Imports */
 .align-baseline {

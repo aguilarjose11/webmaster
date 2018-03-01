@@ -23,6 +23,11 @@ $theme-colors:
   "mdj2": rgba(160, 207, 255, 0.6)
 );
 
+//Adjust header title to fit below navBar
+#headerTitle{
+  padding-top: 15%
+}
+
 // image separating the information from the introduction.
 .img-separator-intro-info
 {
@@ -31,6 +36,10 @@ $theme-colors:
   background-size: cover;
   background-position: 0px ;
   background-repeat: no-repeat;
+}
+
+.tab-content{
+  align-items: center;
 }
 
 

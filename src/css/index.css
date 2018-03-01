@@ -2476,7 +2476,7 @@ input[type="button"].btn-block {
 
 .slant {
   position: absolute;
-  width: 350px;
+  width: 320px;
   height: 575px;
   left: -100px;
   background-color: rgba(0, 0, 0, 0.4);
@@ -2508,7 +2508,7 @@ input[type="button"].btn-block {
     top: -70px; }
   .slant {
     position: absolute;
-    width: 390px;
+    width: 350px;
     height: 575px;
     left: -100px;
     background-color: rgba(0, 0, 0, 0.4);
@@ -2539,7 +2539,7 @@ input[type="button"].btn-block {
     top: -70px; }
   .slant {
     position: absolute;
-    width: 450px;
+    width: 350px;
     height: 575px;
     left: -100px;
     background-color: rgba(0, 0, 0, 0.4);

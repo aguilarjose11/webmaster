@@ -102,7 +102,7 @@ $jumbotron-height: 575px;
   // slanted background over jumbotron
   .slant
   {
-    @include slant-shade(350px);
+    @include slant-shade(320px);
   }
 
   // text over slant shade over jumbotron.
@@ -127,7 +127,7 @@ $jumbotron-height: 575px;
   // slanted background over jumbotron
   .slant
   {
-    @include slant-shade(390px);
+    @include slant-shade(350px);
   }
 
   // text over slant shade over jumbotron.
@@ -152,7 +152,7 @@ $jumbotron-height: 575px;
   // slanted background over jumbotron
   .slant
   {
-    @include slant-shade(450px);
+    @include slant-shade(350px);
   }
 
   // text over slant shade over jumbotron.
