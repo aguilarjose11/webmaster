@@ -23,6 +23,12 @@ $theme-colors:
   "mdj2": rgba(160, 207, 255, 0.6)
 );
 
+// Makes the words in h1 stand out a bit more with shadow and bolding.
+h1{
+  text-shadow: 2px 2px 10px grey;
+  font-weight: bold;
+}
+
 // table containing all the information in regards of
 // advantages of Martin Robot.
 .advantages
