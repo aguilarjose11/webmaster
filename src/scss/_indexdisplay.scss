@@ -15,7 +15,7 @@
   **/
 
 //variable declarations
-$jumbotron-height: 575px;
+$jumbotron-height: 655px;
 
 
 /** This mixin takes care of the jumbotron rules.
@@ -37,9 +37,7 @@ $jumbotron-height: 575px;
   position: relative;
   background-position: $x-axis $y-axis;
   height: $jumbotron-height;
-  padding-bottom: 0px;
   padding-top: 0px;
-  margin-bottom: 0px;
   top: -70px;
 }
 
@@ -55,12 +53,12 @@ $jumbotron-height: 575px;
   @mixin slant-shade($width)
   {
     position: absolute;
-    width: $width;
+    width: $width + 400px;
     height: $jumbotron-height;
     //top: 56px;
-    left: -100px;
+    left: -200px;
     background-color: rgba(0,0,0,.4);
-    transform: rotate(0) scale(1) skewX(-15.75deg) translate(0);
+    transform: rotate(0) scale(2) skewX(-35.75deg) translate(0);
 
   }
 

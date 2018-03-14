@@ -6,7 +6,7 @@
 
 /* Variable declaration */
 
-$bg-color: #efefef;// html body background color
+$bg-color: grey;// html body background color
 
 /* Rules.*/
 
@@ -28,6 +28,21 @@ h1{
   font-weight: bold;
 }
 
+#cardBoxBoy{
+  padding-top: 0px;
+  margin-left: 50px;
+  margin-right: 50px;
+  text-align: center;
+
+}
+#cardBoxMan{
+  margin-top: 0px;
+  padding-top: 0px;
+  margin-left: 50px;
+  margin-right: 50px;
+  text-align: center;
+  font-family: 'Roboto';
+}
 /* Imports */
 
 // required imports! --> DO NOT DELETE! <--
