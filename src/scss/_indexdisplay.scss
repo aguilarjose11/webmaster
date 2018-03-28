@@ -34,11 +34,11 @@ $jumbotron-height: 655px;
   background-attachment: absolute;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
+  position: static;
   background-position: $x-axis $y-axis;
   height: $jumbotron-height;
   padding-top: 0px;
-  top: -70px;
+  top: 0px;
 }
 
 
@@ -53,12 +53,11 @@ $jumbotron-height: 655px;
   @mixin slant-shade($width)
   {
     position: absolute;
-    width: $width + 400px;
+    width: 45%;
     height: $jumbotron-height;
-    //top: 56px;
-    left: -200px;
     background-color: rgba(0,0,0,.4);
-    transform: rotate(0) scale(2) skewX(-35.75deg) translate(0);
+
+    //try clip-path
 
   }
 
@@ -200,7 +199,7 @@ $jumbotron-height: 655px;
   // slanted background over jumbotron
   .slant
   {
-    @include slant-shade(400px);
+    @include slant-shade(1000px);
   }
 
   // text over slant shade over jumbotron.

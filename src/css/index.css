@@ -2484,19 +2484,17 @@ input[type="button"].btn-block {
   background-attachment: absolute;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
+  position: static;
   background-position: -450px 0px;
   height: 655px;
   padding-top: 0px;
-  top: -70px; }
+  top: 0px; }
 
 .slant {
   position: absolute;
-  width: 720px;
+  width: 45%;
   height: 655px;
-  left: -200px;
-  background-color: rgba(0, 0, 0, 0.4);
-  transform: rotate(0) scale(2) skewX(-35.75deg) translate(0); }
+  background-color: rgba(0, 0, 0, 0.4); }
 
 .slant-text {
   background-color: transparent;
@@ -2515,18 +2513,16 @@ input[type="button"].btn-block {
     background-attachment: absolute;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
+    position: static;
     background-position: -250px 0px;
     height: 655px;
     padding-top: 0px;
-    top: -70px; }
+    top: 0px; }
   .slant {
     position: absolute;
-    width: 750px;
+    width: 45%;
     height: 655px;
-    left: -200px;
-    background-color: rgba(0, 0, 0, 0.4);
-    transform: rotate(0) scale(2) skewX(-35.75deg) translate(0); }
+    background-color: rgba(0, 0, 0, 0.4); }
   .slant-text {
     background-color: transparent;
     border-color: transparent;
@@ -2544,18 +2540,16 @@ input[type="button"].btn-block {
     background-attachment: absolute;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
+    position: static;
     background-position: -150px 0px;
     height: 655px;
     padding-top: 0px;
-    top: -70px; }
+    top: 0px; }
   .slant {
     position: absolute;
-    width: 750px;
+    width: 45%;
     height: 655px;
-    left: -200px;
-    background-color: rgba(0, 0, 0, 0.4);
-    transform: rotate(0) scale(2) skewX(-35.75deg) translate(0); }
+    background-color: rgba(0, 0, 0, 0.4); }
   .slant-text {
     background-color: transparent;
     border-color: transparent;
@@ -2573,18 +2567,16 @@ input[type="button"].btn-block {
     background-attachment: absolute;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
+    position: static;
     background-position: 0px 0px;
     height: 655px;
     padding-top: 0px;
-    top: -70px; }
+    top: 0px; }
   .slant {
     position: absolute;
-    width: 850px;
+    width: 45%;
     height: 655px;
-    left: -200px;
-    background-color: rgba(0, 0, 0, 0.4);
-    transform: rotate(0) scale(2) skewX(-35.75deg) translate(0); }
+    background-color: rgba(0, 0, 0, 0.4); }
   .slant-text {
     background-color: transparent;
     border-color: transparent;
@@ -2602,18 +2594,16 @@ input[type="button"].btn-block {
     background-attachment: absolute;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
+    position: static;
     background-position: 0px 0px;
     height: 655px;
     padding-top: 0px;
-    top: -70px; }
+    top: 0px; }
   .slant {
     position: absolute;
-    width: 800px;
+    width: 45%;
     height: 655px;
-    left: -200px;
-    background-color: rgba(0, 0, 0, 0.4);
-    transform: rotate(0) scale(2) skewX(-35.75deg) translate(0); }
+    background-color: rgba(0, 0, 0, 0.4); }
   .slant-text {
     background-color: transparent;
     border-color: transparent;
