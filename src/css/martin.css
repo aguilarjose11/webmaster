@@ -20,19 +20,21 @@ h1 {
   text-align: center; }
 
 #myVideo {
-  position: relative;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%; }
+  position: absolute;
+  width: 100%;
+  min-height: 100%;
+  margin: 0px;
+  padding: 0px; }
 
 .content {
-  position: relative;
+  position: absolute;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
+  top: 1000px;
+  background: transparent;
   color: #f1f1f1;
   width: 100%;
-  padding: 20px; }
+  padding: 20px;
+  z-index: 80; }
 
 .advantages {
   padding-top: 50px;
@@ -2548,36 +2550,35 @@ input[type="button"].btn-block {
   padding-bottom: 0px;
   padding-top: 0px;
   margin-bottom: 0px;
-  top: -70px; }
+  top: 0px; }
 
 .slant {
   position: absolute;
   width: 1750px;
-  height: 505px;
-  margin-top: 70px;
+  height: 575px;
+  margin-top: 0px;
   left: -945px;
   background-color: rgba(0, 0, 50, 0.5);
   transform: rotate(0) scale(1) skewX(-65.75deg) translate(0);
   margin-bottom: 0px; }
 
 .slant2 {
-  position: absolute;
-  width: 1550px;
-  height: 505px;
-  margin-top: -70px;
-  left: -55px;
-  background-color: rgba(0, 0, 50, 0.2);
-  transform: rotate(0) scale(1) skewX(0deg) translate(0); }
+  position: relative;
+  width: 100%;
+  height: 850px;
+  background-color: rgba(0, 0, 50, 0.3);
+  transform: rotate(0) scale(1) skewX(0deg) translate(0);
+  z-index: 40; }
 
 .slant-text {
   background-color: transparent;
   border-color: transparent;
-  width: 370px;
+  width: 300px;
   height: 575px;
   padding-left: 0px;
-  padding-top: 95px;
+  padding-top: 25px;
   color: #e1e1e1;
-  border-bottom: 300px; }
+  border-bottom: 0px; }
 
 .presentation-img {
   background-image: url("https://images.unsplash.com/photo-1516110833967-0b5716ca1387");
@@ -2602,33 +2603,32 @@ input[type="button"].btn-block {
     padding-bottom: 0px;
     padding-top: 0px;
     margin-bottom: 0px;
-    top: -70px; }
+    top: 0px; }
   .slant {
     position: absolute;
     width: 1750px;
-    height: 505px;
-    margin-top: 70px;
+    height: 575px;
+    margin-top: 0px;
     left: -945px;
     background-color: rgba(0, 0, 50, 0.5);
     transform: rotate(0) scale(1) skewX(-65.75deg) translate(0);
     margin-bottom: 0px; }
   .slant2 {
-    position: absolute;
-    width: 1550px;
-    height: 505px;
-    margin-top: -70px;
-    left: -55px;
-    background-color: rgba(0, 0, 50, 0.2);
-    transform: rotate(0) scale(1) skewX(0deg) translate(0); }
+    position: relative;
+    width: 100%;
+    height: 850px;
+    background-color: rgba(0, 0, 50, 0.3);
+    transform: rotate(0) scale(1) skewX(0deg) translate(0);
+    z-index: 40; }
   .slant-text {
     background-color: transparent;
     border-color: transparent;
     width: 370px;
     height: 575px;
     padding-left: 0px;
-    padding-top: 95px;
+    padding-top: 25px;
     color: #e1e1e1;
-    border-bottom: 300px; } }
+    border-bottom: 0px; } }
 
 /**
 * Set up for displays RANGING: 768px -> 992px (*exclusive*).
@@ -2645,33 +2645,32 @@ input[type="button"].btn-block {
     padding-bottom: 0px;
     padding-top: 0px;
     margin-bottom: 0px;
-    top: -70px; }
+    top: 0px; }
   .slant {
     position: absolute;
     width: 1750px;
-    height: 505px;
-    margin-top: 70px;
+    height: 575px;
+    margin-top: 0px;
     left: -945px;
     background-color: rgba(0, 0, 50, 0.5);
     transform: rotate(0) scale(1) skewX(-65.75deg) translate(0);
     margin-bottom: 0px; }
   .slant2 {
-    position: absolute;
-    width: 1550px;
-    height: 505px;
-    margin-top: -70px;
-    left: -55px;
-    background-color: rgba(0, 0, 50, 0.2);
-    transform: rotate(0) scale(1) skewX(0deg) translate(0); }
+    position: relative;
+    width: 100%;
+    height: 850px;
+    background-color: rgba(0, 0, 50, 0.3);
+    transform: rotate(0) scale(1) skewX(0deg) translate(0);
+    z-index: 40; }
   .slant-text {
     background-color: transparent;
     border-color: transparent;
     width: 370px;
     height: 575px;
     padding-left: 0px;
-    padding-top: 95px;
+    padding-top: 25px;
     color: #e1e1e1;
-    border-bottom: 300px; } }
+    border-bottom: 0px; } }
 
 /**
 * Set up for displays RANGING: 992px -> 1200px (*exclusive*).
@@ -2688,33 +2687,32 @@ input[type="button"].btn-block {
     padding-bottom: 0px;
     padding-top: 0px;
     margin-bottom: 0px;
-    top: -70px; }
+    top: 0px; }
   .slant {
     position: absolute;
     width: 1750px;
-    height: 505px;
-    margin-top: 70px;
+    height: 575px;
+    margin-top: 0px;
     left: -945px;
     background-color: rgba(0, 0, 50, 0.5);
     transform: rotate(0) scale(1) skewX(-65.75deg) translate(0);
     margin-bottom: 0px; }
   .slant2 {
-    position: absolute;
-    width: 1550px;
-    height: 505px;
-    margin-top: -70px;
-    left: -55px;
-    background-color: rgba(0, 0, 50, 0.2);
-    transform: rotate(0) scale(1) skewX(0deg) translate(0); }
+    position: relative;
+    width: 100%;
+    height: 850px;
+    background-color: rgba(0, 0, 50, 0.3);
+    transform: rotate(0) scale(1) skewX(0deg) translate(0);
+    z-index: 40; }
   .slant-text {
     background-color: transparent;
     border-color: transparent;
-    width: 370px;
+    width: 300px;
     height: 575px;
     padding-left: 0px;
-    padding-top: 95px;
+    padding-top: 25px;
     color: #e1e1e1;
-    border-bottom: 300px; } }
+    border-bottom: 0px; } }
 
 /**
 * Set up for displays GREATER THAN: 1200px.
@@ -2731,30 +2729,29 @@ input[type="button"].btn-block {
     padding-bottom: 0px;
     padding-top: 0px;
     margin-bottom: 0px;
-    top: -70px; }
+    top: 0px; }
   .slant {
     position: absolute;
     width: 1750px;
-    height: 505px;
-    margin-top: 70px;
+    height: 575px;
+    margin-top: 0px;
     left: -945px;
     background-color: rgba(0, 0, 50, 0.5);
     transform: rotate(0) scale(1) skewX(-65.75deg) translate(0);
     margin-bottom: 0px; }
   .slant2 {
-    position: absolute;
-    width: 1550px;
-    height: 505px;
-    margin-top: -70px;
-    left: -55px;
-    background-color: rgba(0, 0, 50, 0.2);
-    transform: rotate(0) scale(1) skewX(0deg) translate(0); }
+    position: relative;
+    width: 100%;
+    height: 850px;
+    background-color: rgba(0, 0, 50, 0.3);
+    transform: rotate(0) scale(1) skewX(0deg) translate(0);
+    z-index: 40; }
   .slant-text {
     background-color: transparent;
     border-color: transparent;
-    width: 370px;
+    width: 300px;
     height: 575px;
     padding-left: 0px;
-    padding-top: 95px;
+    padding-top: 25px;
     color: #e1e1e1;
-    border-bottom: 300px; } }
+    border-bottom: 0px; } }

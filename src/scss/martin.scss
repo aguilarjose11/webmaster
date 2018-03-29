@@ -40,20 +40,22 @@ h1{
   text-align: center;
 }
 #myVideo {
-    position: relative;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
+    position: absolute;
+    width: 100%;
     min-height: 100%;
+    margin: 0px;
+    padding: 0px;
 
 }
 .content {
-    position: relative;
+    position: absolute;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
+    top: 1000px;
+    background: rgba(0, 0, 0, 0);
     color: #f1f1f1;
     width: 100%;
     padding: 20px;
+    z-index: 80;
 }
 // table containing all the information in regards of
 // advantages of Martin Robot.

@@ -3,6 +3,9 @@
 
 
 /* Variable Overrides.*/
+$dropdown-link-hover-color: rgba(160, 207, 255, 0.6);
+$dropdown-link-hover-bg: rgba(160, 207, 255, 0.6);
+
 
 /* Variable declaration */
 
@@ -28,21 +31,6 @@ h1{
   font-weight: bold;
 }
 
-#cardBoxBoy{
-  padding-top: 0px;
-  margin-left: 50px;
-  margin-right: 50px;
-  text-align: center;
-
-}
-#cardBoxMan{
-  margin-top: 0px;
-  padding-top: 0px;
-  margin-left: 50px;
-  margin-right: 50px;
-  text-align: center;
-  font-family: 'Roboto';
-}
 /* Imports */
 
 // required imports! --> DO NOT DELETE! <--
