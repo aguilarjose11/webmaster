@@ -19,12 +19,21 @@ h1 {
   margin-right: 50px;
   text-align: center; }
 
-#myVideo {
-  position: relative;
-  right: 0;
-  bottom: 0;
+video#bgvid {
+  position: fixed;
+  top: 50%;
+  left: 50%;
   min-width: 100%;
-  min-height: 100%; }
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  background: url(polina.jpg) no-repeat;
+  background-size: cover; }
 
 .content {
   position: relative;
@@ -2555,7 +2564,7 @@ input[type="button"].btn-block {
   width: 1750px;
   height: 505px;
   margin-top: 70px;
-  left: -945px;
+  left: -965px;
   background-color: rgba(0, 0, 50, 0.5);
   transform: rotate(0) scale(1) skewX(-65.75deg) translate(0);
   margin-bottom: 0px; }
@@ -2608,7 +2617,7 @@ input[type="button"].btn-block {
     width: 1750px;
     height: 505px;
     margin-top: 70px;
-    left: -945px;
+    left: -965px;
     background-color: rgba(0, 0, 50, 0.5);
     transform: rotate(0) scale(1) skewX(-65.75deg) translate(0);
     margin-bottom: 0px; }
@@ -2651,7 +2660,7 @@ input[type="button"].btn-block {
     width: 1750px;
     height: 505px;
     margin-top: 70px;
-    left: -945px;
+    left: -965px;
     background-color: rgba(0, 0, 50, 0.5);
     transform: rotate(0) scale(1) skewX(-65.75deg) translate(0);
     margin-bottom: 0px; }
@@ -2694,7 +2703,7 @@ input[type="button"].btn-block {
     width: 1750px;
     height: 505px;
     margin-top: 70px;
-    left: -945px;
+    left: -965px;
     background-color: rgba(0, 0, 50, 0.5);
     transform: rotate(0) scale(1) skewX(-65.75deg) translate(0);
     margin-bottom: 0px; }
@@ -2737,7 +2746,7 @@ input[type="button"].btn-block {
     width: 1750px;
     height: 505px;
     margin-top: 70px;
-    left: -945px;
+    left: -965px;
     background-color: rgba(0, 0, 50, 0.5);
     transform: rotate(0) scale(1) skewX(-65.75deg) translate(0);
     margin-bottom: 0px; }
