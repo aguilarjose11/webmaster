@@ -39,29 +39,23 @@ h1{
   margin-right: 50px;
   text-align: center;
 }
-video#bgvid {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
+#myVideo {
+    position: absolute;
+    width: 100%;
     min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -100;
-    -ms-transform: translateX(-50%) translateY(-50%);
-    -moz-transform: translateX(-50%) translateY(-50%);
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
-    background: url(polina.jpg) no-repeat;
-    background-size: cover;
+    margin: 0px;
+    padding: 0px;
+
 }
 .content {
-    position: relative;
+    position: absolute;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
+    top: 1000px;
+    background: rgba(0, 0, 0, 0);
     color: #f1f1f1;
     width: 100%;
     padding: 20px;
+    z-index: 80;
 }
 // table containing all the information in regards of
 // advantages of Martin Robot.
