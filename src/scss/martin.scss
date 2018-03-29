@@ -25,7 +25,7 @@ $theme-colors:
 
 // Makes the words in h1 stand out a bit more with shadow and bolding.
 h1{
-  text-shadow: 2px 2px 10px grey;
+  text-shadow: 4px 4px 10px grey;
   font-weight: bold;
 }
 
@@ -39,13 +39,24 @@ h1{
   margin-right: 50px;
   text-align: center;
 }
+#button{
+  margin-top: 220px;
+  margin-left: 145px;
+}
 #myVideo {
     position: absolute;
     width: 100%;
-    min-height: 100%;
-    margin: 0px;
-    padding: 0px;
-
+    margin-left: 0px;
+    padding-left: 0px;
+    height: 400px;
+    -webkit-transform: scaleX(2);
+    -moz-transform: scaleX(2);
+}
+.cropper{
+    width: 200px;
+    overflow:hidden;
+    display:block;
+    height: 360px;
 }
 .content {
     position: absolute;
