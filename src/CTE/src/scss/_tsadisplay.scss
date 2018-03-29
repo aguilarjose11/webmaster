@@ -148,7 +148,11 @@ $jumbotron-height: 575px;
   }
   .card-block
   {
-    @@include card-block(300px, 500px);
+    @include card-block(300px, 500px);
+  }
+  .img
+  {
+    @include img(30px, 20px);
   }
 }
 
@@ -173,6 +177,11 @@ $jumbotron-height: 575px;
   .slant-text
   {
     @include slant-text(300px, 30px, 85px);
+  }
+
+  .img
+  {
+    @include img(30px, 20px);
   }
 
 }
@@ -200,6 +209,10 @@ $jumbotron-height: 575px;
     @include slant-text(300px, 30px, 85px);
   }
 
+  .img
+  {
+    @include img(30px, 20px);
+  }
 }
 
 /**

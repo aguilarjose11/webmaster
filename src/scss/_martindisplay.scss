@@ -30,12 +30,12 @@ $jumbotron-height: 575px;
   */
 @mixin jumbotron-base($x-axis, $y-axis)
 {
-  background-image: url("https://images.unsplash.com/photo-1485827404703-89b55fcc595e");
+  background-image: url("../assets/MARTIN.svg");
   background-attachment: absolute;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 1450px;
   position: relative;
-  background-position: $x-axis $y-axis;
+  background-position: ($x-axis - 30px) ($y-axis + 150px);
   height: $jumbotron-height;
   padding-bottom: 0px;
   padding-top: 0px;
@@ -56,14 +56,34 @@ $jumbotron-height: 575px;
 @mixin slant-shade($width, $x-axis)
 {
   position: absolute;
-  width: $width;
+  width: $width + 1400px;
   height: $jumbotron-height - 70px;
   margin-top: 70px;
   //top: 56px;
-  left: $x-axis;
+  left: $x-axis - 890px;
   background-color: rgba(0,0,50,.5);
-  transform: rotate(0) scale(1) skewX(-15.75deg) translate(0);
+  transform: rotate(0) scale(1) skewX(-65.75deg) translate(0);
+  margin-bottom: 0px;
+}
 
+/** slant-shade mixin
+*
+* This mixin controlls the size of the slant shade used
+* to display text on the jumbotron's face.
+*
+* variables:
+*   -$width: Width of the slant shade.
+*/
+@mixin slant-shade2($width, $x-axis)
+{
+  position: absolute;
+  width: $width + 1200px;
+  height: $jumbotron-height - 70px;
+  margin-top: -70px;
+  //top: 56px;
+  left: $x-axis;
+  background-color: rgba(0,0,50,.2);
+  transform: rotate(0) scale(1) skewX(-0deg) translate(0);
 }
 
 /** slant-text mixin
@@ -86,6 +106,7 @@ height: $jumbotron-height;
 padding-left: $text-box-x;//30px;
 padding-top: $text-box-y + 70px;//85px;
 color: rgb(225,225,225);
+border-bottom: 300px;
 
 }
 
@@ -114,6 +135,7 @@ color: rgb(225,225,225);
 
 
 
+
 // ------ Display mixins ------
 
 /**
@@ -132,6 +154,11 @@ color: rgb(225,225,225);
   .slant
   {
     @include slant-shade(350px, -55px);
+  }
+
+  .slant2
+  {
+    @include slant-shade2(350px, -55px);
   }
 
   // text over slant shade over jumbotron.
@@ -163,7 +190,10 @@ color: rgb(225,225,225);
   {
     @include slant-shade(350px, -55px);
   }
-
+  .slant2
+  {
+    @include slant-shade2(350px, -55px);
+  }
   // text over slant shade over jumbotron.
   .slant-text
   {
@@ -192,7 +222,10 @@ color: rgb(225,225,225);
   {
     @include slant-shade(350px, -55px);
   }
-
+  .slant2
+  {
+    @include slant-shade2(350px, -55px);
+  }
   // text over slant shade over jumbotron.
   .slant-text
   {
@@ -221,7 +254,10 @@ color: rgb(225,225,225);
   {
     @include slant-shade(350px, -55px);
   }
-
+  .slant2
+  {
+    @include slant-shade2(350px, -55px);
+  }
   // text over slant shade over jumbotron.
   .slant-text
   {
@@ -250,7 +286,10 @@ color: rgb(225,225,225);
   {
     @include slant-shade(350px, -55px);
   }
-
+  .slant2
+  {
+    @include slant-shade2(350px, -55px);
+  }
   // text over slant shade over jumbotron.
   .slant-text
   {

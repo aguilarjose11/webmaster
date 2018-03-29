@@ -9,6 +9,23 @@ h1 {
   text-shadow: 2px 2px 10px grey;
   font-weight: bold; }
 
+#cardBoxMan {
+  padding-left: 50px;
+  padding-right: 50px; }
+
+#cardBoxBoy {
+  padding-top: 0px;
+  margin-left: 50px;
+  margin-right: 50px;
+  text-align: center; }
+
+#myVideo {
+  position: relative;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%; }
+
 .advantages {
   padding-top: 50px;
   padding-left: 30px; }
@@ -2481,6 +2498,14 @@ input[type="button"].btn-block {
 * variables:
 *   -$width: Width of the slant shade.
 */
+/** slant-shade mixin
+*
+* This mixin controlls the size of the slant shade used
+* to display text on the jumbotron's face.
+*
+* variables:
+*   -$width: Width of the slant shade.
+*/
 /** slant-text mixin
   *
   * this mixin takes care of the slant-shade text size and other
@@ -2505,12 +2530,12 @@ input[type="button"].btn-block {
 * Set up for displays LESS THAN: 576px (*exclusive*).
 **/
 .jumbotron {
-  background-image: url("https://images.unsplash.com/photo-1485827404703-89b55fcc595e");
+  background-image: url("../assets/MARTIN.svg");
   background-attachment: absolute;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 1450px;
   position: relative;
-  background-position: -300px 0px;
+  background-position: -330px 150px;
   height: 575px;
   padding-bottom: 0px;
   padding-top: 0px;
@@ -2519,12 +2544,22 @@ input[type="button"].btn-block {
 
 .slant {
   position: absolute;
-  width: 350px;
+  width: 1750px;
   height: 505px;
   margin-top: 70px;
-  left: -55px;
+  left: -945px;
   background-color: rgba(0, 0, 50, 0.5);
-  transform: rotate(0) scale(1) skewX(-15.75deg) translate(0); }
+  transform: rotate(0) scale(1) skewX(-65.75deg) translate(0);
+  margin-bottom: 0px; }
+
+.slant2 {
+  position: absolute;
+  width: 1550px;
+  height: 505px;
+  margin-top: -70px;
+  left: -55px;
+  background-color: rgba(0, 0, 50, 0.2);
+  transform: rotate(0) scale(1) skewX(0deg) translate(0); }
 
 .slant-text {
   background-color: transparent;
@@ -2533,7 +2568,8 @@ input[type="button"].btn-block {
   height: 575px;
   padding-left: 0px;
   padding-top: 95px;
-  color: #e1e1e1; }
+  color: #e1e1e1;
+  border-bottom: 300px; }
 
 .presentation-img {
   background-image: url("https://images.unsplash.com/photo-1516110833967-0b5716ca1387");
@@ -2548,12 +2584,12 @@ input[type="button"].btn-block {
 **/
 @media (min-width: 576px) {
   .jumbotron {
-    background-image: url("https://images.unsplash.com/photo-1485827404703-89b55fcc595e");
+    background-image: url("../assets/MARTIN.svg");
     background-attachment: absolute;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 1450px;
     position: relative;
-    background-position: 0 0;
+    background-position: -30px 150px;
     height: 575px;
     padding-bottom: 0px;
     padding-top: 0px;
@@ -2561,12 +2597,21 @@ input[type="button"].btn-block {
     top: -70px; }
   .slant {
     position: absolute;
-    width: 350px;
+    width: 1750px;
     height: 505px;
     margin-top: 70px;
-    left: -55px;
+    left: -945px;
     background-color: rgba(0, 0, 50, 0.5);
-    transform: rotate(0) scale(1) skewX(-15.75deg) translate(0); }
+    transform: rotate(0) scale(1) skewX(-65.75deg) translate(0);
+    margin-bottom: 0px; }
+  .slant2 {
+    position: absolute;
+    width: 1550px;
+    height: 505px;
+    margin-top: -70px;
+    left: -55px;
+    background-color: rgba(0, 0, 50, 0.2);
+    transform: rotate(0) scale(1) skewX(0deg) translate(0); }
   .slant-text {
     background-color: transparent;
     border-color: transparent;
@@ -2574,19 +2619,20 @@ input[type="button"].btn-block {
     height: 575px;
     padding-left: 0px;
     padding-top: 95px;
-    color: #e1e1e1; } }
+    color: #e1e1e1;
+    border-bottom: 300px; } }
 
 /**
 * Set up for displays RANGING: 768px -> 992px (*exclusive*).
 **/
 @media (min-width: 768px) {
   .jumbotron {
-    background-image: url("https://images.unsplash.com/photo-1485827404703-89b55fcc595e");
+    background-image: url("../assets/MARTIN.svg");
     background-attachment: absolute;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 1450px;
     position: relative;
-    background-position: 0 0;
+    background-position: -30px 150px;
     height: 575px;
     padding-bottom: 0px;
     padding-top: 0px;
@@ -2594,12 +2640,21 @@ input[type="button"].btn-block {
     top: -70px; }
   .slant {
     position: absolute;
-    width: 350px;
+    width: 1750px;
     height: 505px;
     margin-top: 70px;
-    left: -55px;
+    left: -945px;
     background-color: rgba(0, 0, 50, 0.5);
-    transform: rotate(0) scale(1) skewX(-15.75deg) translate(0); }
+    transform: rotate(0) scale(1) skewX(-65.75deg) translate(0);
+    margin-bottom: 0px; }
+  .slant2 {
+    position: absolute;
+    width: 1550px;
+    height: 505px;
+    margin-top: -70px;
+    left: -55px;
+    background-color: rgba(0, 0, 50, 0.2);
+    transform: rotate(0) scale(1) skewX(0deg) translate(0); }
   .slant-text {
     background-color: transparent;
     border-color: transparent;
@@ -2607,19 +2662,20 @@ input[type="button"].btn-block {
     height: 575px;
     padding-left: 0px;
     padding-top: 95px;
-    color: #e1e1e1; } }
+    color: #e1e1e1;
+    border-bottom: 300px; } }
 
 /**
 * Set up for displays RANGING: 992px -> 1200px (*exclusive*).
 **/
 @media (min-width: 992px) {
   .jumbotron {
-    background-image: url("https://images.unsplash.com/photo-1485827404703-89b55fcc595e");
+    background-image: url("../assets/MARTIN.svg");
     background-attachment: absolute;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 1450px;
     position: relative;
-    background-position: 0 0;
+    background-position: -30px 150px;
     height: 575px;
     padding-bottom: 0px;
     padding-top: 0px;
@@ -2627,12 +2683,21 @@ input[type="button"].btn-block {
     top: -70px; }
   .slant {
     position: absolute;
-    width: 350px;
+    width: 1750px;
     height: 505px;
     margin-top: 70px;
-    left: -55px;
+    left: -945px;
     background-color: rgba(0, 0, 50, 0.5);
-    transform: rotate(0) scale(1) skewX(-15.75deg) translate(0); }
+    transform: rotate(0) scale(1) skewX(-65.75deg) translate(0);
+    margin-bottom: 0px; }
+  .slant2 {
+    position: absolute;
+    width: 1550px;
+    height: 505px;
+    margin-top: -70px;
+    left: -55px;
+    background-color: rgba(0, 0, 50, 0.2);
+    transform: rotate(0) scale(1) skewX(0deg) translate(0); }
   .slant-text {
     background-color: transparent;
     border-color: transparent;
@@ -2640,19 +2705,20 @@ input[type="button"].btn-block {
     height: 575px;
     padding-left: 0px;
     padding-top: 95px;
-    color: #e1e1e1; } }
+    color: #e1e1e1;
+    border-bottom: 300px; } }
 
 /**
 * Set up for displays GREATER THAN: 1200px.
 **/
 @media (min-width: 1200px) {
   .jumbotron {
-    background-image: url("https://images.unsplash.com/photo-1485827404703-89b55fcc595e");
+    background-image: url("../assets/MARTIN.svg");
     background-attachment: absolute;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 1450px;
     position: relative;
-    background-position: 0 0;
+    background-position: -30px 150px;
     height: 575px;
     padding-bottom: 0px;
     padding-top: 0px;
@@ -2660,12 +2726,21 @@ input[type="button"].btn-block {
     top: -70px; }
   .slant {
     position: absolute;
-    width: 350px;
+    width: 1750px;
     height: 505px;
     margin-top: 70px;
-    left: -55px;
+    left: -945px;
     background-color: rgba(0, 0, 50, 0.5);
-    transform: rotate(0) scale(1) skewX(-15.75deg) translate(0); }
+    transform: rotate(0) scale(1) skewX(-65.75deg) translate(0);
+    margin-bottom: 0px; }
+  .slant2 {
+    position: absolute;
+    width: 1550px;
+    height: 505px;
+    margin-top: -70px;
+    left: -55px;
+    background-color: rgba(0, 0, 50, 0.2);
+    transform: rotate(0) scale(1) skewX(0deg) translate(0); }
   .slant-text {
     background-color: transparent;
     border-color: transparent;
@@ -2673,4 +2748,5 @@ input[type="button"].btn-block {
     height: 575px;
     padding-left: 0px;
     padding-top: 95px;
-    color: #e1e1e1; } }
+    color: #e1e1e1;
+    border-bottom: 300px; } }

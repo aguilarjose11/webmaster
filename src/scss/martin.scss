@@ -29,6 +29,24 @@ h1{
   font-weight: bold;
 }
 
+#cardBoxMan{
+  padding-left: 50px;
+  padding-right: 50px;
+}
+#cardBoxBoy{
+  padding-top: 0px;
+  margin-left: 50px;
+  margin-right: 50px;
+  text-align: center;
+}
+#myVideo {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+
+}
 // table containing all the information in regards of
 // advantages of Martin Robot.
 .advantages
