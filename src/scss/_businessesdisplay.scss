@@ -53,17 +53,37 @@
   * variables:
   *   -$width: Width of the slant shade.
   */
-  @mixin slant-shade($width, $x-axis)
+  @mixin slant-shade($width)
   {
-    position: absolute;
-    width: $width;
-    height: $jumbotron-height - 70px;
-    margin-top: 70px;
-    //top: 56px;
-    left: $x-axis;
-    background-color: rgba(0,0,0,.4);
-    transform: rotate(0) scale(1) skewX(-15.75deg) translate(0);
+    top: 0px;
+  	width: 100%;
+  	height: 50px;
+  	position: relative;
+  	background-color: rgba(0,0,0,.4);
 
+    // rectangle on left
+    &:before
+    {
+    	top: 50px;
+    	content: "";
+    	position: absolute;
+    	width: 30%;
+    	height: 525px;
+    	background-color: rgba(0,0,0,.4);
+    }
+    // triangle
+    &:after
+    {
+    	left: 30%;
+    	top: 50px;
+    	content: "";
+    	position: absolute;
+    	border-bottom: 525px solid transparent;
+    	border-left: $width solid rgba(0,0,0,.4);
+      // 68vw for xsmall
+    }
+
+    //try clip-path
   }
 
   /** slant-text mixin
@@ -108,7 +128,7 @@
   // slanted background over jumbotron
   .slant
   {
-    @include slant-shade(350px, -55px);
+    @include slant-shade(67.1vw);
   }
 
   // text over slant shade over jumbotron.
@@ -132,7 +152,7 @@
   // slanted background over jumbotron
   .slant
   {
-    @include slant-shade(350px, -55px);
+    @include slant-shade(68vw);;
   }
 
   // text over slant shade over jumbotron.
@@ -156,7 +176,7 @@
   // slanted background over jumbotron
   .slant
   {
-    @include slant-shade(350px, -55px);
+    @include slant-shade(68.4vw);
   }
 
   // text over slant shade over jumbotron.
@@ -180,7 +200,7 @@
   // slanted background over jumbotron
   .slant
   {
-    @include slant-shade(350px, -55px);
+    @include slant-shade(68.7vw);
   }
 
   // text over slant shade over jumbotron.
@@ -204,7 +224,7 @@
   // slanted background over jumbotron
   .slant
   {
-    @include slant-shade(350px, -55px);
+    @include slant-shade(69.1vw);
   }
 
   // text over slant shade over jumbotron.
