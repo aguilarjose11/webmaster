@@ -47,6 +47,14 @@ h1{
     min-height: 100%;
 
 }
+.content {
+    position: relative;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+}
 // table containing all the information in regards of
 // advantages of Martin Robot.
 .advantages
