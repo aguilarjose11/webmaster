@@ -13,6 +13,25 @@ body {
 #navColor {
   color: rgba(255, 255, 255, 0.9); }
 
+.footer {
+  width: 100%;
+  background-color: #222;
+  padding: 50px 30px; }
+
+.footNav {
+  font-family: monospace;
+  font-weight: 400;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  list-style-type: none; }
+
+#footA {
+  color: white; }
+
+li {
+  padding-top: 10px; }
+
 /* Imports */
 .align-baseline {
   vertical-align: baseline !important; }

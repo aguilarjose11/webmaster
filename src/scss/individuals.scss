@@ -35,7 +35,25 @@ h1{
   font-weight: bold;
 }
 
-
+.footer{
+  width: 100%;
+  background-color: #222;
+  padding: 50px 30px;
+}
+.footNav{
+  font-family: monospace;
+  font-weight: 400;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  list-style-type: none;
+}
+#footA{
+  color: white;
+}
+li{
+    padding-top: 10px;
+}
 
 // image at left of the introduction to martin.
 .intro-side
