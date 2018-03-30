@@ -53,11 +53,11 @@ h1{
 }
 #myVideo {
     position: absolute;
-    width: 100%;
+
     margin-left: 0px;
     padding-left: 0px;
     height: 400px;
-    -webkit-transform: scaleX(2);
+    -webkit-transform: scaleX(2) translate(172px);
     -moz-transform: scaleX(2);
 }
 #gold{

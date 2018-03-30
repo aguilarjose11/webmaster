@@ -30,11 +30,10 @@ h1 {
 
 #myVideo {
   position: absolute;
-  width: 100%;
   margin-left: 0px;
   padding-left: 0px;
   height: 400px;
-  -webkit-transform: scaleX(2);
+  -webkit-transform: scaleX(2) translate(172px);
   -moz-transform: scaleX(2); }
 
 #gold {
@@ -2639,14 +2638,21 @@ input[type="button"].btn-block {
   top: 0px; }
 
 .slant {
-  position: absolute;
-  width: 350px;
-  height: 575px;
-  margin-top: 0px;
-  left: -55px;
-  background-color: rgba(0, 0, 50, 0.5);
-  transform: rotate(0) scale(3.5) skewX(-40.75deg) translate(-40px);
-  margin-bottom: 0px; }
+  top: 0px;
+  position: relative;
+  background-color: rgba(60, 0, 0, 0.3); }
+  .slant:before {
+    content: "";
+    position: absolute;
+    width: 30%;
+    height: 575px;
+    background-color: rgba(0, 0, 50, 0.5); }
+  .slant:after {
+    left: 30%;
+    content: "";
+    position: absolute;
+    border-bottom: 575px solid transparent;
+    border-left: 350px solid rgba(0, 0, 50, 0.5); }
 
 .slant2 {
   position: relative;
@@ -2739,14 +2745,21 @@ input[type="button"].btn-block {
     margin-bottom: 0px;
     top: 0px; }
   .slant {
-    position: absolute;
-    width: 350px;
-    height: 575px;
-    margin-top: 0px;
-    left: -55px;
-    background-color: rgba(0, 0, 50, 0.5);
-    transform: rotate(0) scale(3.5) skewX(-40.75deg) translate(-40px);
-    margin-bottom: 0px; }
+    top: 0px;
+    position: relative;
+    background-color: rgba(60, 0, 0, 0.3); }
+    .slant:before {
+      content: "";
+      position: absolute;
+      width: 30%;
+      height: 575px;
+      background-color: rgba(0, 0, 50, 0.5); }
+    .slant:after {
+      left: 30%;
+      content: "";
+      position: absolute;
+      border-bottom: 575px solid transparent;
+      border-left: 350px solid rgba(0, 0, 50, 0.5); }
   .slant2 {
     position: relative;
     width: 100%;
@@ -2819,14 +2832,21 @@ input[type="button"].btn-block {
     margin-bottom: 0px;
     top: 0px; }
   .slant {
-    position: absolute;
-    width: 350px;
-    height: 575px;
-    margin-top: 0px;
-    left: -55px;
-    background-color: rgba(0, 0, 50, 0.5);
-    transform: rotate(0) scale(3.5) skewX(-40.75deg) translate(-40px);
-    margin-bottom: 0px; }
+    top: 0px;
+    position: relative;
+    background-color: rgba(60, 0, 0, 0.3); }
+    .slant:before {
+      content: "";
+      position: absolute;
+      width: 30%;
+      height: 575px;
+      background-color: rgba(0, 0, 50, 0.5); }
+    .slant:after {
+      left: 30%;
+      content: "";
+      position: absolute;
+      border-bottom: 575px solid transparent;
+      border-left: 350px solid rgba(0, 0, 50, 0.5); }
   .slant2 {
     position: relative;
     width: 100%;
@@ -2899,14 +2919,21 @@ input[type="button"].btn-block {
     margin-bottom: 0px;
     top: 0px; }
   .slant {
-    position: absolute;
-    width: 350px;
-    height: 575px;
-    margin-top: 0px;
-    left: -55px;
-    background-color: rgba(0, 0, 50, 0.5);
-    transform: rotate(0) scale(3.5) skewX(-40.75deg) translate(-40px);
-    margin-bottom: 0px; }
+    top: 0px;
+    position: relative;
+    background-color: rgba(60, 0, 0, 0.3); }
+    .slant:before {
+      content: "";
+      position: absolute;
+      width: 30%;
+      height: 575px;
+      background-color: rgba(0, 0, 50, 0.5); }
+    .slant:after {
+      left: 30%;
+      content: "";
+      position: absolute;
+      border-bottom: 575px solid transparent;
+      border-left: 350px solid rgba(0, 0, 50, 0.5); }
   .slant2 {
     position: relative;
     width: 100%;
@@ -2979,14 +3006,21 @@ input[type="button"].btn-block {
     margin-bottom: 0px;
     top: 0px; }
   .slant {
-    position: absolute;
-    width: 350px;
-    height: 575px;
-    margin-top: 0px;
-    left: -55px;
-    background-color: rgba(0, 0, 50, 0.5);
-    transform: rotate(0) scale(3.5) skewX(-40.75deg) translate(-40px);
-    margin-bottom: 0px; }
+    top: 0px;
+    position: relative;
+    background-color: rgba(60, 0, 0, 0.3); }
+    .slant:before {
+      content: "";
+      position: absolute;
+      width: 30%;
+      height: 575px;
+      background-color: rgba(0, 0, 50, 0.5); }
+    .slant:after {
+      left: 30%;
+      content: "";
+      position: absolute;
+      border-bottom: 575px solid transparent;
+      border-left: 350px solid rgba(0, 0, 50, 0.5); }
   .slant2 {
     position: relative;
     width: 100%;
