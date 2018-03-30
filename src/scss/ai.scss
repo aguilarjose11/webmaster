@@ -25,16 +25,28 @@ body
 {
     background-color: $bg-color;
 }
-
+.buttonColor{
+    color: rgba(160, 207, 255, 0.9)
+}
+#cardBoxP{
+  padding-top: 0px;
+  margin-left: 50px;
+  margin-right: 50px;
+  text-align: center;
+  font-size: 25px;
+  font-family: monospace;
+  padding-left: 50px;
+  padding-right: 50px;
+}
 // map for adding theme colors, changing colors
 $theme-colors:
 (
-  "mdj2": rgba(160, 207, 255, 0.9)
-  "navColor": color: rgba(255, 255, 255, 0.9)
+  "mdj2": rgba(255, 255, 255, 0.9)
+
 );
 
-#navColor{
-  color: rgba(255, 255, 255, 0.9)
+#tealColor{
+  color: rgba(160, 207, 255, 0.9)
 }
 
 .footer{

@@ -7,8 +7,8 @@ body {
 body {
   background-color: #f2f2f2; }
 
-#navColor {
-  color: rgba(255, 255, 255, 0.9); }
+#tealColor {
+  color: rgba(160, 207, 255, 0.9); }
 
 h1 {
   text-shadow: 4px 4px 10px grey;
@@ -87,6 +87,25 @@ h1 {
   width: 475px;
   height: 150px;
   background-color: rgba(0, 0, 0, 0.5); }
+
+.footer {
+  width: 100%;
+  background-color: #222;
+  padding: 50px 30px; }
+
+.footNav {
+  font-family: monospace;
+  font-weight: 400;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  list-style-type: none; }
+
+#footA {
+  color: white; }
+
+li {
+  padding-top: 10px; }
 
 /* Imports */
 .align-baseline {
@@ -172,12 +191,12 @@ button.bg-dark:focus {
   background-color: #1d2124 !important; }
 
 .bg-mdj2 {
-  background-color: rgba(160, 207, 255, 0.9) !important; }
+  background-color: rgba(255, 255, 255, 0.9) !important; }
 
 a.bg-mdj2:hover, a.bg-mdj2:focus,
 button.bg-mdj2:hover,
 button.bg-mdj2:focus {
-  background-color: rgba(109, 181, 255, 0.9) !important; }
+  background-color: rgba(230, 230, 230, 0.9) !important; }
 
 .bg-white {
   background-color: #fff !important; }
@@ -240,7 +259,7 @@ button.bg-mdj2:focus {
   border-color: #343a40 !important; }
 
 .border-mdj2 {
-  border-color: rgba(160, 207, 255, 0.9) !important; }
+  border-color: rgba(255, 255, 255, 0.9) !important; }
 
 .border-white {
   border-color: #fff !important; }
@@ -1997,10 +2016,10 @@ a.text-dark:hover, a.text-dark:focus {
   color: #1d2124 !important; }
 
 .text-mdj2 {
-  color: rgba(160, 207, 255, 0.9) !important; }
+  color: rgba(255, 255, 255, 0.9) !important; }
 
 a.text-mdj2:hover, a.text-mdj2:focus {
-  color: rgba(109, 181, 255, 0.9) !important; }
+  color: rgba(230, 230, 230, 0.9) !important; }
 
 .text-muted {
   color: #6c757d !important; }
@@ -2233,26 +2252,26 @@ fieldset:disabled a.btn {
 
 .btn-mdj2 {
   color: #212529;
-  background-color: rgba(160, 207, 255, 0.9);
-  border-color: rgba(160, 207, 255, 0.9); }
+  background-color: rgba(255, 255, 255, 0.9);
+  border-color: rgba(255, 255, 255, 0.9); }
   .btn-mdj2:hover {
     color: #212529;
-    background-color: rgba(122, 188, 255, 0.9);
-    border-color: rgba(109, 181, 255, 0.9); }
+    background-color: rgba(236, 236, 236, 0.9);
+    border-color: rgba(230, 230, 230, 0.9); }
   .btn-mdj2:focus, .btn-mdj2.focus {
-    box-shadow: 0 0 0 0.2rem rgba(160, 207, 255, 0.5); }
+    box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5); }
   .btn-mdj2.disabled, .btn-mdj2:disabled {
     color: #212529;
-    background-color: rgba(160, 207, 255, 0.9);
-    border-color: rgba(160, 207, 255, 0.9); }
+    background-color: rgba(255, 255, 255, 0.9);
+    border-color: rgba(255, 255, 255, 0.9); }
   .btn-mdj2:not(:disabled):not(.disabled):active, .btn-mdj2:not(:disabled):not(.disabled).active,
   .show > .btn-mdj2.dropdown-toggle {
     color: #212529;
-    background-color: rgba(109, 181, 255, 0.9);
-    border-color: rgba(96, 175, 255, 0.9); }
+    background-color: rgba(230, 230, 230, 0.9);
+    border-color: rgba(223, 223, 223, 0.9); }
     .btn-mdj2:not(:disabled):not(.disabled):active:focus, .btn-mdj2:not(:disabled):not(.disabled).active:focus,
     .show > .btn-mdj2.dropdown-toggle:focus {
-      box-shadow: 0 0 0 0.2rem rgba(160, 207, 255, 0.5); }
+      box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5); }
 
 .btn-outline-primary {
   color: #007bff;
@@ -2439,27 +2458,27 @@ fieldset:disabled a.btn {
       box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5); }
 
 .btn-outline-mdj2 {
-  color: rgba(160, 207, 255, 0.9);
+  color: rgba(255, 255, 255, 0.9);
   background-color: transparent;
   background-image: none;
-  border-color: rgba(160, 207, 255, 0.9); }
+  border-color: rgba(255, 255, 255, 0.9); }
   .btn-outline-mdj2:hover {
     color: #212529;
-    background-color: rgba(160, 207, 255, 0.9);
-    border-color: rgba(160, 207, 255, 0.9); }
+    background-color: rgba(255, 255, 255, 0.9);
+    border-color: rgba(255, 255, 255, 0.9); }
   .btn-outline-mdj2:focus, .btn-outline-mdj2.focus {
-    box-shadow: 0 0 0 0.2rem rgba(160, 207, 255, 0.5); }
+    box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5); }
   .btn-outline-mdj2.disabled, .btn-outline-mdj2:disabled {
-    color: rgba(160, 207, 255, 0.9);
+    color: rgba(255, 255, 255, 0.9);
     background-color: transparent; }
   .btn-outline-mdj2:not(:disabled):not(.disabled):active, .btn-outline-mdj2:not(:disabled):not(.disabled).active,
   .show > .btn-outline-mdj2.dropdown-toggle {
     color: #212529;
-    background-color: rgba(160, 207, 255, 0.9);
-    border-color: rgba(160, 207, 255, 0.9); }
+    background-color: rgba(255, 255, 255, 0.9);
+    border-color: rgba(255, 255, 255, 0.9); }
     .btn-outline-mdj2:not(:disabled):not(.disabled):active:focus, .btn-outline-mdj2:not(:disabled):not(.disabled).active:focus,
     .show > .btn-outline-mdj2.dropdown-toggle:focus {
-      box-shadow: 0 0 0 0.2rem rgba(160, 207, 255, 0.5); }
+      box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5); }
 
 .btn-link {
   font-weight: 400;
@@ -2626,7 +2645,7 @@ input[type="button"].btn-block {
   margin-top: 0px;
   left: -55px;
   background-color: rgba(0, 0, 50, 0.5);
-  transform: rotate(0) scale(4) skewX(-40.75deg) translate(-40px);
+  transform: rotate(0) scale(3.5) skewX(-40.75deg) translate(-40px);
   margin-bottom: 0px; }
 
 .slant2 {
@@ -2726,7 +2745,7 @@ input[type="button"].btn-block {
     margin-top: 0px;
     left: -55px;
     background-color: rgba(0, 0, 50, 0.5);
-    transform: rotate(0) scale(4) skewX(-40.75deg) translate(-40px);
+    transform: rotate(0) scale(3.5) skewX(-40.75deg) translate(-40px);
     margin-bottom: 0px; }
   .slant2 {
     position: relative;
@@ -2806,7 +2825,7 @@ input[type="button"].btn-block {
     margin-top: 0px;
     left: -55px;
     background-color: rgba(0, 0, 50, 0.5);
-    transform: rotate(0) scale(4) skewX(-40.75deg) translate(-40px);
+    transform: rotate(0) scale(3.5) skewX(-40.75deg) translate(-40px);
     margin-bottom: 0px; }
   .slant2 {
     position: relative;
@@ -2886,7 +2905,7 @@ input[type="button"].btn-block {
     margin-top: 0px;
     left: -55px;
     background-color: rgba(0, 0, 50, 0.5);
-    transform: rotate(0) scale(4) skewX(-40.75deg) translate(-40px);
+    transform: rotate(0) scale(3.5) skewX(-40.75deg) translate(-40px);
     margin-bottom: 0px; }
   .slant2 {
     position: relative;
@@ -2966,7 +2985,7 @@ input[type="button"].btn-block {
     margin-top: 0px;
     left: -55px;
     background-color: rgba(0, 0, 50, 0.5);
-    transform: rotate(0) scale(4) skewX(-40.75deg) translate(-40px);
+    transform: rotate(0) scale(3.5) skewX(-40.75deg) translate(-40px);
     margin-bottom: 0px; }
   .slant2 {
     position: relative;
