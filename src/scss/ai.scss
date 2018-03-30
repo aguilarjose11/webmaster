@@ -6,10 +6,19 @@
 
 /* Variable declaration */
 
-$bg-color: #efefef; // html body background color
+/* Variable declaration */
 
+$bg-color: rgb(242,242,242);// html body background color
 
 /* Rules.*/
+
+// color of the html body section
+body
+{
+    background-color: $bg-color;
+    font-family: "Gotham SSm 4r", "Gotham SSm A", "Gotham SSm B", Arial, sans-serif;
+}
+
 
 // color of the html body section
 body
@@ -20,7 +29,7 @@ body
 // map for adding theme colors, changing colors
 $theme-colors:
 (
-  "mdj2": rgba(160, 207, 255, 0.6)
+  "mdj2": rgba(160, 207, 255, 0.9)
 );
 
 

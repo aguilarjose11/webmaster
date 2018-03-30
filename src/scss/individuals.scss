@@ -4,12 +4,23 @@
 
 /* Variable Overrides.*/
 
-/* Variable declaration */
+//* Variable declaration */
 
-$bg-color: #efefef;// html body background color
+$bg-color: rgb(242,242,242);// html body background color
 
 /* Rules.*/
 
+// color of the html body section
+body
+{
+    background-color: $bg-color;
+}
+
+// map for adding theme colors, changing colors
+$theme-colors:
+(
+  "mdj2": rgba(160, 207, 255, 0.9)
+);
 // color of the html body section
 body
 {
@@ -50,11 +61,7 @@ h1{
 
 }
 
-// map for adding theme colors, changing colors
-$theme-colors:
-(
-  "mdj2": rgba(160, 207, 255, 0.6)
-);
+
 
 /* Imports */
 

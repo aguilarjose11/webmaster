@@ -31,13 +31,13 @@ $jumbotron-color:#698faf;
   */
 @mixin jumbotron-base($x-axis, $y-axis, $jumbotron-height)
 {
-  background-image: url("https://cdn.pixabay.com/photo/2015/10/11/11/20/banner-982162_960_720.jpg");
+  background-image: url("../assets/motherboard.jpg");
   background-attachment: absolute;
   background-repeat: no-repeat;
   background-size: cover;
   position: static;
   background-position: $x-axis $y-axis;
-  height: $jumbotron-height;
+  height: 350px;
   padding-bottom: 0px;
   padding-top: 0px;
   margin-bottom: 0px;
@@ -197,7 +197,7 @@ $jumbotron-color:#698faf;
   // jumbotron rules
   .jumbotron
   {
-    @include jumbotron-base(0px, 0px, $jumbotron-height);
+    @include jumbotron-base(0px, -130px, $jumbotron-height);
   }
 
   // slanted background over jumbotron
@@ -227,7 +227,7 @@ $jumbotron-color:#698faf;
   // jumbotron rules
   .jumbotron
   {
-    @include jumbotron-base(0px, 0px, $jumbotron-height);
+    @include jumbotron-base(0px, -150px, $jumbotron-height);
   }
 
   // slanted background over jumbotron

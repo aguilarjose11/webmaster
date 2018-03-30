@@ -1,9 +1,14 @@
 /* Here be Dragons!*/
 /* Variable Overrides.*/
 /* Variable declaration */
+/* Variable declaration */
 /* Rules.*/
 body {
-  background-color: #efefef; }
+  background-color: #f2f2f2;
+  font-family: "Gotham SSm 4r", "Gotham SSm A", "Gotham SSm B", Arial, sans-serif; }
+
+body {
+  background-color: #f2f2f2; }
 
 /* Imports */
 .align-baseline {
@@ -89,12 +94,12 @@ button.bg-dark:focus {
   background-color: #1d2124 !important; }
 
 .bg-mdj2 {
-  background-color: rgba(160, 207, 255, 0.6) !important; }
+  background-color: rgba(160, 207, 255, 0.9) !important; }
 
 a.bg-mdj2:hover, a.bg-mdj2:focus,
 button.bg-mdj2:hover,
 button.bg-mdj2:focus {
-  background-color: rgba(109, 181, 255, 0.6) !important; }
+  background-color: rgba(109, 181, 255, 0.9) !important; }
 
 .bg-white {
   background-color: #fff !important; }
@@ -157,7 +162,7 @@ button.bg-mdj2:focus {
   border-color: #343a40 !important; }
 
 .border-mdj2 {
-  border-color: rgba(160, 207, 255, 0.6) !important; }
+  border-color: rgba(160, 207, 255, 0.9) !important; }
 
 .border-white {
   border-color: #fff !important; }
@@ -1914,10 +1919,10 @@ a.text-dark:hover, a.text-dark:focus {
   color: #1d2124 !important; }
 
 .text-mdj2 {
-  color: rgba(160, 207, 255, 0.6) !important; }
+  color: rgba(160, 207, 255, 0.9) !important; }
 
 a.text-mdj2:hover, a.text-mdj2:focus {
-  color: rgba(109, 181, 255, 0.6) !important; }
+  color: rgba(109, 181, 255, 0.9) !important; }
 
 .text-muted {
   color: #6c757d !important; }
@@ -2150,23 +2155,23 @@ fieldset:disabled a.btn {
 
 .btn-mdj2 {
   color: #212529;
-  background-color: rgba(160, 207, 255, 0.6);
-  border-color: rgba(160, 207, 255, 0.6); }
+  background-color: rgba(160, 207, 255, 0.9);
+  border-color: rgba(160, 207, 255, 0.9); }
   .btn-mdj2:hover {
     color: #212529;
-    background-color: rgba(122, 188, 255, 0.6);
-    border-color: rgba(109, 181, 255, 0.6); }
+    background-color: rgba(122, 188, 255, 0.9);
+    border-color: rgba(109, 181, 255, 0.9); }
   .btn-mdj2:focus, .btn-mdj2.focus {
     box-shadow: 0 0 0 0.2rem rgba(160, 207, 255, 0.5); }
   .btn-mdj2.disabled, .btn-mdj2:disabled {
     color: #212529;
-    background-color: rgba(160, 207, 255, 0.6);
-    border-color: rgba(160, 207, 255, 0.6); }
+    background-color: rgba(160, 207, 255, 0.9);
+    border-color: rgba(160, 207, 255, 0.9); }
   .btn-mdj2:not(:disabled):not(.disabled):active, .btn-mdj2:not(:disabled):not(.disabled).active,
   .show > .btn-mdj2.dropdown-toggle {
     color: #212529;
-    background-color: rgba(109, 181, 255, 0.6);
-    border-color: rgba(96, 175, 255, 0.6); }
+    background-color: rgba(109, 181, 255, 0.9);
+    border-color: rgba(96, 175, 255, 0.9); }
     .btn-mdj2:not(:disabled):not(.disabled):active:focus, .btn-mdj2:not(:disabled):not(.disabled).active:focus,
     .show > .btn-mdj2.dropdown-toggle:focus {
       box-shadow: 0 0 0 0.2rem rgba(160, 207, 255, 0.5); }
@@ -2356,24 +2361,24 @@ fieldset:disabled a.btn {
       box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5); }
 
 .btn-outline-mdj2 {
-  color: rgba(160, 207, 255, 0.6);
+  color: rgba(160, 207, 255, 0.9);
   background-color: transparent;
   background-image: none;
-  border-color: rgba(160, 207, 255, 0.6); }
+  border-color: rgba(160, 207, 255, 0.9); }
   .btn-outline-mdj2:hover {
     color: #212529;
-    background-color: rgba(160, 207, 255, 0.6);
-    border-color: rgba(160, 207, 255, 0.6); }
+    background-color: rgba(160, 207, 255, 0.9);
+    border-color: rgba(160, 207, 255, 0.9); }
   .btn-outline-mdj2:focus, .btn-outline-mdj2.focus {
     box-shadow: 0 0 0 0.2rem rgba(160, 207, 255, 0.5); }
   .btn-outline-mdj2.disabled, .btn-outline-mdj2:disabled {
-    color: rgba(160, 207, 255, 0.6);
+    color: rgba(160, 207, 255, 0.9);
     background-color: transparent; }
   .btn-outline-mdj2:not(:disabled):not(.disabled):active, .btn-outline-mdj2:not(:disabled):not(.disabled).active,
   .show > .btn-outline-mdj2.dropdown-toggle {
     color: #212529;
-    background-color: rgba(160, 207, 255, 0.6);
-    border-color: rgba(160, 207, 255, 0.6); }
+    background-color: rgba(160, 207, 255, 0.9);
+    border-color: rgba(160, 207, 255, 0.9); }
     .btn-outline-mdj2:not(:disabled):not(.disabled):active:focus, .btn-outline-mdj2:not(:disabled):not(.disabled).active:focus,
     .show > .btn-outline-mdj2.dropdown-toggle:focus {
       box-shadow: 0 0 0 0.2rem rgba(160, 207, 255, 0.5); }
@@ -2468,13 +2473,13 @@ input[type="button"].btn-block {
   * Set up for displays LESS THAN: 576px (*exclusive*).
   **/
 .jumbotron {
-  background-image: url("https://cdn.pixabay.com/photo/2015/10/11/11/20/banner-982162_960_720.jpg");
+  background-image: url("../assets/motherboard.jpg");
   background-attachment: absolute;
   background-repeat: no-repeat;
   background-size: cover;
   position: static;
   background-position: -450px 0px;
-  height: 150px;
+  height: 350px;
   padding-bottom: 0px;
   padding-top: 0px;
   margin-bottom: 0px; }
@@ -2503,13 +2508,13 @@ input[type="button"].btn-block {
   **/
 @media (min-width: 576px) {
   .jumbotron {
-    background-image: url("https://cdn.pixabay.com/photo/2015/10/11/11/20/banner-982162_960_720.jpg");
+    background-image: url("../assets/motherboard.jpg");
     background-attachment: absolute;
     background-repeat: no-repeat;
     background-size: cover;
     position: static;
     background-position: -250px 0px;
-    height: 150px;
+    height: 350px;
     padding-bottom: 0px;
     padding-top: 0px;
     margin-bottom: 0px; }
@@ -2535,13 +2540,13 @@ input[type="button"].btn-block {
   **/
 @media (min-width: 768px) {
   .jumbotron {
-    background-image: url("https://cdn.pixabay.com/photo/2015/10/11/11/20/banner-982162_960_720.jpg");
+    background-image: url("../assets/motherboard.jpg");
     background-attachment: absolute;
     background-repeat: no-repeat;
     background-size: cover;
     position: static;
     background-position: -150px 0px;
-    height: 100%;
+    height: 350px;
     padding-bottom: 0px;
     padding-top: 0px;
     margin-bottom: 0px; }
@@ -2567,13 +2572,13 @@ input[type="button"].btn-block {
   **/
 @media (min-width: 992px) {
   .jumbotron {
-    background-image: url("https://cdn.pixabay.com/photo/2015/10/11/11/20/banner-982162_960_720.jpg");
+    background-image: url("../assets/motherboard.jpg");
     background-attachment: absolute;
     background-repeat: no-repeat;
     background-size: cover;
     position: static;
-    background-position: 0px 0px;
-    height: 100%;
+    background-position: 0px -130px;
+    height: 350px;
     padding-bottom: 0px;
     padding-top: 0px;
     margin-bottom: 0px; }
@@ -2599,13 +2604,13 @@ input[type="button"].btn-block {
   **/
 @media (min-width: 1200px) {
   .jumbotron {
-    background-image: url("https://cdn.pixabay.com/photo/2015/10/11/11/20/banner-982162_960_720.jpg");
+    background-image: url("../assets/motherboard.jpg");
     background-attachment: absolute;
     background-repeat: no-repeat;
     background-size: cover;
     position: static;
-    background-position: 0px 0px;
-    height: 100%;
+    background-position: 0px -150px;
+    height: 350px;
     padding-bottom: 0px;
     padding-top: 0px;
     margin-bottom: 0px; }

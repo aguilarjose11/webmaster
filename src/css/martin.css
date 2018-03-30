@@ -1,9 +1,11 @@
 /* Here be Dragons!*/
 /* Variable Overrides.*/
-/* Variable declaration */
 /* Rules.*/
 body {
-  background-color: #efefef; }
+  background-color: #f2f2f2; }
+
+body {
+  background-color: #f2f2f2; }
 
 h1 {
   text-shadow: 4px 4px 10px grey;
@@ -161,12 +163,12 @@ button.bg-dark:focus {
   background-color: #1d2124 !important; }
 
 .bg-mdj2 {
-  background-color: rgba(160, 207, 255, 0.6) !important; }
+  background-color: rgba(160, 207, 255, 0.9) !important; }
 
 a.bg-mdj2:hover, a.bg-mdj2:focus,
 button.bg-mdj2:hover,
 button.bg-mdj2:focus {
-  background-color: rgba(109, 181, 255, 0.6) !important; }
+  background-color: rgba(109, 181, 255, 0.9) !important; }
 
 .bg-white {
   background-color: #fff !important; }
@@ -229,7 +231,7 @@ button.bg-mdj2:focus {
   border-color: #343a40 !important; }
 
 .border-mdj2 {
-  border-color: rgba(160, 207, 255, 0.6) !important; }
+  border-color: rgba(160, 207, 255, 0.9) !important; }
 
 .border-white {
   border-color: #fff !important; }
@@ -1986,10 +1988,10 @@ a.text-dark:hover, a.text-dark:focus {
   color: #1d2124 !important; }
 
 .text-mdj2 {
-  color: rgba(160, 207, 255, 0.6) !important; }
+  color: rgba(160, 207, 255, 0.9) !important; }
 
 a.text-mdj2:hover, a.text-mdj2:focus {
-  color: rgba(109, 181, 255, 0.6) !important; }
+  color: rgba(109, 181, 255, 0.9) !important; }
 
 .text-muted {
   color: #6c757d !important; }
@@ -2222,23 +2224,23 @@ fieldset:disabled a.btn {
 
 .btn-mdj2 {
   color: #212529;
-  background-color: rgba(160, 207, 255, 0.6);
-  border-color: rgba(160, 207, 255, 0.6); }
+  background-color: rgba(160, 207, 255, 0.9);
+  border-color: rgba(160, 207, 255, 0.9); }
   .btn-mdj2:hover {
     color: #212529;
-    background-color: rgba(122, 188, 255, 0.6);
-    border-color: rgba(109, 181, 255, 0.6); }
+    background-color: rgba(122, 188, 255, 0.9);
+    border-color: rgba(109, 181, 255, 0.9); }
   .btn-mdj2:focus, .btn-mdj2.focus {
     box-shadow: 0 0 0 0.2rem rgba(160, 207, 255, 0.5); }
   .btn-mdj2.disabled, .btn-mdj2:disabled {
     color: #212529;
-    background-color: rgba(160, 207, 255, 0.6);
-    border-color: rgba(160, 207, 255, 0.6); }
+    background-color: rgba(160, 207, 255, 0.9);
+    border-color: rgba(160, 207, 255, 0.9); }
   .btn-mdj2:not(:disabled):not(.disabled):active, .btn-mdj2:not(:disabled):not(.disabled).active,
   .show > .btn-mdj2.dropdown-toggle {
     color: #212529;
-    background-color: rgba(109, 181, 255, 0.6);
-    border-color: rgba(96, 175, 255, 0.6); }
+    background-color: rgba(109, 181, 255, 0.9);
+    border-color: rgba(96, 175, 255, 0.9); }
     .btn-mdj2:not(:disabled):not(.disabled):active:focus, .btn-mdj2:not(:disabled):not(.disabled).active:focus,
     .show > .btn-mdj2.dropdown-toggle:focus {
       box-shadow: 0 0 0 0.2rem rgba(160, 207, 255, 0.5); }
@@ -2428,24 +2430,24 @@ fieldset:disabled a.btn {
       box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5); }
 
 .btn-outline-mdj2 {
-  color: rgba(160, 207, 255, 0.6);
+  color: rgba(160, 207, 255, 0.9);
   background-color: transparent;
   background-image: none;
-  border-color: rgba(160, 207, 255, 0.6); }
+  border-color: rgba(160, 207, 255, 0.9); }
   .btn-outline-mdj2:hover {
     color: #212529;
-    background-color: rgba(160, 207, 255, 0.6);
-    border-color: rgba(160, 207, 255, 0.6); }
+    background-color: rgba(160, 207, 255, 0.9);
+    border-color: rgba(160, 207, 255, 0.9); }
   .btn-outline-mdj2:focus, .btn-outline-mdj2.focus {
     box-shadow: 0 0 0 0.2rem rgba(160, 207, 255, 0.5); }
   .btn-outline-mdj2.disabled, .btn-outline-mdj2:disabled {
-    color: rgba(160, 207, 255, 0.6);
+    color: rgba(160, 207, 255, 0.9);
     background-color: transparent; }
   .btn-outline-mdj2:not(:disabled):not(.disabled):active, .btn-outline-mdj2:not(:disabled):not(.disabled).active,
   .show > .btn-outline-mdj2.dropdown-toggle {
     color: #212529;
-    background-color: rgba(160, 207, 255, 0.6);
-    border-color: rgba(160, 207, 255, 0.6); }
+    background-color: rgba(160, 207, 255, 0.9);
+    border-color: rgba(160, 207, 255, 0.9); }
     .btn-outline-mdj2:not(:disabled):not(.disabled):active:focus, .btn-outline-mdj2:not(:disabled):not(.disabled).active:focus,
     .show > .btn-outline-mdj2.dropdown-toggle:focus {
       box-shadow: 0 0 0 0.2rem rgba(160, 207, 255, 0.5); }
@@ -2567,15 +2569,18 @@ input[type="button"].btn-block {
   *   - $height: y position of the text on jumbotron.
   */
 /**
+  *
+  */
+/**
 * Set up for displays LESS THAN: 576px (*exclusive*).
 **/
 .jumbotron1 {
-  background-image: url("../assets/MARTIN.svg");
+  background-image: url("../assets/teamwork.jpg");
   background-attachment: absolute;
   background-repeat: no-repeat;
   background-size: 1450px;
   position: relative;
-  background-position: -330px 150px;
+  background-position: -300px 0px;
   height: 575px;
   padding-bottom: 0px;
   padding-top: 0px;
@@ -2597,12 +2602,12 @@ input[type="button"].btn-block {
 
 .slant {
   position: absolute;
-  width: 1750px;
+  width: 350px;
   height: 575px;
   margin-top: 0px;
-  left: -1040px;
+  left: -55px;
   background-color: rgba(0, 0, 50, 0.5);
-  transform: rotate(0) scale(1) skewX(-65.75deg) translate(0);
+  transform: rotate(0) scale(4) skewX(-40.75deg) translate(-40px);
   margin-bottom: 0px; }
 
 .slant2 {
@@ -2614,12 +2619,21 @@ input[type="button"].btn-block {
   z-index: 40; }
 
 .slant3 {
-  position: absolute;
-  width: 0;
-  height: 0;
-  border-top: 575px solid rgba(0, 0, 50, 0.5);
-  border-left: 900px solid transparent;
-  left: 400px; }
+  content: "";
+  position: relative;
+  width: 600px;
+  height: 605px;
+  background-color: rgba(0, 0, 50, 0.5);
+  float: right;
+  clear: bottom; }
+  .slant3:before {
+    right: 600px;
+    position: absolute;
+    content: "";
+    width: 0px;
+    height: 0px;
+    border-top: 500px solid rgba(0, 0, 50, 0.5);
+    border-left: 500px solid transparent; }
 
 .slant-text {
   background-color: transparent;
@@ -2639,17 +2653,25 @@ input[type="button"].btn-block {
   width: 120%;
   height: 300px; }
 
+.ai-power {
+  padding: 0;
+  background-image: url("../assets/chip.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0px -70px;
+  overflow: hidden; }
+
 /**
 * Set up for displays RANGING: 576px -> 768px (*exclusive*).
 **/
 @media (min-width: 576px) {
   .jumbotron1 {
-    background-image: url("../assets/MARTIN.svg");
+    background-image: url("../assets/teamwork.jpg");
     background-attachment: absolute;
     background-repeat: no-repeat;
     background-size: 1450px;
     position: relative;
-    background-position: -30px 150px;
+    background-position: 0 0;
     height: 575px;
     padding-bottom: 0px;
     padding-top: 0px;
@@ -2669,12 +2691,12 @@ input[type="button"].btn-block {
     top: 0px; }
   .slant {
     position: absolute;
-    width: 1750px;
+    width: 350px;
     height: 575px;
     margin-top: 0px;
-    left: -1040px;
+    left: -55px;
     background-color: rgba(0, 0, 50, 0.5);
-    transform: rotate(0) scale(1) skewX(-65.75deg) translate(0);
+    transform: rotate(0) scale(4) skewX(-40.75deg) translate(-40px);
     margin-bottom: 0px; }
   .slant2 {
     position: relative;
@@ -2684,12 +2706,21 @@ input[type="button"].btn-block {
     transform: rotate(0) scale(1) skewX(0deg) translate(0);
     z-index: 40; }
   .slant3 {
-    position: absolute;
-    width: 0;
-    height: 0;
-    border-top: 575px solid rgba(0, 0, 50, 0.5);
-    border-left: 900px solid transparent;
-    left: 400px; }
+    content: "";
+    position: relative;
+    width: 600px;
+    height: 605px;
+    background-color: rgba(0, 0, 50, 0.5);
+    float: right;
+    clear: bottom; }
+    .slant3:before {
+      right: 600px;
+      position: absolute;
+      content: "";
+      width: 0px;
+      height: 0px;
+      border-top: 500px solid rgba(0, 0, 50, 0.5);
+      border-left: 500px solid transparent; }
   .slant-text {
     background-color: transparent;
     border-color: transparent;
@@ -2705,12 +2736,12 @@ input[type="button"].btn-block {
 **/
 @media (min-width: 768px) {
   .jumbotron1 {
-    background-image: url("../assets/MARTIN.svg");
+    background-image: url("../assets/teamwork.jpg");
     background-attachment: absolute;
     background-repeat: no-repeat;
     background-size: 1450px;
     position: relative;
-    background-position: -30px 150px;
+    background-position: 0 0;
     height: 575px;
     padding-bottom: 0px;
     padding-top: 0px;
@@ -2730,12 +2761,12 @@ input[type="button"].btn-block {
     top: 0px; }
   .slant {
     position: absolute;
-    width: 1750px;
+    width: 350px;
     height: 575px;
     margin-top: 0px;
-    left: -1040px;
+    left: -55px;
     background-color: rgba(0, 0, 50, 0.5);
-    transform: rotate(0) scale(1) skewX(-65.75deg) translate(0);
+    transform: rotate(0) scale(4) skewX(-40.75deg) translate(-40px);
     margin-bottom: 0px; }
   .slant2 {
     position: relative;
@@ -2745,12 +2776,21 @@ input[type="button"].btn-block {
     transform: rotate(0) scale(1) skewX(0deg) translate(0);
     z-index: 40; }
   .slant3 {
-    position: absolute;
-    width: 0;
-    height: 0;
-    border-top: 575px solid rgba(0, 0, 50, 0.5);
-    border-left: 900px solid transparent;
-    left: 400px; }
+    content: "";
+    position: relative;
+    width: 600px;
+    height: 605px;
+    background-color: rgba(0, 0, 50, 0.5);
+    float: right;
+    clear: bottom; }
+    .slant3:before {
+      right: 600px;
+      position: absolute;
+      content: "";
+      width: 0px;
+      height: 0px;
+      border-top: 500px solid rgba(0, 0, 50, 0.5);
+      border-left: 500px solid transparent; }
   .slant-text {
     background-color: transparent;
     border-color: transparent;
@@ -2766,12 +2806,12 @@ input[type="button"].btn-block {
 **/
 @media (min-width: 992px) {
   .jumbotron1 {
-    background-image: url("../assets/MARTIN.svg");
+    background-image: url("../assets/teamwork.jpg");
     background-attachment: absolute;
     background-repeat: no-repeat;
     background-size: 1450px;
     position: relative;
-    background-position: -30px 150px;
+    background-position: 0 0;
     height: 575px;
     padding-bottom: 0px;
     padding-top: 0px;
@@ -2791,12 +2831,12 @@ input[type="button"].btn-block {
     top: 0px; }
   .slant {
     position: absolute;
-    width: 1750px;
+    width: 350px;
     height: 575px;
     margin-top: 0px;
-    left: -1040px;
+    left: -55px;
     background-color: rgba(0, 0, 50, 0.5);
-    transform: rotate(0) scale(1) skewX(-65.75deg) translate(0);
+    transform: rotate(0) scale(4) skewX(-40.75deg) translate(-40px);
     margin-bottom: 0px; }
   .slant2 {
     position: relative;
@@ -2806,12 +2846,21 @@ input[type="button"].btn-block {
     transform: rotate(0) scale(1) skewX(0deg) translate(0);
     z-index: 40; }
   .slant3 {
-    position: absolute;
-    width: 0;
-    height: 0;
-    border-top: 575px solid rgba(0, 0, 50, 0.5);
-    border-left: 900px solid transparent;
-    left: 400px; }
+    content: "";
+    position: relative;
+    width: 600px;
+    height: 605px;
+    background-color: rgba(0, 0, 50, 0.5);
+    float: right;
+    clear: bottom; }
+    .slant3:before {
+      right: 600px;
+      position: absolute;
+      content: "";
+      width: 0px;
+      height: 0px;
+      border-top: 500px solid rgba(0, 0, 50, 0.5);
+      border-left: 500px solid transparent; }
   .slant-text {
     background-color: transparent;
     border-color: transparent;
@@ -2827,12 +2876,12 @@ input[type="button"].btn-block {
 **/
 @media (min-width: 1200px) {
   .jumbotron1 {
-    background-image: url("../assets/MARTIN.svg");
+    background-image: url("../assets/teamwork.jpg");
     background-attachment: absolute;
     background-repeat: no-repeat;
     background-size: 1450px;
     position: relative;
-    background-position: -30px 150px;
+    background-position: 0 0;
     height: 575px;
     padding-bottom: 0px;
     padding-top: 0px;
@@ -2852,12 +2901,12 @@ input[type="button"].btn-block {
     top: 0px; }
   .slant {
     position: absolute;
-    width: 1750px;
+    width: 350px;
     height: 575px;
     margin-top: 0px;
-    left: -1040px;
+    left: -55px;
     background-color: rgba(0, 0, 50, 0.5);
-    transform: rotate(0) scale(1) skewX(-65.75deg) translate(0);
+    transform: rotate(0) scale(4) skewX(-40.75deg) translate(-40px);
     margin-bottom: 0px; }
   .slant2 {
     position: relative;
@@ -2867,12 +2916,21 @@ input[type="button"].btn-block {
     transform: rotate(0) scale(1) skewX(0deg) translate(0);
     z-index: 40; }
   .slant3 {
-    position: absolute;
-    width: 0;
-    height: 0;
-    border-top: 575px solid rgba(0, 0, 50, 0.5);
-    border-left: 900px solid transparent;
-    left: 400px; }
+    content: "";
+    position: relative;
+    width: 600px;
+    height: 605px;
+    background-color: rgba(0, 0, 50, 0.5);
+    float: right;
+    clear: bottom; }
+    .slant3:before {
+      right: 600px;
+      position: absolute;
+      content: "";
+      width: 0px;
+      height: 0px;
+      border-top: 500px solid rgba(0, 0, 50, 0.5);
+      border-left: 500px solid transparent; }
   .slant-text {
     background-color: transparent;
     border-color: transparent;

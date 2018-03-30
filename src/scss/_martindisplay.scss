@@ -30,12 +30,12 @@ $jumbotron-height: 575px;
   */
 @mixin jumbotron-base($x-axis, $y-axis)
 {
-  background-image: url("../assets/MARTIN.svg");
+  background-image: url("../assets/teamwork.jpg");
   background-attachment: absolute;
   background-repeat: no-repeat;
   background-size: 1450px;
   position: relative;
-  background-position: ($x-axis - 30px) ($y-axis + 150px);
+  background-position: ($x-axis ) ($y-axis);
   height: $jumbotron-height;
   padding-bottom: 0px;
   padding-top: 0px;
@@ -80,13 +80,13 @@ $jumbotron-height: 575px;
 @mixin slant-shade($width, $x-axis)
 {
   position: absolute;
-  width: $width + 1400px;
+  width: $width;
   height: $jumbotron-height;
   margin-top: 0px;
   //top: 56px;
-  left: $x-axis - 985px;
+  left: $x-axis ;
   background-color: rgba(0,0,50,.5);
-  transform: rotate(0) scale(1) skewX(-65.75deg) translate(0);
+  transform: rotate(0) scale(4) skewX(-40.75deg) translate(-40px);
   margin-bottom: 0px;
 }
 
@@ -119,12 +119,27 @@ $jumbotron-height: 575px;
 */
 @mixin slant-shade3($width, $x-axis)
 {
-    position: absolute;
-    width: 0;
-    height: 0;
-    border-top: 575px solid rgba(0,0,50,.5);
-    border-left: 900px solid transparent;
-    left: 400px;
+    // variables
+    $size-shade: 600px;
+    //rules
+    content: "";
+    position: relative;
+    width: $size-shade;
+    height: 605px;
+    background-color: rgba(0,0,50,.5);
+    float: right;
+    clear: bottom;
+
+    &:before
+    {
+      right:$size-shade;
+      position: absolute;
+      content: "";
+      width: 0px;
+      height: 0px;
+      border-top: 500px solid rgba(0,0,50,.5);
+      border-left: 500px solid transparent;
+    }
 }
 
 /** slant-text mixin
@@ -173,7 +188,18 @@ border-bottom:0px;
   }
 
 
-
+/**
+  *
+  */
+  @mixin ai-power()
+  {
+    padding: 0;
+    background-image: url("../assets/chip.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0px -70px;
+    overflow:hidden;
+  }
 
 
 
@@ -218,6 +244,11 @@ border-bottom:0px;
   .presentation-img
   {
     @include presentation-img(0px, 0px, 120%, 300px);
+  }
+  .ai-power
+  {
+    @include ai-power();
+
   }
 }
 
