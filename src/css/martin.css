@@ -34,6 +34,12 @@ h1 {
   -webkit-transform: scaleX(2);
   -moz-transform: scaleX(2); }
 
+#gold {
+  color: #f7e667; }
+
+#rose {
+  color: #ea9677; }
+
 .cropper {
   width: 200px;
   overflow: hidden;
@@ -2560,6 +2566,16 @@ input[type="button"].btn-block {
   */
 /** slant-text mixin
   *
+  * this mixin takes care of the slant-shade text size and other
+  * propereties.
+  *
+  * variables:
+  *   - $text-box: width of the text box.
+  *   - $text-box-x: x position of the text on jumbotron.
+  *   - $text-box-y: y position of the text on jumbotron.
+  */
+/** slant-text mixin
+  *
   * this mixin allows the manipulation of the presentation image
   * of the presentation textbox in the Martin's presentation website
   *
@@ -2645,6 +2661,17 @@ input[type="button"].btn-block {
   color: #e1e1e1;
   border-bottom: 0px; }
 
+.slant-text2 {
+  background-color: transparent;
+  border-color: transparent;
+  width: 700px;
+  height: 775px;
+  padding-left: 0px;
+  padding-top: 55px;
+  color: #e1e1e1;
+  border-bottom: 0px;
+  left: 620px; }
+
 .presentation-img {
   background-image: url("https://images.unsplash.com/photo-1516110833967-0b5716ca1387");
   background-position: 0px 0px;
@@ -2729,7 +2756,17 @@ input[type="button"].btn-block {
     padding-left: 0px;
     padding-top: 25px;
     color: #e1e1e1;
-    border-bottom: 0px; } }
+    border-bottom: 0px; }
+  .slant-text2 {
+    background-color: transparent;
+    border-color: transparent;
+    width: 700px;
+    height: 775px;
+    padding-left: 0px;
+    padding-top: 55px;
+    color: #e1e1e1;
+    border-bottom: 0px;
+    left: 620px; } }
 
 /**
 * Set up for displays RANGING: 768px -> 992px (*exclusive*).
@@ -2799,7 +2836,17 @@ input[type="button"].btn-block {
     padding-left: 0px;
     padding-top: 25px;
     color: #e1e1e1;
-    border-bottom: 0px; } }
+    border-bottom: 0px; }
+  .slant-text2 {
+    background-color: transparent;
+    border-color: transparent;
+    width: 700px;
+    height: 775px;
+    padding-left: 0px;
+    padding-top: 55px;
+    color: #e1e1e1;
+    border-bottom: 0px;
+    left: 620px; } }
 
 /**
 * Set up for displays RANGING: 992px -> 1200px (*exclusive*).
@@ -2869,7 +2916,17 @@ input[type="button"].btn-block {
     padding-left: 0px;
     padding-top: 25px;
     color: #e1e1e1;
-    border-bottom: 0px; } }
+    border-bottom: 0px; }
+  .slant-text2 {
+    background-color: transparent;
+    border-color: transparent;
+    width: 700px;
+    height: 775px;
+    padding-left: 0px;
+    padding-top: 55px;
+    color: #e1e1e1;
+    border-bottom: 0px;
+    left: 620px; } }
 
 /**
 * Set up for displays GREATER THAN: 1200px.
@@ -2939,4 +2996,14 @@ input[type="button"].btn-block {
     padding-left: 0px;
     padding-top: 25px;
     color: #e1e1e1;
-    border-bottom: 0px; } }
+    border-bottom: 0px; }
+  .slant-text2 {
+    background-color: transparent;
+    border-color: transparent;
+    width: 700px;
+    height: 775px;
+    padding-left: 0px;
+    padding-top: 55px;
+    color: #e1e1e1;
+    border-bottom: 0px;
+    left: 620px; } }

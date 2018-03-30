@@ -168,6 +168,31 @@ border-bottom:0px;
 
 /** slant-text mixin
   *
+  * this mixin takes care of the slant-shade text size and other
+  * propereties.
+  *
+  * variables:
+  *   - $text-box: width of the text box.
+  *   - $text-box-x: x position of the text on jumbotron.
+  *   - $text-box-y: y position of the text on jumbotron.
+  */
+
+@mixin slant-text2($text-box, $text-box-x, $text-box-y)
+{
+  background-color: rgba(0,0,0,0);
+  border-color: rgba(0,0,0,0);
+  width: $text-box + 400px;
+  height: $jumbotron-height + 200px;
+  padding-left: $text-box-x;//30px;
+  padding-top: $text-box-y + 30px;//85px;
+  color: rgb(225,225,225);
+  border-bottom:0px;
+  left: 620px;
+
+}
+
+/** slant-text mixin
+  *
   * this mixin allows the manipulation of the presentation image
   * of the presentation textbox in the Martin's presentation website
   *
@@ -240,6 +265,10 @@ border-bottom:0px;
     @include slant-text(300px, 0px, 25px);
   }
 
+  .slant-text2
+  {
+    @include slant-text2(300px, 0px, 25px);
+  }
   // image of the Martin's introduction side picture.
   .presentation-img
   {
@@ -285,7 +314,10 @@ border-bottom:0px;
   {
     @include slant-text(370px, 0px, 25px);
   }
-
+  .slant-text2
+  {
+    @include slant-text2(300px, 0px, 25px);
+  }
   // image of the Martin's introduction side picture.
   .presentation-img
   {
@@ -324,7 +356,10 @@ border-bottom:0px;
   {
     @include slant-text(370px, 0px, 25px);
   }
-
+  .slant-text2
+  {
+    @include slant-text2(300px, 0px, 25px);
+  }
   // image of the Martin's introduction side picture.
   .presentation-img
   {
@@ -363,7 +398,10 @@ border-bottom:0px;
   {
     @include slant-text(300px, 0px, 25px);
   }
-
+  .slant-text2
+  {
+    @include slant-text2(300px, 0px, 25px);
+  }
   // image of the Martin's introduction side picture.
   .presentation-img
   {
@@ -402,7 +440,10 @@ border-bottom:0px;
   {
     @include slant-text(300px, 0px, 25px);
   }
-
+  .slant-text2
+  {
+    @include slant-text2(300px, 0px, 25px);
+  }
   // image of the Martin's introduction side picture.
   .presentation-img
   {
