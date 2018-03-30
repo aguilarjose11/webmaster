@@ -24,7 +24,9 @@ $theme-colors:
 (
   "mdj2": rgba(160, 207, 255, 0.9)
 );
-
+#navColor{
+  color: rgba(255, 255, 255, 0.9)
+}
 // Makes the words in h1 stand out a bit more with shadow and bolding.
 h1{
   text-shadow: 2px 2px 10px grey;

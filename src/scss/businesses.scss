@@ -30,7 +30,9 @@ $theme-colors:
 (
   "mdj2": rgba(160, 207, 255, 0.9)
 );
-
+#navColor{
+  color: rgba(255, 255, 255, 0.9)
+}
 //Adjust header title to fit below navBar
 #headerTitle{
   padding-top: 15%
