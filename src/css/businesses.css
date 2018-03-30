@@ -11,6 +11,9 @@ body {
 #tealColor {
   color: rgba(160, 207, 255, 0.9); }
 
+#gold {
+  color: #4169ba; }
+
 #headerTitle {
   padding-top: 15%; }
 
@@ -2534,6 +2537,23 @@ input[type="button"].btn-block {
     border-bottom: 525px solid transparent;
     border-left: 67.1vw solid rgba(0, 0, 0, 0.4); }
 
+.slant3 {
+  content: "";
+  position: relative;
+  width: 600px;
+  height: 605px;
+  background-color: rgba(0, 0, 50, 0.5);
+  float: right;
+  clear: bottom; }
+  .slant3:before {
+    right: 600px;
+    position: absolute;
+    content: "";
+    width: 0px;
+    height: 0px;
+    border-top: 500px solid rgba(0, 0, 50, 0.5);
+    border-left: 500px solid transparent; }
+
 .slant-text {
   background-color: transparent;
   border-color: transparent;
@@ -2542,6 +2562,14 @@ input[type="button"].btn-block {
   padding-left: 0px;
   padding-top: 95px;
   color: #e1e1e1; }
+
+.ai-power {
+  padding: 0;
+  background-image: url("../assets/family.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0px -70px;
+  overflow: hidden; }
 
 /**
   * Set up for displays RANGING: 576px -> 768px (*exclusive*).
@@ -2579,6 +2607,22 @@ input[type="button"].btn-block {
       position: absolute;
       border-bottom: 525px solid transparent;
       border-left: 68vw solid rgba(0, 0, 0, 0.4); }
+  .slant3 {
+    content: "";
+    position: relative;
+    width: 600px;
+    height: 605px;
+    background-color: rgba(0, 0, 50, 0.5);
+    float: right;
+    clear: bottom; }
+    .slant3:before {
+      right: 600px;
+      position: absolute;
+      content: "";
+      width: 0px;
+      height: 0px;
+      border-top: 500px solid rgba(0, 0, 50, 0.5);
+      border-left: 500px solid transparent; }
   .slant-text {
     background-color: transparent;
     border-color: transparent;
@@ -2586,7 +2630,14 @@ input[type="button"].btn-block {
     height: 575px;
     padding-left: 0px;
     padding-top: 95px;
-    color: #e1e1e1; } }
+    color: #e1e1e1; }
+  .ai-power {
+    padding: 0;
+    background-image: url("../assets/family.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0px -70px;
+    overflow: hidden; } }
 
 /**
   * Set up for displays RANGING: 768px -> 992px (*exclusive*).
@@ -2624,6 +2675,22 @@ input[type="button"].btn-block {
       position: absolute;
       border-bottom: 525px solid transparent;
       border-left: 68.4vw solid rgba(0, 0, 0, 0.4); }
+  .slant3 {
+    content: "";
+    position: relative;
+    width: 600px;
+    height: 605px;
+    background-color: rgba(0, 0, 50, 0.5);
+    float: right;
+    clear: bottom; }
+    .slant3:before {
+      right: 600px;
+      position: absolute;
+      content: "";
+      width: 0px;
+      height: 0px;
+      border-top: 500px solid rgba(0, 0, 50, 0.5);
+      border-left: 500px solid transparent; }
   .slant-text {
     background-color: transparent;
     border-color: transparent;
@@ -2631,7 +2698,14 @@ input[type="button"].btn-block {
     height: 575px;
     padding-left: 0px;
     padding-top: 95px;
-    color: #e1e1e1; } }
+    color: #e1e1e1; }
+  .ai-power {
+    padding: 0;
+    background-image: url("../assets/family.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0px -70px;
+    overflow: hidden; } }
 
 /**
   * Set up for displays RANGING: 992px -> 1200px (*exclusive*).
@@ -2669,6 +2743,22 @@ input[type="button"].btn-block {
       position: absolute;
       border-bottom: 525px solid transparent;
       border-left: 68.7vw solid rgba(0, 0, 0, 0.4); }
+  .slant3 {
+    content: "";
+    position: relative;
+    width: 600px;
+    height: 605px;
+    background-color: rgba(0, 0, 50, 0.5);
+    float: right;
+    clear: bottom; }
+    .slant3:before {
+      right: 600px;
+      position: absolute;
+      content: "";
+      width: 0px;
+      height: 0px;
+      border-top: 500px solid rgba(0, 0, 50, 0.5);
+      border-left: 500px solid transparent; }
   .slant-text {
     background-color: transparent;
     border-color: transparent;
@@ -2676,7 +2766,14 @@ input[type="button"].btn-block {
     height: 575px;
     padding-left: 0px;
     padding-top: 95px;
-    color: #e1e1e1; } }
+    color: #e1e1e1; }
+  .ai-power {
+    padding: 0;
+    background-image: url("../assets/family.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0px -70px;
+    overflow: hidden; } }
 
 /**
   * Set up for displays GREATER THAN: 1200px.
@@ -2714,6 +2811,22 @@ input[type="button"].btn-block {
       position: absolute;
       border-bottom: 525px solid transparent;
       border-left: 69.1vw solid rgba(0, 0, 0, 0.4); }
+  .slant3 {
+    content: "";
+    position: relative;
+    width: 600px;
+    height: 605px;
+    background-color: rgba(0, 0, 50, 0.5);
+    float: right;
+    clear: bottom; }
+    .slant3:before {
+      right: 600px;
+      position: absolute;
+      content: "";
+      width: 0px;
+      height: 0px;
+      border-top: 500px solid rgba(0, 0, 50, 0.5);
+      border-left: 500px solid transparent; }
   .slant-text {
     background-color: transparent;
     border-color: transparent;
@@ -2721,4 +2834,11 @@ input[type="button"].btn-block {
     height: 575px;
     padding-left: 0px;
     padding-top: 95px;
-    color: #e1e1e1; } }
+    color: #e1e1e1; }
+  .ai-power {
+    padding: 0;
+    background-image: url("../assets/family.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0px -70px;
+    overflow: hidden; } }
