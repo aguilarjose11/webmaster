@@ -123,8 +123,8 @@ $jumbotron-height: 575px;
     width: 0;
     height: 0;
     border-top: 575px solid rgba(0,0,50,.5);
-    border-left: 900px solid transparent;
-    left: 400px;
+    border-left: 1000px solid transparent;
+    left: 328px;
 }
 
 /** slant-text mixin
@@ -148,6 +148,31 @@ padding-left: $text-box-x;//30px;
 padding-top: $text-box-y;//85px;
 color: rgb(225,225,225);
 border-bottom:0px;
+
+}
+
+/** slant-text mixin
+  *
+  * this mixin takes care of the slant-shade text size and other
+  * propereties.
+  *
+  * variables:
+  *   - $text-box: width of the text box.
+  *   - $text-box-x: x position of the text on jumbotron.
+  *   - $text-box-y: y position of the text on jumbotron.
+  */
+
+@mixin slant-text2($text-box, $text-box-x, $text-box-y)
+{
+  background-color: rgba(0,0,0,0);
+  border-color: rgba(0,0,0,0);
+  width: $text-box + 400px;
+  height: $jumbotron-height + 200px;
+  padding-left: $text-box-x;//30px;
+  padding-top: $text-box-y + 30px;//85px;
+  color: rgb(225,225,225);
+  border-bottom:0px;
+  left: 620px;
 
 }
 
@@ -214,6 +239,10 @@ border-bottom:0px;
     @include slant-text(300px, 0px, 25px);
   }
 
+  .slant-text2
+  {
+    @include slant-text2(300px, 0px, 25px);
+  }
   // image of the Martin's introduction side picture.
   .presentation-img
   {
@@ -254,7 +283,10 @@ border-bottom:0px;
   {
     @include slant-text(370px, 0px, 25px);
   }
-
+  .slant-text2
+  {
+    @include slant-text2(300px, 0px, 25px);
+  }
   // image of the Martin's introduction side picture.
   .presentation-img
   {
@@ -293,7 +325,10 @@ border-bottom:0px;
   {
     @include slant-text(370px, 0px, 25px);
   }
-
+  .slant-text2
+  {
+    @include slant-text2(300px, 0px, 25px);
+  }
   // image of the Martin's introduction side picture.
   .presentation-img
   {
@@ -332,7 +367,10 @@ border-bottom:0px;
   {
     @include slant-text(300px, 0px, 25px);
   }
-
+  .slant-text2
+  {
+    @include slant-text2(300px, 0px, 25px);
+  }
   // image of the Martin's introduction side picture.
   .presentation-img
   {
@@ -371,7 +409,10 @@ border-bottom:0px;
   {
     @include slant-text(300px, 0px, 25px);
   }
-
+  .slant-text2
+  {
+    @include slant-text2(300px, 0px, 25px);
+  }
   // image of the Martin's introduction side picture.
   .presentation-img
   {
