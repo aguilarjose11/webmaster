@@ -30,7 +30,7 @@ $jumbotron-height: 575px;
   */
   @mixin jumbotron-base($x-axis, $y-axis)
   {
-    background-image: url("/assets/nat.jpg");
+    background-image: url("/assets/nationals.jpg");
     background-attachment: absolute;
     background-repeat: no-repeat;
     background-size: cover;
@@ -145,10 +145,6 @@ $jumbotron-height: 575px;
   .slant-text
   {
     @include slant-text(300px, 30px, 85px);
-  }
-  .card-block
-  {
-    @include card-block(300px, 500px);
   }
   .img
   {
