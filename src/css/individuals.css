@@ -2507,7 +2507,7 @@ input[type="button"].btn-block {
   * Set up for displays LESS THAN: 576px (*exclusive*).
   **/
 .jumbotron {
-  background-image: url("https://static.pexels.com/photos/669615/pexels-photo-669615.jpeg");
+  background-image: url("../assets/home.jpg");
   background-attachment: absolute;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2568,7 +2568,7 @@ input[type="button"].btn-block {
 
 .ai-power {
   padding: 0;
-  background-image: url("../assets/family.jpg");
+  background-image: url("../assets/buildings.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0px -70px;
@@ -2579,7 +2579,7 @@ input[type="button"].btn-block {
   **/
 @media (min-width: 576px) {
   .jumbotron {
-    background-image: url("https://static.pexels.com/photos/669615/pexels-photo-669615.jpeg");
+    background-image: url("../assets/home.jpg");
     background-attachment: absolute;
     background-repeat: no-repeat;
     background-size: cover;
@@ -2636,7 +2636,7 @@ input[type="button"].btn-block {
     color: #e1e1e1; }
   .ai-power {
     padding: 0;
-    background-image: url("../assets/family.jpg");
+    background-image: url("../assets/buildings.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0px -70px;
@@ -2647,7 +2647,7 @@ input[type="button"].btn-block {
   **/
 @media (min-width: 768px) {
   .jumbotron {
-    background-image: url("https://static.pexels.com/photos/669615/pexels-photo-669615.jpeg");
+    background-image: url("../assets/home.jpg");
     background-attachment: absolute;
     background-repeat: no-repeat;
     background-size: cover;
@@ -2704,7 +2704,7 @@ input[type="button"].btn-block {
     color: #e1e1e1; }
   .ai-power {
     padding: 0;
-    background-image: url("../assets/family.jpg");
+    background-image: url("../assets/buildings.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0px -70px;
@@ -2715,7 +2715,7 @@ input[type="button"].btn-block {
   **/
 @media (min-width: 992px) {
   .jumbotron {
-    background-image: url("https://static.pexels.com/photos/669615/pexels-photo-669615.jpeg");
+    background-image: url("../assets/home.jpg");
     background-attachment: absolute;
     background-repeat: no-repeat;
     background-size: cover;
@@ -2772,7 +2772,7 @@ input[type="button"].btn-block {
     color: #e1e1e1; }
   .ai-power {
     padding: 0;
-    background-image: url("../assets/family.jpg");
+    background-image: url("../assets/buildings.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0px -70px;
@@ -2783,7 +2783,7 @@ input[type="button"].btn-block {
   **/
 @media (min-width: 1200px) {
   .jumbotron {
-    background-image: url("https://static.pexels.com/photos/669615/pexels-photo-669615.jpeg");
+    background-image: url("../assets/home.jpg");
     background-attachment: absolute;
     background-repeat: no-repeat;
     background-size: cover;
@@ -2840,7 +2840,7 @@ input[type="button"].btn-block {
     color: #e1e1e1; }
   .ai-power {
     padding: 0;
-    background-image: url("../assets/family.jpg");
+    background-image: url("../assets/buildings.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0px -70px;
