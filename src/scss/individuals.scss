@@ -4,11 +4,20 @@
 
 /* Variable Overrides.*/
 
-//* Variable declaration */
+/* Variable declaration */
+
+
 
 $bg-color: rgb(242,242,242);// html body background color
 
 /* Rules.*/
+
+// color of the html body section
+body
+{
+    background-color: $bg-color;
+}
+
 
 // color of the html body section
 body
@@ -22,15 +31,31 @@ $theme-colors:
   "mdj2": rgba(255, 255, 255, 0.9)
 
 );
+#redColor{
+  color: #f74747;
+}
 #tealColor{
   color: rgba(160, 207, 255, 0.9)
 }
-// color of the html body section
-body
-{
-    background-color: $bg-color;
+#gold{
+  color: #4169ba;
+}
+//Adjust header title to fit below navBar
+#headerTitle{
+  padding-top: 15%
 }
 
+// image separating the information from the introduction.
+.img-separator-intro-info
+{
+  background-image: url("https://static.pexels.com/photos/325185/pexels-photo-325185.jpeg");
+  height: 200px;
+  background-size: cover;
+  background-position: 0px ;
+  background-repeat: no-repeat;
+}
+
+// Makes main text stand out more.
 h1{
   text-shadow: 2px 2px 10px grey;
   font-weight: bold;
@@ -56,34 +81,6 @@ li{
     padding-top: 10px;
 }
 
-// image at left of the introduction to martin.
-.intro-side
-{
-  background-image: url("https://static.pexels.com/photos/436784/pexels-photo-436784.jpeg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 300px;
-  left: 0px;
-  background-position: -30px 0px
-
-}
-
-//class that deletes the gutters of the columns
-.no-gutters
-{
-  margin-left: 0;
-  margin-right: 0;
-
-  >.col,
-  > [class*="col-"]
-  {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-}
-
-
 
 /* Imports */
 
@@ -100,4 +97,4 @@ li{
 
 /* mixins */
 
-@import 'individualsdisplay' // mixin that takes care of the display changes.
+@import 'businessesdisplay' // mixin that takes care of the display changes.

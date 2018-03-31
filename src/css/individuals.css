@@ -1,14 +1,31 @@
 /* Here be Dragons!*/
 /* Variable Overrides.*/
+/* Variable declaration */
 /* Rules.*/
 body {
   background-color: #f2f2f2; }
 
+body {
+  background-color: #f2f2f2; }
+
+#redColor {
+  color: #f74747; }
+
 #tealColor {
   color: rgba(160, 207, 255, 0.9); }
 
-body {
-  background-color: #f2f2f2; }
+#gold {
+  color: #4169ba; }
+
+#headerTitle {
+  padding-top: 15%; }
+
+.img-separator-intro-info {
+  background-image: url("https://static.pexels.com/photos/325185/pexels-photo-325185.jpeg");
+  height: 200px;
+  background-size: cover;
+  background-position: 0px;
+  background-repeat: no-repeat; }
 
 h1 {
   text-shadow: 2px 2px 10px grey;
@@ -32,22 +49,6 @@ h1 {
 
 li {
   padding-top: 10px; }
-
-.intro-side {
-  background-image: url("https://static.pexels.com/photos/436784/pexels-photo-436784.jpeg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 300px;
-  left: 0px;
-  background-position: -30px 0px; }
-
-.no-gutters {
-  margin-left: 0;
-  margin-right: 0; }
-  .no-gutters > .col,
-  .no-gutters > [class*="col-"] {
-    padding-left: 0;
-    padding-right: 0; }
 
 /* Imports */
 .align-baseline {
@@ -2475,20 +2476,372 @@ input[type="button"].btn-block {
   * - slant-text($size)
   **/
 /** This mixin takes care of the jumbotron rules.
-  * To add rules that are expected to be shown-
-  * in every display size add them here.
-  *
-  * variables:
-  *   - $x-axis: Variable for the x position of the jumbotron's
-  *              picture background.
-  *   -$y-axis:  Variable for the y position of the jumbotron's
-  *              picture background.
-  */
-/** slant-shade mixin
-    *
-    * This mixin controlls the size of the slant shade used
-    * to display text on the jumbotron's face.
+    * To add rules that are expected to be shown-
+    * in every display size add them here.
     *
     * variables:
-    *   -$width: Width of the slant shade.
+    *   - $x-axis: Variable for the x position of the jumbotron's
+    *              picture background.
+    *   -$y-axis:  Variable for the y position of the jumbotron's
+    *              picture background.
     */
+/** slant-shade mixin
+  *
+  * This mixin controlls the size of the slant shade used
+  * to display text on the jumbotron's face.
+  *
+  * variables:
+  *   -$width: Width of the slant shade.
+  */
+/** slant-text mixin
+    *
+    * this mixin takes care of the slant-shade text size and other
+    * propereties.
+    *
+    * variables:
+    *   - $text-box: width of the text box.
+    *   - $text-box-x: x position of the text on jumbotron.
+    *   - $text-box-y: y position of the text on jumbotron.
+    */
+/**
+  * Set up for displays LESS THAN: 576px (*exclusive*).
+  **/
+.jumbotron {
+  background-image: url("https://static.pexels.com/photos/669615/pexels-photo-669615.jpeg");
+  background-attachment: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-position: 0px 0px;
+  height: 575px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  margin-bottom: 0px;
+  top: -70px; }
+
+.slant {
+  top: 0px;
+  width: 100%;
+  height: 50px;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.4); }
+  .slant:before {
+    top: 50px;
+    content: "";
+    position: absolute;
+    width: 30%;
+    height: 525px;
+    background-color: rgba(0, 0, 0, 0.4); }
+  .slant:after {
+    left: 30%;
+    top: 50px;
+    content: "";
+    position: absolute;
+    border-bottom: 525px solid transparent;
+    border-left: 67.1vw solid rgba(0, 0, 0, 0.4); }
+
+.slant3 {
+  content: "";
+  position: relative;
+  width: 600px;
+  height: 605px;
+  background-color: rgba(0, 0, 50, 0.5);
+  float: right;
+  clear: bottom; }
+  .slant3:before {
+    right: 600px;
+    position: absolute;
+    content: "";
+    width: 0px;
+    height: 0px;
+    border-top: 500px solid rgba(0, 0, 50, 0.5);
+    border-left: 500px solid transparent; }
+
+.slant-text {
+  background-color: transparent;
+  border-color: transparent;
+  width: 370px;
+  height: 575px;
+  padding-left: 0px;
+  padding-top: 95px;
+  color: #e1e1e1; }
+
+.ai-power {
+  padding: 0;
+  background-image: url("../assets/family.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0px -70px;
+  overflow: hidden; }
+
+/**
+  * Set up for displays RANGING: 576px -> 768px (*exclusive*).
+  **/
+@media (min-width: 576px) {
+  .jumbotron {
+    background-image: url("https://static.pexels.com/photos/669615/pexels-photo-669615.jpeg");
+    background-attachment: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-position: 0 0;
+    height: 575px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    margin-bottom: 0px;
+    top: -70px; }
+  .slant {
+    top: 0px;
+    width: 100%;
+    height: 50px;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.4); }
+    .slant:before {
+      top: 50px;
+      content: "";
+      position: absolute;
+      width: 30%;
+      height: 525px;
+      background-color: rgba(0, 0, 0, 0.4); }
+    .slant:after {
+      left: 30%;
+      top: 50px;
+      content: "";
+      position: absolute;
+      border-bottom: 525px solid transparent;
+      border-left: 68vw solid rgba(0, 0, 0, 0.4); }
+  .slant3 {
+    content: "";
+    position: relative;
+    width: 600px;
+    height: 605px;
+    background-color: rgba(0, 0, 50, 0.5);
+    float: right;
+    clear: bottom; }
+    .slant3:before {
+      right: 600px;
+      position: absolute;
+      content: "";
+      width: 0px;
+      height: 0px;
+      border-top: 500px solid rgba(0, 0, 50, 0.5);
+      border-left: 500px solid transparent; }
+  .slant-text {
+    background-color: transparent;
+    border-color: transparent;
+    width: 370px;
+    height: 575px;
+    padding-left: 0px;
+    padding-top: 95px;
+    color: #e1e1e1; }
+  .ai-power {
+    padding: 0;
+    background-image: url("../assets/family.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0px -70px;
+    overflow: hidden; } }
+
+/**
+  * Set up for displays RANGING: 768px -> 992px (*exclusive*).
+  **/
+@media (min-width: 768px) {
+  .jumbotron {
+    background-image: url("https://static.pexels.com/photos/669615/pexels-photo-669615.jpeg");
+    background-attachment: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-position: 0 0;
+    height: 575px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    margin-bottom: 0px;
+    top: -70px; }
+  .slant {
+    top: 0px;
+    width: 100%;
+    height: 50px;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.4); }
+    .slant:before {
+      top: 50px;
+      content: "";
+      position: absolute;
+      width: 30%;
+      height: 525px;
+      background-color: rgba(0, 0, 0, 0.4); }
+    .slant:after {
+      left: 30%;
+      top: 50px;
+      content: "";
+      position: absolute;
+      border-bottom: 525px solid transparent;
+      border-left: 68.4vw solid rgba(0, 0, 0, 0.4); }
+  .slant3 {
+    content: "";
+    position: relative;
+    width: 600px;
+    height: 605px;
+    background-color: rgba(0, 0, 50, 0.5);
+    float: right;
+    clear: bottom; }
+    .slant3:before {
+      right: 600px;
+      position: absolute;
+      content: "";
+      width: 0px;
+      height: 0px;
+      border-top: 500px solid rgba(0, 0, 50, 0.5);
+      border-left: 500px solid transparent; }
+  .slant-text {
+    background-color: transparent;
+    border-color: transparent;
+    width: 370px;
+    height: 575px;
+    padding-left: 0px;
+    padding-top: 95px;
+    color: #e1e1e1; }
+  .ai-power {
+    padding: 0;
+    background-image: url("../assets/family.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0px -70px;
+    overflow: hidden; } }
+
+/**
+  * Set up for displays RANGING: 992px -> 1200px (*exclusive*).
+  **/
+@media (min-width: 992px) {
+  .jumbotron {
+    background-image: url("https://static.pexels.com/photos/669615/pexels-photo-669615.jpeg");
+    background-attachment: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-position: 0 0;
+    height: 575px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    margin-bottom: 0px;
+    top: -70px; }
+  .slant {
+    top: 0px;
+    width: 100%;
+    height: 50px;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.4); }
+    .slant:before {
+      top: 50px;
+      content: "";
+      position: absolute;
+      width: 30%;
+      height: 525px;
+      background-color: rgba(0, 0, 0, 0.4); }
+    .slant:after {
+      left: 30%;
+      top: 50px;
+      content: "";
+      position: absolute;
+      border-bottom: 525px solid transparent;
+      border-left: 68.7vw solid rgba(0, 0, 0, 0.4); }
+  .slant3 {
+    content: "";
+    position: relative;
+    width: 600px;
+    height: 605px;
+    background-color: rgba(0, 0, 50, 0.5);
+    float: right;
+    clear: bottom; }
+    .slant3:before {
+      right: 600px;
+      position: absolute;
+      content: "";
+      width: 0px;
+      height: 0px;
+      border-top: 500px solid rgba(0, 0, 50, 0.5);
+      border-left: 500px solid transparent; }
+  .slant-text {
+    background-color: transparent;
+    border-color: transparent;
+    width: 370px;
+    height: 575px;
+    padding-left: 0px;
+    padding-top: 95px;
+    color: #e1e1e1; }
+  .ai-power {
+    padding: 0;
+    background-image: url("../assets/family.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0px -70px;
+    overflow: hidden; } }
+
+/**
+  * Set up for displays GREATER THAN: 1200px.
+  **/
+@media (min-width: 1200px) {
+  .jumbotron {
+    background-image: url("https://static.pexels.com/photos/669615/pexels-photo-669615.jpeg");
+    background-attachment: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-position: 0 0;
+    height: 575px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    margin-bottom: 0px;
+    top: -70px; }
+  .slant {
+    top: 0px;
+    width: 100%;
+    height: 50px;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.4); }
+    .slant:before {
+      top: 50px;
+      content: "";
+      position: absolute;
+      width: 30%;
+      height: 525px;
+      background-color: rgba(0, 0, 0, 0.4); }
+    .slant:after {
+      left: 30%;
+      top: 50px;
+      content: "";
+      position: absolute;
+      border-bottom: 525px solid transparent;
+      border-left: 69.1vw solid rgba(0, 0, 0, 0.4); }
+  .slant3 {
+    content: "";
+    position: relative;
+    width: 600px;
+    height: 605px;
+    background-color: rgba(0, 0, 50, 0.5);
+    float: right;
+    clear: bottom; }
+    .slant3:before {
+      right: 600px;
+      position: absolute;
+      content: "";
+      width: 0px;
+      height: 0px;
+      border-top: 500px solid rgba(0, 0, 50, 0.5);
+      border-left: 500px solid transparent; }
+  .slant-text {
+    background-color: transparent;
+    border-color: transparent;
+    width: 370px;
+    height: 575px;
+    padding-left: 0px;
+    padding-top: 95px;
+    color: #e1e1e1; }
+  .ai-power {
+    padding: 0;
+    background-image: url("../assets/family.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0px -70px;
+    overflow: hidden; } }
