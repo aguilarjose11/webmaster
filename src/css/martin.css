@@ -34,7 +34,7 @@ h1 {
   padding-left: 0px;
   height: 400px;
   -webkit-transform: scaleX(2) translate(172px);
-  -moz-transform: scaleX(2); }
+  -moz-transform: scaleX(2) translate(172px); }
 
 #gold {
   color: #f7e667; }

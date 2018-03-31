@@ -14,23 +14,23 @@
   * - slant-text($size)
   **/
 
-//variable declarations
-$jumbotron-height: 575px;
+  //variable declarations
+  $jumbotron-height: 575px;
 
 
-/** This mixin takes care of the jumbotron rules.
-  * To add rules that are expected to be shown-
-  * in every display size add them here.
-  *
-  * variables:
-  *   - $x-axis: Variable for the x position of the jumbotron's
-  *              picture background.
-  *   -$y-axis:  Variable for the y position of the jumbotron's
-  *              picture background.
-  */
+  /** This mixin takes care of the jumbotron rules.
+    * To add rules that are expected to be shown-
+    * in every display size add them here.
+    *
+    * variables:
+    *   - $x-axis: Variable for the x position of the jumbotron's
+    *              picture background.
+    *   -$y-axis:  Variable for the y position of the jumbotron's
+    *              picture background.
+    */
   @mixin jumbotron-base($x-axis, $y-axis)
   {
-    background-image: url("https://static.pexels.com/photos/669615/pexels-photo-669615.jpeg");
+    background-image: url("../assets/home.jpg");
     background-attachment: absolute;
     background-repeat: no-repeat;
     background-size: cover;
@@ -44,44 +44,47 @@ $jumbotron-height: 575px;
   }
 
 
-  /** slant-shade mixin
-    *
-    * This mixin controlls the size of the slant shade used
-    * to display text on the jumbotron's face.
-    *
-    * variables:
-    *   -$width: Width of the slant shade.
-    */
-    @mixin slant-shade($width)
+
+/** slant-shade mixin
+  *
+  * This mixin controlls the size of the slant shade used
+  * to display text on the jumbotron's face.
+  *
+  * variables:
+  *   -$width: Width of the slant shade.
+  */
+  @mixin slant-shade($width)
+  {
+    top: 0px;
+  	width: 100%;
+  	height: 50px;
+  	position: relative;
+  	background-color: rgba(0,0,0,.4);
+
+    // rectangle on left
+    &:before
     {
-      top: 0px;
-    	width: 100%;
-    	height: 50px;
-    	position: relative;
+    	top: 50px;
+    	content: "";
+    	position: absolute;
+    	width: 30%;
+    	height: 525px;
     	background-color: rgba(0,0,0,.4);
+    }
+    // triangle
+    &:after
+    {
+    	left: 30%;
+    	top: 50px;
+    	content: "";
+    	position: absolute;
+    	border-bottom: 525px solid transparent;
+    	border-left: $width solid rgba(0,0,0,.4);
+      // 68vw for xsmall
+    }
 
-      // rectangle on left
-      &:before
-      {
-      	top: 50px;
-      	content: "";
-      	position: absolute;
-      	width: 30%;
-      	height: 605px;
-      	background-color: rgba(0,0,0,.4);
-      }
-      // triangle
-      &:after
-      {
-      	left: 30%;
-      	top: 50px;
-      	content: "";
-      	position: absolute;
-      	border-bottom: 605px solid transparent;
-      	border-left: $width solid rgba(0,0,0,.4);
-        // 68vw for xsmall
-      }
-
+    //try clip-path
+  }
 
   /** slant-text mixin
     *
@@ -101,148 +104,204 @@ $jumbotron-height: 575px;
   width: $text-box;
   height: $jumbotron-height;
   padding-left: $text-box-x;//30px;
-  padding-top: $text-box-y;//85px;
+  padding-top: $text-box-y + 70px;//85px;
   color: rgb(225,225,225);
 
 }
+@mixin slant-shade3($width, $x-axis)
+{
+    // variables
+    $size-shade: 600px;
+    //rules
+    content: "";
+    position: relative;
+    width: $size-shade;
+    height: 605px;
+    background-color: rgba(0,0,50,.5);
+    float: right;
+    clear: bottom;
 
-/**
-  *
-  *
-  *
-  */
-  @mixin info-divider($x-axis, $y-axis)
-  {
-    background-image: url("https://static.pexels.com/photos/39644/robonaut-machines-dexterous-humanoid-39644.jpeg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 250px;
-    background-position: $x-axis $y-axis;
-  }
+    &:before
+    {
+      right:$size-shade;
+      position: absolute;
+      content: "";
+      width: 0px;
+      height: 0px;
+      border-top: 500px solid rgba(0,0,50,.5);
+      border-left: 500px solid transparent;
+    }
+}
+
+@mixin ai-power()
+{
+  padding: 0;
+  background-image: url("../assets/family.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0px -70px;
+  overflow:hidden;
+}
 
 // ------ Display mixins ------
 
 /**
   * Set up for displays LESS THAN: 576px (*exclusive*).
   **/
-  @include media-breakpoint-up(xs)
+@include media-breakpoint-up(xs)
+{
+
+  // Jumbotron's configuration and rules
+  .jumbotron
   {
-    // jumbotron rules
-    .jumbotron
-    {
-        @include jumbotron-base(-450px, 0px);
-    }
-
-    // slanted background over jumbotron
-    .slant
-    {
-      @include slant-shade(67.1vw);
-    }
-
-    // text over slant shade over jumbotron.
-    .slant-text
-    {
-      @include slant-text(300px, 0px, 25px);
-    }
-
+    @include jumbotron-base(0px, 0px);
   }
 
-  /**
-    * Set up for displays RANGING: 576px -> 768px (*exclusive*).
-    **/
-  @include media-breakpoint-up(sm)
+  // slanted background over jumbotron
+  .slant
   {
-    // jumbotron rules
-    .jumbotron
-    {
-      @include jumbotron-base(-250px, 0px);
-    }
-
-    // slanted background over jumbotron
-    .slant
-    {
-      @include slant-shade(68vw);
-    }
-
-    // text over slant shade over jumbotron.
-    .slant-text
-    {
-      @include slant-text(300px, 30px, 85px);
-    }
+    @include slant-shade(67.1vw);
+  }
+  .slant3
+  {
+    @include slant-shade3(350px, -55px);
+  }
+  // text over slant shade over jumbotron.
+  .slant-text
+  {
+    @include slant-text(370px, 0px, 25px);
+  }
+  .ai-power
+  {
+    @include ai-power();
 
   }
+}
 
-  /**
-    * Set up for displays RANGING: 768px -> 992px (*exclusive*).
-    **/
-  @include media-breakpoint-up(md)
+/**
+  * Set up for displays RANGING: 576px -> 768px (*exclusive*).
+  **/
+@include media-breakpoint-up(sm)
+{
+  // Jumbotron's configuration and rules
+  .jumbotron
   {
-      // jumbotron rules
-    .jumbotron
-    {
-      @include jumbotron-base(-119px, 0px);
-    }
-
-    // slanted background over jumbotron
-    .slant
-    {
-      @include slant-shade(68.4vw);
-    }
-
-    // text over slant shade over jumbotron.
-    .slant-text
-    {
-      @include slant-text(300px, 30px, 85px);
-    }
-
+    @include jumbotron-base(0, 0);
   }
 
-  /**
-    * Set up for displays RANGING: 992px -> 1200px (*exclusive*).
-    **/
-  @include media-breakpoint-up(lg)
+  // slanted background over jumbotron
+  .slant
   {
-    // jumbotron rules
-    .jumbotron
-    {
-      @include jumbotron-base(0px, 0px);
-    }
-
-    // slanted background over jumbotron
-    .slant
-    {
-      @include slant-shade(68.7vw);
-    }
-
-    // text over slant shade over jumbotron.
-    .slant-text
-    {
-      @include slant-text(300px, 30px, 85px);
-    }
+    @include slant-shade(68vw);;
+  }
+  .slant3
+  {
+    @include slant-shade3(350px, -55px);
+  }
+  // text over slant shade over jumbotron.
+  .slant-text
+  {
+    @include slant-text(370px, 0px, 25px);
+  }
+  .ai-power
+  {
+    @include ai-power();
 
   }
+}
 
-  /**
-    * Set up for displays GREATER THAN: 1200px.
-    **/
-  @include media-breakpoint-up(xl)
+/**
+  * Set up for displays RANGING: 768px -> 992px (*exclusive*).
+  **/
+@include media-breakpoint-up(md)
+{
+  // Jumbotron's configuration and rules
+  .jumbotron
   {
-    // jumbotron rules
-    .jumbotron
-    {
-      @include jumbotron-base(0px, 0px);
-    }
+    @include jumbotron-base(0, 0);
+  }
 
-    // slanted background over jumbotron
-    .slant
-    {
-      @include slant-shade(69.1vw);
-    }
+  // slanted background over jumbotron
+  .slant
+  {
+    @include slant-shade(68.4vw);
+  }
+  .slant3
+  {
+    @include slant-shade3(350px, -55px);
+  }
+  // text over slant shade over jumbotron.
+  .slant-text
+  {
+    @include slant-text(370px, 0px, 25px);
+  }
+  .ai-power
+  {
+    @include ai-power();
 
-    // text over slant shade over jumbotron.
-    .slant-text
-    {
-      @include slant-text(300px, 30px, 85px);
-    }
+  }
+}
+
+/**
+  * Set up for displays RANGING: 992px -> 1200px (*exclusive*).
+  **/
+@include media-breakpoint-up(lg)
+{
+  // Jumbotron's configuration and rules
+  .jumbotron
+  {
+    @include jumbotron-base(0, 0);
+  }
+
+  // slanted background over jumbotron
+  .slant
+  {
+    @include slant-shade(68.7vw);
+  }
+  .slant3
+  {
+    @include slant-shade3(350px, -55px);
+  }
+  // text over slant shade over jumbotron.
+  .slant-text
+  {
+    @include slant-text(370px, 0px, 25px);
+  }
+  .ai-power
+  {
+    @include ai-power();
+
+  }
+}
+
+/**
+  * Set up for displays GREATER THAN: 1200px.
+  **/
+@include media-breakpoint-up(xl)
+{
+  // Jumbotron's configuration and rules
+  .jumbotron
+  {
+    @include jumbotron-base(0, 0);
+  }
+
+  // slanted background over jumbotron
+  .slant
+  {
+    @include slant-shade(69.1vw);
+  }
+  .slant3
+  {
+    @include slant-shade3(350px, -55px);
+  }
+  // text over slant shade over jumbotron.
+  .slant-text
+  {
+    @include slant-text(370px, 0px, 25px);
+  }
+  .ai-power
+  {
+    @include ai-power();
+
   }
 }
