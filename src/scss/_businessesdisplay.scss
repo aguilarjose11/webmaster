@@ -108,8 +108,40 @@
   color: rgb(225,225,225);
 
 }
+@mixin slant-shade3($width, $x-axis)
+{
+    // variables
+    $size-shade: 600px;
+    //rules
+    content: "";
+    position: relative;
+    width: $size-shade;
+    height: 605px;
+    background-color: rgba(0,0,50,.5);
+    float: right;
+    clear: bottom;
 
+    &:before
+    {
+      right:$size-shade;
+      position: absolute;
+      content: "";
+      width: 0px;
+      height: 0px;
+      border-top: 500px solid rgba(0,0,50,.5);
+      border-left: 500px solid transparent;
+    }
+}
 
+@mixin ai-power()
+{
+  padding: 0;
+  background-image: url("../assets/family.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0px -70px;
+  overflow:hidden;
+}
 
 // ------ Display mixins ------
 
@@ -130,11 +162,19 @@
   {
     @include slant-shade(67.1vw);
   }
-
+  .slant3
+  {
+    @include slant-shade3(350px, -55px);
+  }
   // text over slant shade over jumbotron.
   .slant-text
   {
     @include slant-text(370px, 0px, 25px);
+  }
+  .ai-power
+  {
+    @include ai-power();
+
   }
 }
 
@@ -154,11 +194,19 @@
   {
     @include slant-shade(68vw);;
   }
-
+  .slant3
+  {
+    @include slant-shade3(350px, -55px);
+  }
   // text over slant shade over jumbotron.
   .slant-text
   {
     @include slant-text(370px, 0px, 25px);
+  }
+  .ai-power
+  {
+    @include ai-power();
+
   }
 }
 
@@ -178,11 +226,19 @@
   {
     @include slant-shade(68.4vw);
   }
-
+  .slant3
+  {
+    @include slant-shade3(350px, -55px);
+  }
   // text over slant shade over jumbotron.
   .slant-text
   {
     @include slant-text(370px, 0px, 25px);
+  }
+  .ai-power
+  {
+    @include ai-power();
+
   }
 }
 
@@ -202,11 +258,19 @@
   {
     @include slant-shade(68.7vw);
   }
-
+  .slant3
+  {
+    @include slant-shade3(350px, -55px);
+  }
   // text over slant shade over jumbotron.
   .slant-text
   {
     @include slant-text(370px, 0px, 25px);
+  }
+  .ai-power
+  {
+    @include ai-power();
+
   }
 }
 
@@ -226,10 +290,18 @@
   {
     @include slant-shade(69.1vw);
   }
-
+  .slant3
+  {
+    @include slant-shade3(350px, -55px);
+  }
   // text over slant shade over jumbotron.
   .slant-text
   {
     @include slant-text(370px, 0px, 25px);
+  }
+  .ai-power
+  {
+    @include ai-power();
+
   }
 }
