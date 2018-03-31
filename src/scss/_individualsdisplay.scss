@@ -28,21 +28,20 @@ $jumbotron-height: 575px;
   *   -$y-axis:  Variable for the y position of the jumbotron's
   *              picture background.
   */
-@mixin jumbotron-base($x-axis, $y-axis)
-{
-  background-image: url("https://static.pexels.com/photos/630839/pexels-photo-630839.jpeg");
-  background-attachment: absolute;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  background-position: $x-axis $y-axis;
-  height: $jumbotron-height;
-  padding-bottom: 0px;
-  padding-top: 0px;
-  margin-bottom: 0px;
-  top: -70px;
-}
-
+  @mixin jumbotron-base($x-axis, $y-axis)
+  {
+    background-image: url("https://static.pexels.com/photos/669615/pexels-photo-669615.jpeg");
+    background-attachment: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-position: $x-axis $y-axis;
+    height: $jumbotron-height;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    margin-bottom: 0px;
+    top: -70px;
+  }
 
 
   /** slant-shade mixin
