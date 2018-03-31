@@ -2536,7 +2536,7 @@ input[type="button"].btn-block {
   * Set up for displays LESS THAN: 576px (*exclusive*).
   **/
 .jumbotron {
-  background-image: url("/assets/nationals.jpg");
+  background-image: url("../assets/nationals.jpg");
   background-attachment: absolute;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2575,7 +2575,7 @@ input[type="button"].btn-block {
   **/
 @media (min-width: 576px) {
   .jumbotron {
-    background-image: url("/assets/nationals.jpg");
+    background-image: url("../assets/nationals.jpg");
     background-attachment: absolute;
     background-repeat: no-repeat;
     background-size: cover;
@@ -2611,7 +2611,7 @@ input[type="button"].btn-block {
   **/
 @media (min-width: 768px) {
   .jumbotron {
-    background-image: url("/assets/nationals.jpg");
+    background-image: url("../assets/nationals.jpg");
     background-attachment: absolute;
     background-repeat: no-repeat;
     background-size: cover;
@@ -2647,7 +2647,7 @@ input[type="button"].btn-block {
   **/
 @media (min-width: 992px) {
   .jumbotron {
-    background-image: url("/assets/nationals.jpg");
+    background-image: url("../assets/nationals.jpg");
     background-attachment: absolute;
     background-repeat: no-repeat;
     background-size: cover;
@@ -2683,7 +2683,7 @@ input[type="button"].btn-block {
   **/
 @media (min-width: 1200px) {
   .jumbotron {
-    background-image: url("/assets/nationals.jpg");
+    background-image: url("../assets/nationals.jpg");
     background-attachment: absolute;
     background-repeat: no-repeat;
     background-size: cover;

@@ -30,7 +30,7 @@ $jumbotron-height: 575px;
   */
   @mixin jumbotron-base($x-axis, $y-axis)
   {
-    background-image: url("/assets/nationals.jpg");
+    background-image: url("../assets/nationals.jpg");
     background-attachment: absolute;
     background-repeat: no-repeat;
     background-size: cover;
