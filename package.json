@@ -25,8 +25,12 @@
     "gulp-sass": "^3.1.0"
   },
   "dependencies": {
-    "bootstrap": "^4.0.0",
-    "jquery": "^3.3.1",
-    "popper.js": "^1.13.0"
+    "bootstrap": "*",
+    "browser-sync": "*",
+    "gulp": "*",
+    "gulp-sass": "*",
+    "gulp-sync": "*",
+    "jquery": "*",
+    "popper.js": "*"
   }
 }
